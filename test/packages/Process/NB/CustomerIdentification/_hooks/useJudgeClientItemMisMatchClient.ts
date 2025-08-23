@@ -1,0 +1,13 @@
+import { useMemo } from 'react';
+import lodash from 'lodash';
+import { NbClientTag } from 'process/NB/CustomerIdentification/Enum';
+
+export default ({ item }: any) => {
+  return useMemo(() => {
+    return lodash
+      .chain(item)
+      .get('identificationList', [])
+      .some((idItem: any) => idItem.clientTag === NbClientTag.Mismatch)
+      .value();
+  }, [item]);
+};

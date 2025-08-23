@@ -1,0 +1,93 @@
+diff --git a/node_modules/svgo/lib/svgo.js b/node_modules/svgo/lib/svgo.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/svgo/plugins/minifyStyles.js b/node_modules/svgo/plugins/minifyStyles.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/svgo/plugins/prefixIds.js b/node_modules/svgo/plugins/prefixIds.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/svgo/plugins/preset-default.js b/node_modules/svgo/plugins/preset-default.js
+index 4ed5888..1718213 100644
+--- a/node_modules/svgo/plugins/preset-default.js
++++ b/node_modules/svgo/plugins/preset-default.js
+@@ -39,42 +39,43 @@ const removeDesc = require('./removeDesc.js');
+ 
+ const presetDefault = createPreset({
+   name: 'presetDefault',
+-  plugins: [
+-    removeDoctype,
+-    removeXMLProcInst,
+-    removeComments,
+-    removeMetadata,
+-    removeEditorsNSData,
+-    cleanupAttrs,
+-    mergeStyles,
+-    inlineStyles,
+-    minifyStyles,
+-    cleanupIDs,
+-    removeUselessDefs,
+-    cleanupNumericValues,
+-    convertColors,
+-    removeUnknownsAndDefaults,
+-    removeNonInheritableGroupAttrs,
+-    removeUselessStrokeAndFill,
+-    removeViewBox,
+-    cleanupEnableBackground,
+-    removeHiddenElems,
+-    removeEmptyText,
+-    convertShapeToPath,
+-    convertEllipseToCircle,
+-    moveElemsAttrsToGroup,
+-    moveGroupAttrsToElems,
+-    collapseGroups,
+-    convertPathData,
+-    convertTransform,
+-    removeEmptyAttrs,
+-    removeEmptyContainers,
+-    mergePaths,
+-    removeUnusedNS,
+-    sortDefsChildren,
+-    removeTitle,
+-    removeDesc,
+-  ],
++  plugins: []
++  // [
++  //   removeDoctype,
++  //   removeXMLProcInst,
++  //   removeComments,
++  //   removeMetadata,
++  //   removeEditorsNSData,
++  //   cleanupAttrs,
++  //   mergeStyles,
++  //   inlineStyles,
++  //   minifyStyles,
++  //   cleanupIDs,
++  //   removeUselessDefs,
++  //   cleanupNumericValues,
++  //   convertColors,
++  //   removeUnknownsAndDefaults,
++  //   removeNonInheritableGroupAttrs,
++  //   removeUselessStrokeAndFill,
++  //   removeViewBox,
++  //   cleanupEnableBackground,
++  //   removeHiddenElems,
++  //   removeEmptyText,
++  //   convertShapeToPath,
++  //   convertEllipseToCircle,
++  //   moveElemsAttrsToGroup,
++  //   moveGroupAttrsToElems,
++  //   collapseGroups,
++  //   convertPathData,
++  //   convertTransform,
++  //   removeEmptyAttrs,
++  //   removeEmptyContainers,
++  //   mergePaths,
++  //   removeUnusedNS,
++  //   sortDefsChildren,
++  //   removeTitle,
++  //   removeDesc,
++  // ],
+ });
+ 
+ module.exports = presetDefault;

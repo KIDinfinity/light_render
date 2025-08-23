@@ -1,0 +1,43 @@
+import Dictionary from 'enum/Dictionary';
+
+const PHHistory: string[] = [
+  Dictionary.Dropdown_CFG_Country,
+  Dictionary.Gender,
+  Dictionary.IdentityType,
+  Dictionary.OrganizationIdentityType,
+  Dictionary.Dropdown_CLM_SubmissionChannel,
+  Dictionary.InsuredState,
+  Dictionary.CauseOfIncident,
+  Dictionary.TreatmentType,
+  Dictionary.DiagnosisType,
+  Dictionary.Dropdown_CLM_HospitalType,
+  Dictionary.Dropdown_POL_RelationshipWithInsured,
+  Dictionary.Dropdown_CLM_ClaimStatus,
+  Dictionary.MainBenefit,
+  Dictionary.Dropdown_CLM_TherapiesType,
+  Dictionary.Dropdown_COM_ClaimType,
+  Dictionary.PaymentMethod,
+  Dictionary.Dropdown_CLM_ClaimDecision,
+  Dictionary.Dropdown_CLM_AssessmentDecision,
+  Dictionary.Dropdown_CLM_ExGratiaCode,
+  Dictionary.AmountType,
+  Dictionary.PolicyType,
+  Dictionary.PayablesType,
+  Dictionary.Dropdown_CLM_AgentStatus,
+  Dictionary.Dropdown_PAY_ChequeRemarkTemplate,
+  Dictionary.Dropdown_CLM_SurgeryClass,
+  Dictionary.Dropdown_CLM_PlaceOfHospital,
+  Dictionary.Dropdown_CLM_RoomType,
+  Dictionary.Dropdown_CLM_SurgeryCategory,
+  Dictionary.Dropdown_CLM_DenyCode,
+  Dictionary.Dropdown_PAY_ChequeRemarkTemplate,
+  Dictionary.Dropdown_CLM_SurgeryClass,
+  Dictionary.Dropdown_CLM_CriticalIllness,
+  Dictionary.Dropdown_CLM_PlaceOfHospital,
+  Dictionary.Dropdown_CLM_RoomType,
+  Dictionary.Dropdown_COM_CountryCode,
+];
+
+export default {
+  PHHistory,
+};

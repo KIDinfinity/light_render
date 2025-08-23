@@ -1,0 +1,1333 @@
+{
+  "monitor_envoy_sum": {
+    "apiTraceId": "c94c542f-84c4-4063-a107-50a47b7de007",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_healthCheck_envoy",
+      "dataList": [
+        {
+          "region": "ID",
+          "total_count": 3,
+          "type": "ENVOY",
+          "category": "NB Settlement"
+        },
+        {
+          "region": "ID",
+          "total_count": 5,
+          "type": "ENVOY",
+          "category": "POS Settlement"
+        },
+        {
+          "region": "ID",
+          "total_count": 1,
+          "type": "ENVOY",
+          "category": "Sending Pending Letter / SMS"
+        },
+        {
+          "region": "MY",
+          "total_count": 5,
+          "type": "Job Center",
+          "category": "Sending Email"
+        },
+        {
+          "region": "MY",
+          "total_count": 2,
+          "type": "Job Center",
+          "category": "CFI Job"
+        },
+        {
+          "region": "MY",
+          "total_count": 1,
+          "type": "Job Center",
+          "category": "NTU Job"
+        },
+        {
+          "region": "TH",
+          "type": "Envoy"
+        },
+        {
+          "region": "PH",
+          "type": "Envoy"
+        },
+        {
+          "region": "KH",
+          "type": "Envoy"
+        },
+        {
+          "region": "VN",
+          "type": "Envoy"
+        },
+        {
+          "region": "HK",
+          "type": "Envoy"
+        },
+        {
+          "region": "JP",
+          "type": "Envoy"
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_job_center_sum": {
+    "apiTraceId": "5e1db258-395a-4739-bd27-c010a26c9e69",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_job_center_sum",
+      "dataList": [
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "autoAssignHandler",
+          "total_count": 15713,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "requestStartingUpSendQueueJob",
+          "total_count": 2880,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 5763,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "heartbeatHandler",
+          "total_count": 327,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "heartbeatHandler2",
+          "total_count": 327,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 2261,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 1436,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "retryExtraFunctionJobHandler",
+          "total_count": 376,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "intervalCheckPointJobHandler",
+          "total_count": 235,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 13,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "monitorResultHouseKeepHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "SyncProductPackageHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "SyncProductInfoHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "AsyncCleanLogDataTaskJobV2Handler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "dailyCorrespondenceTaskHandler    ",
+          "total_count": 3,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "syncProductDetailJobHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "DailyCleanExpiredDataJobHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "ID",
+          "type": "Job Center",
+          "category": "reasonGroupJobHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 655,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "requestStartingUpSendQueueJob",
+          "total_count": 262,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 130,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 182,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "batchRetryAccountBookJob",
+          "total_count": 4,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "intervalCheckPointJobHandler",
+          "total_count": 20,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "monitorResultHouseKeepHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "VN",
+          "type": "Job Center",
+          "category": "AsyncCleanLogDataTaskJobV2Handler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 4317,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 1722,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 2009,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "batchRetryAccountBookJob",
+          "total_count": 47,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 6,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "docUploadRetryJobHandler",
+          "total_count": 11,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "monitorResultHouseKeepHandler",
+          "total_count": 6,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "AsyncCleanLogDataTaskJobV2Handler",
+          "total_count": 6,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "dailyCorrespondenceTaskHandler",
+          "total_count": 2,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "claimAssessmentWorksheetHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "ClearCachePersistenceScheduleJob",
+          "total_count": 6,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "DailyCleanExpiredDataJobHandler",
+          "total_count": 6,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "LongOutstandingCaseReassignJob",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "batchRetryJob",
+          "total_count": 3,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "JP",
+          "type": "Job Center",
+          "category": "retryFPSLimitCaseHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "retryExtraFunctionJobHandler",
+          "total_count": 1748,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "autoAssignHandler",
+          "total_count": 17279,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 7195,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "requestStartingUpSendQueueJob",
+          "total_count": 2878,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "heartbeatHandler2",
+          "total_count": 359,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "heartbeatHandler",
+          "total_count": 359,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 2296,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 1435,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "batchRetryAccountBookJob",
+          "total_count": 47,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "intervalCheckPointJobHandler",
+          "total_count": 235,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "SyncProductInfoHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "SyncProductPackageHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "monitorResultHouseKeepHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "dailyCorrespondenceTaskHandler    ",
+          "total_count": 2,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "syncProductDetailJobHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "productWithdrawnJobHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "DailyCleanExpiredDataJobHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "CaseAutoLabelAgeCrossJob",
+          "total_count": 60,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "MY",
+          "type": "Job Center",
+          "category": "CaseAutoUnLabelAgeCrossJob",
+          "total_count": 60,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "TH",
+          "type": "Job Center",
+          "category": "retryExtraFunctionJobHandler",
+          "total_count": 27491,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "TH",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 287,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "TH",
+          "type": "Job Center",
+          "category": "docUploadRetryJobHandler",
+          "total_count": 11,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "TH",
+          "type": "Job Center",
+          "category": "correspondenceJobHandler",
+          "total_count": 40,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "TH",
+          "type": "Job Center",
+          "category": "reasonGroupJobHandler",
+          "total_count": 4,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "TH",
+          "type": "Job Center",
+          "category": "HospitalBatchAutoSubmitJob",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "retryExtraFunctionJobHandler",
+          "total_count": 9586,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "GetRcsClaimSettledDateScheduleJob",
+          "total_count": 24,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "requestStartingUpSendQueueJob",
+          "total_count": 2878,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 7195,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 1435,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 2009,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "GetChequeInfoScheduleV2Job",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "batchRetryAccountBookJob",
+          "total_count": 47,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "intervalCheckPointJobHandler",
+          "total_count": 188,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "GetChequeInfoScheduleJob",
+          "total_count": 24,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "LoadClaimCaseAssessorScheduleJob",
+          "total_count": 11,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "GenerateSuppressChequeSettlementLetterJob",
+          "total_count": 24,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "GenerateChequeSettlementLetterScheduleJob",
+          "total_count": 24,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 13,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "monitorResultHouseKeepHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "AsyncCleanLogDataTaskJobV2Handler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "SyncAuditTrailToMCSJob",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "dailyCorrespondenceTaskHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "ClearCachePersistenceScheduleJob",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "DailyCleanExpiredDataJobHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "mySyncFundPriceJobHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "GetRcsClaimFpsInterfaceInfoScheduleJob",
+          "total_count": 2,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "PH",
+          "type": "Job Center",
+          "category": "HospitalBatchAutoSubmitJob",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 4317,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 1722,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "monitorJobCreateHandler",
+          "total_count": 2009,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "reportDropdownOptionsSynchronizerJobHandler",
+          "total_count": 47,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "intervalCheckPointJobHandler",
+          "total_count": 188,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 13,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "monitorResultHouseKeepHandler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "AsyncCleanLogDataTaskJobV2Handler",
+          "total_count": 7,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "dailyCorrespondenceTaskHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "CancelExceptionCaseJobHandler",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "DailyCleanExpiredDataJobHandler",
+          "total_count": 6,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "HK",
+          "type": "Job Center",
+          "category": "HospitalBatchAutoSubmitJob",
+          "total_count": 1,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "KH",
+          "type": "Job Center",
+          "category": "HealthCheckJobHandler",
+          "total_count": 527,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "KH",
+          "type": "Job Center",
+          "category": "requestStartingUpSendQueueJob",
+          "total_count": 264,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "KH",
+          "type": "Job Center",
+          "category": "AsyncSubmissionRequestScheduleJob",
+          "total_count": 135,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "KH",
+          "type": "Job Center",
+          "category": "intervalCheckPointJobHandler",
+          "total_count": 20,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "KH",
+          "type": "Job Center",
+          "category": "batchRetryAccountBookJob",
+          "total_count": 4,
+          "fail_level": "Warning"
+        },
+        {
+          "region": "KH",
+          "type": "Job Center",
+          "category": "AsyncCleanDocDataTaskJob",
+          "total_count": 13,
+          "fail_level": "Warning"
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_submission_sum": {
+    "apiTraceId": "c94c542f-84c4-4063-a107-50a47b7de007",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_healthCheck_JobCenter",
+      "dataList": [
+        {
+          "region": "MY",
+          "total_count": 1,
+          "type": "Submission",
+          "category": "Create case failed"
+        },
+        {
+          "region": "MY",
+          "total_count": 1,
+          "type": "Submission",
+          "category": "Unassigned"
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_document_sum": {
+    "apiTraceId": "c94c542f-84c4-4063-a107-50a47b7de007",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_healthCheck_document",
+      "dataList": [
+        {
+          "region": "MY",
+          "total_count": 1,
+          "type": "Submission",
+          "category": "Upload failed"
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_sysConnect_sum": {
+    "apiTraceId": "c94c542f-84c4-4063-a107-50a47b7de007",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_healthCheck_sysConnect",
+      "dataList": [
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "MY",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "UC Center",
+          "status": "N",
+          "requestTime": "2025-06-12T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-12T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "internal",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "NanoService",
+          "status": "S",
+          "requestTime": "2025-06-17T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-17T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "OMNEService",
+          "status": "N",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "UC Center",
+          "status": "N",
+          "requestTime": "2025-06-12T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-12T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "internal",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW Service",
+          "status": "N",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW1 Service",
+          "status": "N",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW2 Service",
+          "status": "N",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW3 Service",
+          "status": "N",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW4 Service",
+          "status": "S",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW5 Service",
+          "status": "S",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW5 Service",
+          "status": "S",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW7 Service",
+          "status": "S",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW8 Service",
+          "status": "S",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "PH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "IW9 Service",
+          "status": "S",
+          "requestTime": "2025-06-14T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-14T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "external",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "ID",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "UC Center",
+          "status": "N",
+          "requestTime": "2025-06-12T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-12T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "internal",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "TH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "UC Center",
+          "status": "N",
+          "requestTime": "2025-06-12T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-12T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "internal",
+          "intervalTime": 10
+        },
+        {
+          "id": "385d07be-b25c-44b2-ab3b-a860e44b6a50",
+          "creator": "PHSUPVI",
+          "gmtCreate": "2025-06-17T02:12:29.000+0000",
+          "modifier": "PHSUPVI",
+          "gmtModified": "2025-06-17T02:12:29.000+0000",
+          "deleted": 0,
+          "transId": "f467499a-f09c-452f-89ba-9bc32a3f7ca3",
+          "batchNo": "HC20250617101229172",
+          "integrationCode": "INT_I_IL_NB_PremiumCalculation",
+          "regionCode": "TH",
+          "interfaceCode": "PremiumCalculation",
+          "systemCode": "NTC Center",
+          "status": "N",
+          "requestTime": "2025-06-12T02:12:29.000+0000",
+          "requestData": "{\"targets\":[[\"proposal\",\"disclosureSheet\"]],\"quotation\":{\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"title\":\"MRS\",\"age\":37}],\"insureds\":[{\"nation ality\":\"RP\",\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"occClass\":\"\",\"dob\":\"1984-11-\\r\\n19\",\"residentCountry\":\"\",\"fullName\":\"MRS JASMIN \\r\\nNICDAO \\r\\nCUNANAN\",\"relationship\":\"SELF\",\"title\":\"MRS\",\"age\":37}],\"channel\":\"AGENCY\",\"pid\":\"MCCI\",\"agents\":[{\"agentCode\":\"10008276\",\"fullName\":\"Lilibeth Carreon \\r\\nGopez\"}],\"basicInfo\":{\"proposeDT\":\"2022-08-\\r\\n25\",\"paymentMode\":\"M\",\"currency\":\"PHP\"},\"expiryDate\":\"2022-11-19\",\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-08-25\",\"plans\":[{\"productLine\":\"M ED\",\"sumAssured\":500000.0,\"discountRate\":0,\"ann ualPrem\":23670.0,\"premium\":23670.0,\"policyTerm\":38,\"basePrem\":2249.0,\"pid\":\"MCCI\",\"LApla nCode\":\"MC03\",\"premiumTerm\":20,\"premiumType\":\"RP\",\"insur edIndex\":0}],\"proposalNum\":\"0022620000100\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "responseTime": "2025-06-17T02:12:29.000+0000",
+          "responseData": "{\"warnings\":[],\"quotation\":{\"summary\":{\"annualizedPrem\":27000,\"loadedPrem\":27000,\"discount\":0,\"totalPremWithTax\":27000,\"loading\":0,\"initialPrem\":27000,\"loadingRate\":0,\"basePrem\":27000,\"totalPrem\":27000,\"monthlyPrem\":2565,\"annualPrem\":27000,\"semiAnnualPrem\":14310,\"extraPrem\":0,\"quarterlyPrem\":7560},\"agent\":{\"fullName\":\"FWD Takaful\"},\"proposers\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"title\":\"MS\",\"age\":45}],\"insureds\":[{\"smoker\":\"N\",\"occupation\":\"001B\",\"gender\":\"F\",\"nationality\":\"RP\",\"occClass\":\"\",\"dob\":\"1977-06-23\",\"residentCountry\":\"\",\"fullName\":\"MS Huhu Kdijeijf\",\"occGroup\":\"001A\",\"relationship\":\"SELF\",\"title\":\"MS\",\"age\":45}],\"channel\":\"AGENCY\",\"pid\":\"STC\",\"basicInfo\":{\"tsarInd\":0,\"proposeDT\":\"2022-06-23T08:29:12.402Z\",\"paymentMode\":\"A\",\"backDate\":\"2022-06-23\",\"currency\":\"PHP\"},\"expiryDate\":\"1977-06-23\",\"notices\":[],\"proposalOptions\":{\"language\":\"\"},\"proposeDT\":\"2022-06-23\",\"plans\":[{\"discountRate\":0,\"annualizedPrem\":27000,\"policyTerm\":5,\"classes\":\"NEE\",\"discount\":0,\"pid\":\"STC\",\"totalPremWithTax\":27000,\"initialPrem\":27000,\"policyBenefitTerm\":35,\"productName\":{\"en\":\"Set for Tomorrow  - Short Term Cover\"},\"productLine\":\"TERM\",\"sumAssured\":5000000,\"loadingRate\":0,\"premium\":27000,\"insuredIndex\":0,\"premiumUnit\":\"Y\",\"totalPrem\":27000,\"monthlyPrem\":2565,\"semiAnnualPrem\":14310,\"quarterlyPrem\":7560,\"policyAge\":50,\"loadedPrem\":27000,\"policyUnit\":\"Y\",\"loading\":0,\"LAplanCode\":\"TT01\",\"version\":2,\"premiumType\":\"RP\",\"planCode\":\"TT01\",\"premAge\":50,\"productCode\":\"STC\",\"basePrem\":27000,\"premiumTerm\":5,\"annualPrem\":27000,\"extraPrem\":0}],\"eVersion\":1,\"proposalNum\":\"0010310000010RV\",\"funds\":{\"fundChartDataUrl\":\"\",\"fundAllocation\":[]},\"relationship\":\"042\"}}",
+          "exceptionMsg": null,
+          "spendTime": null,
+          "nextTime": "2025-06-12T02:22:29.000+0000",
+          "requestUrl": "https://18.140.242.161/api/quotation/api/illustrate",
+          "category": "internal",
+          "intervalTime": 10
+        }
+      ]
+    },
+    "messageList": null
+  }
+}

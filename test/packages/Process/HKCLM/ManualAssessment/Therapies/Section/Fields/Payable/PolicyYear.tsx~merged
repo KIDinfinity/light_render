@@ -1,0 +1,100 @@
+import React from 'react';
+import { Col } from 'antd';
+import {
+  Authority,
+  ElementConfig,
+  Visible,
+  Editable,
+  Required,
+  FormItemInput,
+  Rule,
+} from 'basic/components/Form';
+import { NAMESPACE } from '../../../../activity.config';
+
+import { localConfig } from '../../index';
+<<<<<<< HEAD
+import { localFieldConfig } from './PolicyYear.config';
+
+export { localFieldConfig } from './PolicyYear.config';
+=======
+<<<<<<< HEAD:packages/Process/HKCLM/ManualAssessment/Therapies/Section/Fields/Payable/PolicyNo.tsx
+import { localFieldConfig } from './PolicyNo.config';
+
+export { localFieldConfig } from './PolicyNo.config';
+=======
+import { localFieldConfig } from './PolicyYear.config';
+
+export { localFieldConfig } from './PolicyYear.config';
+>>>>>>> presit:packages/Process/HKCLM/ManualAssessment/Therapies/Section/Fields/Payable/PolicyYear.tsx
+>>>>>>> presit
+
+export const FormItem = ({ isShow, layout, form, editable, field, config }: any) => {
+  const fieldProps: any = localFieldConfig['field-props'];
+
+  const visibleConditions = Rule(fieldProps['visible-condition'], form, NAMESPACE);
+  const editableConditions = true;
+  const requiredConditions = true;
+
+  return (
+    isShow &&
+    ((config?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        <FormItemInput
+          disabled={
+            !editable ||
+            ((config?.editable || fieldProps.editable) === Editable.Conditions
+              ? !editableConditions
+              : (config?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId={config.label?.dictCode || fieldProps.label.dictCode}
+          labelTypeCode={config.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+          required={
+            config?.required === Required.Conditions
+              ? requiredConditions
+              : (config.required || fieldProps.required) === Required.Yes
+          }
+        />
+      </Col>
+    )
+  );
+};
+
+<<<<<<< HEAD
+const PolicyYear = ({ isShow, layout, form, editable, section }: any) => (
+  <Authority>
+    <ElementConfig.Field config={localConfig} section={section} field="policyYear">
+=======
+<<<<<<< HEAD:packages/Process/HKCLM/ManualAssessment/Therapies/Section/Fields/Payable/PolicyNo.tsx
+const PolicyNo = ({ isShow, layout, form, editable, section }: any) => (
+  <Authority>
+    <ElementConfig.Field config={localConfig} section={section} field="policyNo">
+=======
+const PolicyYear = ({ isShow, layout, form, editable, section }: any) => (
+  <Authority>
+    <ElementConfig.Field config={localConfig} section={section} field="policyYear">
+>>>>>>> presit:packages/Process/HKCLM/ManualAssessment/Therapies/Section/Fields/Payable/PolicyYear.tsx
+>>>>>>> presit
+      <FormItem isShow={isShow} layout={layout} form={form} editable={editable} />
+    </ElementConfig.Field>
+  </Authority>
+);
+
+<<<<<<< HEAD
+PolicyYear.displayName = 'PolicyYear';
+
+export default PolicyYear;
+=======
+<<<<<<< HEAD:packages/Process/HKCLM/ManualAssessment/Therapies/Section/Fields/Payable/PolicyNo.tsx
+PolicyNo.displayName = 'PolicyNo';
+
+export default PolicyNo;
+=======
+PolicyYear.displayName = 'PolicyYear';
+
+export default PolicyYear;
+>>>>>>> presit:packages/Process/HKCLM/ManualAssessment/Therapies/Section/Fields/Payable/PolicyYear.tsx
+>>>>>>> presit

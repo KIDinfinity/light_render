@@ -1,0 +1,16 @@
+export default {
+  disabled: false,
+  required: false,
+  maxLength: undefined,
+  rules: [],
+  triggerEvent: 'onChange',
+  labelId: undefined,
+  cusTitle: false,
+  row: 2,
+  warningMessage: [],
+  labelTypeCode: 'Label_BIZ_Claim',
+  inside: false,
+  hasError: false,
+  useError: true,
+  placeholder: '',
+}

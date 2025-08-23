@@ -1,0 +1,18 @@
+export default {
+  mode: undefined,
+  disabled: false,
+  required: false,
+  rules: [],
+  dropdownCode: 'claim_dict001',
+  otherParams: {},
+  optionShowType: 'both',
+  labelId: undefined,
+  disabledDictCodes: [],
+  onSelectCallback: null,
+  typeCode: '',
+  saveName: false,
+  labelTypeCode: 'Label_BIZ_Claim',
+  warningMessage: [],
+  selectCallbackExProp: '',
+  internationalizationType: '',
+}

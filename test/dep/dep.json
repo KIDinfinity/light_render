@@ -1,0 +1,71 @@
+{
+    "project_group": "rcs",
+    "app_name": "rcs-ui",
+    "ports":[
+        80,
+        4000,
+		8080,
+		8761,
+		8016,
+		33333
+	],
+    "environments": [
+        {
+            "name": "dev",
+            "branch": "dev",
+            "autodeploy": true,
+            "deployments": [
+                {
+                    "site": "hk",
+                    "env_vars": {
+                        "NODE_ENV": "development",
+                        "TZ": "Asia/Shanghai"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uat",
+            "branch": "jp-uat",
+            "autodeploy": true,
+            "deployments": [
+                {
+                    "site": "hk",
+                    "env_vars": {
+                        "NODE_ENV": "development",
+                        "TZ": "Asia/Shanghai"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"prod" ,
+            "branch": "master",
+            "autodeploy": false,
+            "deployments": [
+                {
+                    "site": "hk",
+                    "env_vars": {
+                        "NODE_ENV": "development",
+                        "TZ": "Asia/Shanghai"
+                    }
+                }
+            ]
+        },
+      {
+        "name":"prod-id",
+        "branch":"master",
+        "autodeploy":false,
+        "deployments":[
+          {
+            "site":"hk",
+            "env_vars":{
+              "NODE_ENV": "development",
+              "TZ":"Asia/Jakarta"
+            }
+
+          }
+        ]
+      }
+    ]
+}

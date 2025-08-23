@@ -1,0 +1,33 @@
+FROM node:14.19.0
+
+WORKDIR /fwd/ui/
+
+COPY package.json ./
+COPY package-lock.json ./
+# COPY plugins/ant-design/package.json ./plugins/ant-design/
+# COPY plugins/ant-design/package-lock.json ./plugins/ant-design/
+# COPY plugins/ckeditor5/package.json ./plugins/ckeditor5/
+# COPY plugins/ckeditor5/package-lock.json ./plugins/ckeditor5/
+# COPY plugins/g2plot/package.json ./plugins/g2plot/
+# COPY plugins/g2plot/package-lock.json ./plugins/g2plot/
+# COPY plugins/g6-editor/package.json ./plugins/g6-editor/
+# COPY plugins/g6-editor/package-lock.json ./plugins/g6-editor/
+# COPY plugins/menu/package.json ./plugins/menu/
+# COPY plugins/menu/package-lock.json ./plugins/menu/
+# COPY plugins/rc-form/package.json ./plugins/rc-form/
+# COPY plugins/rc-form/package-lock.json ./plugins/rc-form/
+# COPY plugins/time-picker/package.json ./plugins/time-picker/
+# COPY plugins/time-picker/package-lock.json ./plugins/time-picker/
+# COPY plugins/umi-plugins/antd-pro-merge-less/package.json ./plugins/umi-plugins/antd-pro-merge-less/
+# COPY plugins/umi-plugins/antd-pro-merge-less/package-lock.json ./plugins/umi-plugins/antd-pro-merge-less/
+# COPY plugins/umi-plugins/antd-theme/package.json ./plugins/umi-plugins/antd-theme/
+# COPY plugins/umi-plugins/antd-theme/package-lock.json ./plugins/umi-plugins/antd-theme/
+COPY lerna.json ./
+
+#RUN npm install --silent --no-cache
+RUN npm install -g npm@8.5.5
+RUN npm run bootstrap
+
+COPY ./ ./
+
+CMD ["npm", "run", "start"]

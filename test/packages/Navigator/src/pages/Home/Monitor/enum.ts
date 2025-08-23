@@ -1,0 +1,57 @@
+enum MenuEnum {
+  RS_BP_Menu_Monitor_ClearSnapshot = 'RS_BP_Menu_Monitor_ClearSnapshot',
+  RS_BP_Menu_Monitor_IntegrationError = 'RS_BP_Menu_Monitor_IntegrationError',
+  RS_BP_Menu_Monitor_FailedJob = 'RS_BP_Menu_Monitor_FailedJob',
+  RS_BP_Menu_Monitor_RetryJobQueue = 'RS_BP_Menu_Monitor_RetryJobQueue',
+  RS_BP_Menu_Monitor_SystemIntegrationStatus = 'RS_BP_Menu_Monitor_SystemIntegrationStatus',
+  RS_BP_Menu_Monitor_ExceptionalCase = 'RS_BP_Menu_Monitor_ExceptionalCase',
+  RS_BP_Menu_Monitor_ReGenPostQC = 'RS_BP_Menu_Monitor_ReGenPostQC',
+  RS_BP_Menu_Monitor_SpecialHandler = 'RS_BP_Menu_Monitor_SpecialHandler',
+  RS_BP_Menu_Monitor_ExtractRequestResponse = 'RS_BP_Menu_Monitor_ExtractRequestResponse',
+  RS_BP_Menu_Monitor_CasesWithSubmissionErrorData = 'RS_BP_Menu_Monitor_CasesWithSubmissionErrorData',
+  RS_BP_Menu_Monitor_SkipIntegration = 'RS_BP_Menu_Monitor_SkipIntegration',
+  RS_BP_Menu_Monitor_CasesWithoutDocument = 'RS_BP_Menu_Monitor_CasesWithoutDocument',
+  RS_BP_Menu_Monitor_MIReport = 'RS_BP_Menu_Monitor_MIReport',
+  RS_BP_Menu_Monitor_DisableDowntime = 'RS_BP_Menu_Monitor_DisableDowntime',
+  RS_BP_Menu_Monitor_DBA = 'RS_BP_Menu_Monitor_DBA',
+  RS_BP_Menu_Monitor_DBATool = 'RS_BP_Menu_Monitor_DBATool',
+  RS_BP_Menu_Monitor_CaseProgress = 'RS_BP_Menu_Monitor_CaseProgress',
+}
+
+enum ButtonEnum {
+  RS_BP_Menu_Monitor_DBATool = 'RS_BP_Menu_Monitor_DBATool',
+}
+
+enum MonitorItemCode {
+  tools_clear_snapshot = 'tools_clear_snapshot',
+  tools_skip_integration = 'tools_skip_integration',
+  tools_integration_error = 'tools_integration_error',
+  tools_query_integration_exception_case = 'tools_query_integration_exception_case',
+  tools_query_batch_retry_integration_exception_case_log = 'tools_query_batch_retry_integration_exception_case_log',
+  tools_batch_retry_integration_exception_case = 'tools_batch_retry_integration_exception_case',
+  tools_query_daemon_operation_fail_log = 'tools_query_daemon_operation_fail_log',
+  tools_query_integration_batch_retry_case = 'tools_query_integration_batch_retry_case',
+  tools_batch_retry_integration_batch_retry_case = 'tools_batch_retry_integration_batch_retry_case',
+  tools_query_exceptional_case = 'tools_query_exceptional_case',
+  tools_query_health_check_one = 'tools_query_health_check_one',
+  tools_query_health_check_all = 'tools_query_health_check_all',
+  tools_post_qc_trigger = 'tools_post_qc_trigger',
+  tools_special_handler = 'tools_special_handler',
+  tools_batch_push_activity = 'tools_batch_push_activity',
+  tools_batch_retry_stuck_auto_activity_case = 'tools_batch_retry_stuck_auto_activity_case',
+  tools_batch_resubmit_stuck_auto_activity_case = 'tools_batch_resubmit_stuck_auto_activity_case',
+  tools_extract_integration_request_result = 'tools_extract_integration_request_result',
+  tools_cases_with_submission_error_data = 'tools_cases_with_submission_error_data',
+  tools_retry_cases_with_submission_error_data = 'tools_retry_cases_with_submission_error_data',
+  tools_query_case_without_document = 'tools_query_case_without_document',
+  tools_search_mi_report = 'tools_search_mi_report',
+  tools_retry_mi_report = 'tools_retry_mi_report',
+  tools_exclude_mi_report = 'tools_exclude_mi_report',
+  tools_export_mi_report = 'tools_export_mi_report',
+  tools_query_week_integration_downtime_config = 'tools_query_week_integration_downtime_config',
+  tools_switch_week_integration_downtime_config = 'tools_switch_week_integration_downtime_config',
+  tools_dba = 'tools_dba',
+  tools_query_case_by_condition = 'tools_query_case_by_condition',
+}
+
+export { MenuEnum, MonitorItemCode, ButtonEnum };

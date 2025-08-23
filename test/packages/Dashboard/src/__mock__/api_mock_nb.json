@@ -1,0 +1,307 @@
+{
+  "monitor_submission_nb": {
+    "apiTraceId": "0a9fa73a-3935-44b0-bf9f-b25298602d40",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_submission_nb",
+      "dataList": [
+        {
+          "region": "ID",
+          "submission_channel": "Smart",
+          "total_count": 312,
+          "stp_count": 86,
+          "stp_rate": 45.02
+        },
+        {
+          "region": "VN",
+          "submission_channel": "Smart",
+          "total_count": 2153,
+          "stp_count": 23,
+          "stp_rate": 1.48
+        },
+        {
+          "region": "VN",
+          "submission_channel": "E-COMMERCE",
+          "total_count": 312,
+          "stp_count": 164,
+          "stp_rate": 53.77
+        },
+        {
+          "region": "TKF",
+          "submission_channel": "Cube",
+          "total_count": 750,
+          "stp_count": 558,
+          "stp_rate": 83.4
+        },
+        {
+          "region": "TKF",
+          "submission_channel": "BSN I2U",
+          "total_count": 55,
+          "stp_count": 55,
+          "stp_rate": 100.0
+        },
+        {
+          "region": "TKF",
+          "submission_channel": "Smart",
+          "total_count": 8,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "Cube",
+          "total_count": 5327,
+          "stp_count": 1797,
+          "stp_rate": 44.67
+        },
+        {
+          "region": "PH",
+          "submission_channel": "Cube",
+          "total_count": 2577,
+          "stp_count": 1388,
+          "stp_rate": 73.71
+        },
+        {
+          "region": "FWDIB",
+          "submission_channel": "BSN OTC",
+          "total_count": 8565,
+          "stp_count": 8556,
+          "stp_rate": 99.95
+        },
+        {
+          "region": "FWDIB",
+          "submission_channel": "BSN I2U",
+          "total_count": 540,
+          "stp_count": 539,
+          "stp_rate": 99.81
+        },
+        {
+          "region": "FWDIB",
+          "submission_channel": "Cube",
+          "total_count": 564,
+          "stp_count": 424,
+          "stp_rate": 79.84
+        },
+        {
+          "region": "FWDIB",
+          "submission_channel": "DDTM",
+          "total_count": 298,
+          "stp_count": 142,
+          "stp_rate": 98.61
+        },
+        {
+          "region": "KH",
+          "submission_channel": "Smart",
+          "total_count": 45,
+          "stp_count": 9,
+          "stp_rate": 39.13
+        }
+      ]
+    },
+    "messageList": null
+  },
+
+  "monitor_uw_nb": {
+    "apiTraceId": "6d1692c1-ccbb-4ccd-bae5-b9f110d44248",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_uw_nb",
+      "dataList": [
+        {
+          "region": "ID",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 95
+        },
+        {
+          "region": "ID",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 36
+        },
+        {
+          "region": "VN",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 382
+        },
+        {
+          "region": "VN",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 77
+        },
+        {
+          "region": "TKF",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 140
+        },
+        {
+          "region": "TKF",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 26
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 1455
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 589
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 547
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 139
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 56
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 8
+        },
+        {
+          "region": "KH",
+          "current_activity_key": "Manual Underwriting",
+          "status": "pending",
+          "total_count": 4
+        },
+        {
+          "region": "KH",
+          "current_activity_key": "Manual Underwriting",
+          "status": "todo",
+          "total_count": 19
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_in_progress_nb": {
+    "apiTraceId": "1f056cfa-a507-49d9-98fc-541677af75f9",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_in_progress_nb",
+      "dataList": [
+        {
+          "region": "ID",
+          "current_activity_key": "Dedup",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "VN",
+          "current_activity_key": "Auto UW",
+          "status": "todo",
+          "total_count": 2
+        },
+        {
+          "region": "VN",
+          "current_activity_key": "Auto Prem",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "VN",
+          "current_activity_key": "Settlement",
+          "status": "todo",
+          "total_count": 20
+        },
+        {
+          "region": "TKF",
+          "current_activity_key": "Auto UW",
+          "status": "todo",
+          "total_count": 11
+        },
+        {
+          "region": "TKF",
+          "current_activity_key": "Settlement",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Settlement",
+          "status": "todo",
+          "total_count": 3
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Dedup",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Auto UW",
+          "status": "todo",
+          "total_count": 2
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Settlement",
+          "status": "todo",
+          "total_count": 5
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "Dedup",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "Auto UW",
+          "status": "todo",
+          "total_count": 4
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "Auto Prem",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "Settlement",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "KH",
+          "current_activity_key": "Settlement",
+          "status": "todo",
+          "total_count": 19
+        }
+      ]
+    },
+    "messageList": null
+  }
+}

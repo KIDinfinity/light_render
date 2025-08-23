@@ -1,0 +1,173 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- nb-uat
+
+variables:
+  - name: npm_config_cache
+    value: $(Pipeline.Workspace)/.npm
+  - name: npm_dist_cache
+    value: $(Build.Repository.LocalPath)/dist
+  - name: npm_umi_cache
+    value: $(Build.Repository.LocalPath)/src/.umi
+  - name: tag
+    value: 0.0.2
+  - name: SERVICE
+    value: venus-ui
+
+stages:
+
+- stage: Build
+  displayName: Build
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+    - task: Cache@2
+      inputs:
+        key: 'npm | "$(Agent.OS)" | package-lock.json'
+        restoreKeys: |
+           npm | "$(Agent.OS)"
+        path: $(npm_config_cache)
+      displayName: Cache npm
+    - task: Cache@2
+      inputs:
+        key: 'dist | "$(Agent.OS)" | package-lock.json'
+        restoreKeys: |
+          dist | "$(Agent.OS)"
+        path: $(npm_dist_cache)
+      displayName: Cache npm
+    - task: Cache@2
+      inputs:
+        key: 'umi | "$(Agent.OS)" | package-lock.json'
+        restoreKeys: |
+          umi | "$(Agent.OS)"
+        path: $(npm_umi_cache)
+      displayName: Cache npm
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '10.x'
+      displayName: 'Install Node.js'
+    - script: |
+        npm run bootstrap
+      displayName: 'npm run bootstrap'
+
+    - script: |
+        commit_message=$(git log -1 --pretty=%B)
+
+        # Extract the version using regex
+        if [[ $commit_message =~ V([0-9]+\.[0-9]+\.[0-9]+_[A-Z]{2}_[0-9]{8}) ]]; then
+          version="${BASH_REMATCH[1]}"
+          echo "##vso[task.setvariable variable=version]$version"
+        else
+          version=${Build.SourceVersion}
+          echo "##vso[task.setvariable variable=version]$(Build.SourceVersion)"
+          exit 1
+        fi
+      displayName: 'Extract version from commit message'
+    - script: |
+        commit_message=$(git log -1 --pretty=%B)
+
+        # Extract the version using regex
+        if [[ $commit_message =~ ([A-Z]+-[0-9]+) ]]; then
+          jira_variable="${BASH_REMATCH[1]}"
+          echo "##vso[task.setvariable variable=jira_variable]$jira_variable"
+        fi
+      displayName: 'Extract JIRA variable from commit message'
+    - script: |
+        VERSION=${version} JIRA=${JIRA} npm run build
+      displayName: 'npm run build'
+    - script: |
+        cp -rf dist docker/
+        docker build -t mysseaowbregistry.azurecr.io/owb/venus-ui:$(tag) docker/
+      displayName: 'Docker build'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'MY_ACR_Service_Connection'
+        repository: 'owb/venus-ui'
+        command: push
+        tags: |
+          $(tag)
+      displayName: Push service image
+
+
+- stage: SIT
+  displayName: SIT
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: SIT
+    displayName: Deploy
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: 'MYS-OWB-ENV-SIT-01.owb'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - checkout: self
+          - task: Kubernetes@1
+            displayName: Deploy service
+            inputs:
+              connectionType: Kubernetes Service Connection
+              kubernetesServiceConnection: 'MYS-OWB-ENV-SIT-01'
+              command: rollout
+              namespace: 'owb'
+              arguments: restart deployment $(SERVICE)
+
+
+- stage: UAT
+  displayName: UAT
+  dependsOn: SIT
+  condition: succeeded()
+  jobs:
+  - deployment: UAT
+    displayName: Deploy
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: 'MYS-OWB-ENV-UAT-01.owb'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - checkout: self
+          - task: Kubernetes@1
+            displayName: Deploy service
+            inputs:
+              connectionType: Kubernetes Service Connection
+              kubernetesServiceConnection: 'MYS-OWB-ENV-UAT-01'
+              command: rollout
+              namespace: 'owb'
+              arguments: restart deployment $(SERVICE)
+
+
+#- stage: PRD
+#  displayName: PRD
+#  dependsOn: UAT
+#  condition: succeeded()
+#  jobs:
+#  - deployment: PRD
+#    displayName: Deploy
+#    pool:
+#      vmImage: 'ubuntu-latest'
+#    environment: 'MYS-OWB-ENV-PRD-01.owb'
+#    strategy:
+#      runOnce:
+#        deploy:
+#          steps:
+#          - checkout: self
+#          - task: Kubernetes@1
+#            displayName: Deploy service
+#            inputs:
+#              connectionType: Kubernetes Service Connection
+#              kubernetesServiceConnection: 'MYS-OWB-ENV-PRD-01'
+#              command: rollout
+#              namespace: 'owb'
+#              arguments: restart deployment $(SERVICE)
+

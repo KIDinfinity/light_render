@@ -1,0 +1,432 @@
+{
+  "id": "494b9b71-5621-4e3d-b036-0bbe49a5cfc",
+  "creator": "NBMY-2919",
+  "chartTypeTitle": "堆叠柱状-折线图",
+  "gmtCreate": "2024-11-20T03:47:19.000+0000",
+  "modifier": "NBMY-2919",
+  "gmtModified": "2024-11-20T03:47:19.000+0000",
+  "deleted": 0,
+  "transId": "4b53495e-7ccb-4a26-8390-6943e0c11357",
+  "dashboardCode": "DAS_BS_COM_00006",
+  "dashboardName": "System Activity Monitor Dashboard",
+  "linkedReportCode": "BS_COM_00006",
+  "linkedReportStatisticCode": "SER_BS_COM_00006",
+  "description": "System Activity Monitor",
+  "dashboardType": "B",
+  "frequency": 10,
+  "region": "MY",
+  "remark": null,
+  "chartType": "StackedColumnLine",
+  "chartValueCategory": "number",
+  "softcopyFileType": null,
+  "softcopyLocation": null,
+  "softcopyName": null,
+  "orderByExpression": null,
+  "xAxisFormat": null,
+  "dataFormat": "number",
+  "visible": 1,
+  "sequence": 20,
+  "department": "NB",
+  "dashboardCategory": "Volumn",
+  "seriesNo": "system_performan_nb_fib",
+  "redirectToReport": "1",
+  "redirectReportCode": null,
+  "dashboardSearchFieldList": [
+      {
+          "id": "ae7346a9-a7b3-4031-9c97-f4b4a087c7db",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "7eb3e984-728b-4978-90d5-71f86d7c9082",
+          "dashboardCode": "DAS_BS_COM_00006",
+          "fieldName": "biz_activity_key",
+          "componentType": "multi_drop_down",
+          "componentSequence": 1,
+          "componentSize": null,
+          "defaultValue": "",
+          "whereOperation": "in",
+          "otherDefaultValue": null,
+          "required": 0,
+          "format": null,
+          "limit": null,
+          "unit": null,
+          "editable": 0,
+          "visible": 2,
+          "fieldCaption": "Activity",
+          "layout": 12,
+          "whereOperator": "in",
+          "dropdownDatas": [
+              {
+                  "key": "BP_NB_ACT001",
+                  "value": "Dedup Check"
+              },
+              {
+                  "key": "BP_NB_ACT004",
+                  "value": "Manual Underwriting"
+              },
+              {
+                  "key": "BP_NB_ACT002",
+                  "value": "Customer Identification"
+              },
+              {
+                  "key": "BP_NB_ACT006",
+                  "value": "Premium Settlement"
+              },
+              {
+                  "key": "BP_NB_ACT003",
+                  "value": "Auto Underwriting"
+              },
+              {
+                  "key": "BP_NB_ACT007",
+                  "value": "NB Settlement"
+              },
+              {
+                  "key": "BP_NB_ACT005",
+                  "value": "Auto Premium Settlement"
+              }
+          ],
+          "description": null
+      }
+  ],
+  "miscTypeList": [
+      {
+          "id": "0fee39b9-4e1b-4ac0-bcd3-a2e3942dbaf7",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "case_no",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      },
+      {
+          "id": "22ed635d-6463-4c48-bf91-1d6e6563631b",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-24T23:12:14.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-24T23:12:14.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "stayed_time_level",
+          "miscType": "Label_COM_DAS",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_DAS"
+      },
+      {
+          "id": "4a792736-8ac1-4dfd-8e86-496650174f97",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "submission_channel",
+          "miscType": "Dropdown_COM_SubmissionChannel",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Dropdown_COM_SubmissionChannel"
+      },
+      {
+          "id": "77735e73-a5c8-41bb-9ee1-08b2c40a76c6",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "stayed_time",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      },
+      {
+          "id": "7b442f68-7ee1-424e-9137-8fbd34ecad93",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:18.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:18.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "activity_start_time",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      },
+      {
+          "id": "b71d4472-091a-4d55-a2e0-908379132654",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "policy_no",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      },
+      {
+          "id": "be85eb38-a71e-4f47-96e3-f916c8e1e7a5",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "biz_activity_key",
+          "miscType": "activity",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "activity"
+      },
+      {
+          "id": "c2f4c8c0-3008-490b-9008-26569d90410e",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "exceptional_message",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      },
+      {
+          "id": "cf98761a-ded9-4767-9d82-1496ec48cfde",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "case_category",
+          "miscType": "Label_BPM_CaseCategory",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_BPM_CaseCategory"
+      },
+      {
+          "id": "d4ce1675-f87f-41d1-844f-ab42a93499b2",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "submission_date",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      },
+      {
+          "id": "e1c1bf62-f28c-41a2-8364-b7f3d4a65a1c",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "8eb2da03-4a3c-4b0b-baab-f1c0dade5104",
+          "reportCode": "BS_COM_00006",
+          "fieldName": "business_no",
+          "miscType": "Label_COM_ReportCenter",
+          "extendMiscType": null,
+          "companyCode": null,
+          "dropDownKey": "Label_COM_ReportCenter"
+      }
+  ],
+  "dashboardStatisticRelationList": [
+      {
+          "id": "0e529e3e-4e21-4a1f-b6ff-0862b6d79c52",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "e6d211a2-859a-42e6-9611-a04830fb1387",
+          "reportCode": "BS_COM_00006",
+          "dashboardCode": "DAS_BS_COM_00006",
+          "statisticCode": "STATS_BS_COM_00006_01",
+          "chartType": "stack_chart",
+          "sequence": null
+      },
+      {
+          "id": "8692c11e-a658-4e47-9340-4cbc7782fcd3",
+          "creator": "NBMY-2919",
+          "gmtCreate": "2024-11-20T03:47:19.000+0000",
+          "modifier": "NBMY-2919",
+          "gmtModified": "2024-11-20T03:47:19.000+0000",
+          "deleted": 0,
+          "transId": "e6d211a2-859a-42e6-9611-a04830fb1387",
+          "reportCode": "BS_COM_00006",
+          "dashboardCode": "DAS_BS_COM_00006",
+          "statisticCode": "STATS_BS_COM_00006_02",
+          "chartType": "line_chart",
+          "sequence": null
+      }
+  ],
+  "dropdownOptions": [
+      {
+          "miscType": "activity",
+          "fieldName": "biz_activity_key",
+          "values": [
+              "BP_NB_ACT001",
+              "BP_NB_ACT004",
+              "BP_NB_ACT002",
+              "BP_NB_ACT006",
+              "BP_NB_ACT003",
+              "BP_NB_ACT007",
+              "BP_NB_ACT005"
+          ]
+      }
+  ],
+  "dashboardSeriesConfigVO": null,
+  "chartData": {
+      "lineSeriesField": "stayed_time_level",
+      "xField": "biz_activity_key",
+      "data": [
+          [
+              {
+                  "submission_channel": "01",
+                  "submissionChannel": 4,
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001"
+              },
+              {
+                  "submission_channel": "03",
+                  "submissionChannel": 7,
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001"
+              },
+              {
+                  "submission_channel": "02",
+                  "submissionChannel": 3,
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001"
+              },
+              {
+                  "submission_channel": "04",
+                  "submissionChannel": 1,
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001"
+              },
+              {
+                  "submission_channel": "08",
+                  "submissionChannel": 1,
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001"
+              },
+              {
+                  "submission_channel": "03",
+                  "submissionChannel": 27,
+                  "biz_activity_key": "Auto Underwriting",
+                  "biz_activity_key_dictCode": "BP_NB_ACT003"
+              },
+              {
+                  "submission_channel": "01",
+                  "submissionChannel": 3,
+                  "biz_activity_key": "Auto Underwriting",
+                  "biz_activity_key_dictCode": "BP_NB_ACT003"
+              },
+              {
+                  "submission_channel": "02",
+                  "submissionChannel": 4,
+                  "biz_activity_key": "NB Settlement",
+                  "biz_activity_key_dictCode": "BP_NB_ACT007"
+              },
+              {
+                  "submission_channel": "01",
+                  "submissionChannel": 2,
+                  "biz_activity_key": "NB Settlement",
+                  "biz_activity_key_dictCode": "BP_NB_ACT007"
+              }
+          ],
+          [
+              {
+                  "stayed_time_level": "1-3d",
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001",
+                  "total_record": 2
+              },
+              {
+                  "stayed_time_level": "1-3d",
+                  "biz_activity_key": "Auto Underwriting",
+                  "biz_activity_key_dictCode": "BP_NB_ACT003",
+                  "total_record": 0
+              },
+              {
+                  "stayed_time_level": "1-3d",
+                  "biz_activity_key": "NB Settlement",
+                  "biz_activity_key_dictCode": "BP_NB_ACT007",
+                  "total_record": 0
+              },
+              {
+                  "stayed_time_level": ">3d",
+                  "biz_activity_key": "Dedup Check",
+                  "biz_activity_key_dictCode": "BP_NB_ACT001",
+                  "total_record": 14
+              },
+              {
+                  "stayed_time_level": ">3d",
+                  "biz_activity_key": "Auto Underwriting",
+                  "biz_activity_key_dictCode": "BP_NB_ACT003",
+                  "total_record": 30
+              },
+              {
+                  "stayed_time_level": ">3d",
+                  "biz_activity_key": "NB Settlement",
+                  "biz_activity_key_dictCode": "BP_NB_ACT007",
+                  "total_record": 6
+              }
+          ]
+      ],
+      "yField": [
+          "submissionChannel",
+          "total_record"
+      ],
+      "columnStackField": "submission_channel"
+  },
+  "dashboardChartColorList": null,
+  "format": null,
+  "searchDatas": {
+      "biz_activity_key": ""
+  },
+  "miscType": {
+      "case_no": "Label_COM_ReportCenter",
+      "stayed_time_level": "Label_COM_DAS",
+      "submission_channel": "Dropdown_COM_SubmissionChannel",
+      "stayed_time": "Label_COM_ReportCenter",
+      "activity_start_time": "Label_COM_ReportCenter",
+      "policy_no": "Label_COM_ReportCenter",
+      "biz_activity_key": "activity",
+      "exceptional_message": "Label_COM_ReportCenter",
+      "case_category": "Label_BPM_CaseCategory",
+      "submission_date": "Label_COM_ReportCenter",
+      "business_no": "Label_COM_ReportCenter"
+  },
+  "title": "DAS_BS_COM_00006",
+  "width": 840,
+  "forceFit": false
+}

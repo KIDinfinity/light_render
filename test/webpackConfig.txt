@@ -1,0 +1,1531 @@
+{
+  name: 'MFSU',
+  mode: 'development',
+  stats: 'none',
+  devtool: 'eval-cheap-module-source-map',
+  target: [
+    'web',
+    'es5'
+  ],
+  experiments: {
+    topLevelAwait: true,
+    outputModule: false
+  },
+  cache: {
+    type: 'filesystem',
+    version: '4.0.88',
+    buildDependencies: {
+      config: [
+        '/Users/season/Documents/FWD/Venus/Venus-UI/package.json',
+        '/Users/season/Documents/FWD/Venus/Venus-UI/config/config.ts'
+      ]
+    },
+    cacheDirectory: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/.cache/mfsu-deps'
+  },
+  infrastructureLogging: {
+    level: 'error'
+  },
+  output: {
+    path: '/Users/season/Documents/FWD/Venus/Venus-UI/dist',
+    filename: '[name].[contenthash:8].js',
+    chunkFilename: '[name].[contenthash:8].async.js',
+    publicPath: '/',
+    pathinfo: true,
+    assetModuleFilename: 'mf-dep_[name].[hash:8][ext]',
+    hashFunction: 'xxhash64'
+  },
+  resolve: {
+    symlinks: true,
+    alias: {
+      umi: '@@/exports',
+      react: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/react',
+      'react-dom/client': '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/react-dom',
+      'react-dom': '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/react-dom',
+      'react-router': '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/preset-umi/node_modules/react-router',
+      'react-router-dom': '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/preset-umi/node_modules/react-router-dom',
+      navigator: '/Users/season/Documents/FWD/Venus/Venus-UI/packages/Navigator/src',
+      'enum': '/Users/season/Documents/FWD/Venus/Venus-UI/packages/Basic/src/enum',
+      basic: '/Users/season/Documents/FWD/Venus/Venus-UI/packages/Basic/src',
+      '@': '/Users/season/Documents/FWD/Venus/Venus-UI/src',
+      '@@': '/Users/season/Documents/FWD/Venus/Venus-UI/src/.umi',
+      'regenerator-runtime': '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/preset-umi/node_modules/regenerator-runtime',
+      antd: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/antd',
+      dva$: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/plugins/libs/dva.tsx',
+      '@umijs/max': '@@/exports'
+    },
+    extensions: [
+      '.ts',
+      '.tsx',
+      '.js',
+      '.jsx',
+      '.mjs',
+      '.cjs',
+      '.json',
+      '.wasm'
+    ],
+    modules: [
+      'node_modules'
+    ],
+    fallback: {
+      assert: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/assert/assert.js',
+      buffer: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/buffer/index.js',
+      child_process: false,
+      cluster: false,
+      console: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/console-browserify/index.js',
+      constants: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/constants-browserify/constants.json',
+      crypto: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/crypto-browserify/index.js',
+      dgram: false,
+      dns: false,
+      domain: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/domain-browser/source/index.js',
+      events: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/events/events.js',
+      fs: false,
+      http: false,
+      https: false,
+      module: false,
+      net: false,
+      os: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/os-browserify/browser.js',
+      path: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/path-browserify/index.js',
+      punycode: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/punycode/punycode.js',
+      process: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/process/browser.js',
+      querystring: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/querystring-es3/index.js',
+      readline: false,
+      repl: false,
+      stream: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/stream-browserify/index.js',
+      _stream_duplex: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/readable-stream/duplex.js',
+      _stream_passthrough: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/readable-stream/passthrough.js',
+      _stream_readable: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/readable-stream/readable.js',
+      _stream_transform: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/readable-stream/transform.js',
+      _stream_writable: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/readable-stream/writable.js',
+      string_decoder: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/node-libs-browser/node_modules/string_decoder/lib/string_decoder.js',
+      sys: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/util/util.js',
+      timers: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/timers-browserify/main.js',
+      tls: false,
+      tty: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/tty-browserify/index.js',
+      url: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/url/url.js',
+      util: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/util/util.js',
+      vm: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/vm-browserify/index.js',
+      zlib: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/browserify-zlib/lib/index.js'
+    }
+  },
+  module: {
+    rules: [
+      /* config.module.rule('src') */
+      {
+        test: /\.(js|mjs|cjs)$/,
+        include: [
+          [
+            '/Users/season/Documents/FWD/Venus/Venus-UI'
+          ]
+        ],
+        exclude: [
+          /node_modules/
+        ],
+        use: [
+          /* config.module.rule('src').use('babel-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/babel-loader/index.js',
+            options: {
+              sourceType: 'unambiguous',
+              babelrc: false,
+              configFile: false,
+              cacheDirectory: false,
+              browserslistConfigFile: false,
+              targets: {
+                ie: 11
+              },
+              customize: undefined,
+              presets: [
+                [
+                  '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/babel-preset-umi/dist/index.js',
+                  {
+                    presetEnv: {},
+                    presetReact: {},
+                    presetTypeScript: {},
+                    pluginTransformRuntime: {},
+                    pluginLockCoreJS: {},
+                    pluginDynamicImportNode: false,
+                    pluginAutoCSSModules: true
+                  }
+                ]
+              ],
+              plugins: [
+                [
+                  'wildcard',
+                  {
+                    exts: [
+                      'js',
+                      'jsx',
+                      'ts',
+                      'tsx'
+                    ],
+                    nostrip: true,
+                    useCamelCase: true,
+                    noModifyCase: true
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        resolve: {
+          fullySpecified: false
+        }
+      },
+      /* config.module.rule('jsx-ts-tsx') */
+      {
+        test: /\.(jsx|ts|tsx)$/,
+        use: [
+          /* config.module.rule('jsx-ts-tsx').use('babel-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/babel-loader/index.js',
+            options: {
+              sourceType: 'unambiguous',
+              babelrc: false,
+              configFile: false,
+              cacheDirectory: false,
+              browserslistConfigFile: false,
+              targets: {
+                ie: 11
+              },
+              customize: undefined,
+              presets: [
+                [
+                  '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/babel-preset-umi/dist/index.js',
+                  {
+                    presetEnv: {},
+                    presetReact: {},
+                    presetTypeScript: {},
+                    pluginTransformRuntime: {},
+                    pluginLockCoreJS: {},
+                    pluginDynamicImportNode: false,
+                    pluginAutoCSSModules: true
+                  }
+                ]
+              ],
+              plugins: [
+                [
+                  'wildcard',
+                  {
+                    exts: [
+                      'js',
+                      'jsx',
+                      'ts',
+                      'tsx'
+                    ],
+                    nostrip: true,
+                    useCamelCase: true,
+                    noModifyCase: true
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        resolve: {
+          fullySpecified: false
+        }
+      },
+      /* config.module.rule('extra-src') */
+      {
+        test: /\.(js|mjs|cjs)$/,
+        include: [
+          [
+            function () { /* omitted long function */ }
+          ]
+        ],
+        use: [
+          /* config.module.rule('extra-src').use('babel-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/babel-loader/index.js',
+            options: {
+              sourceType: 'unambiguous',
+              babelrc: false,
+              configFile: false,
+              cacheDirectory: false,
+              browserslistConfigFile: false,
+              targets: {
+                ie: 11
+              },
+              customize: undefined,
+              presets: [
+                [
+                  '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/babel-preset-umi/dist/index.js',
+                  {
+                    presetEnv: {},
+                    presetReact: {},
+                    presetTypeScript: {},
+                    pluginTransformRuntime: {},
+                    pluginLockCoreJS: {},
+                    pluginDynamicImportNode: false,
+                    pluginAutoCSSModules: true
+                  }
+                ]
+              ],
+              plugins: [
+                [
+                  'wildcard',
+                  {
+                    exts: [
+                      'js',
+                      'jsx',
+                      'ts',
+                      'tsx'
+                    ],
+                    nostrip: true,
+                    useCamelCase: true,
+                    noModifyCase: true
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        resolve: {
+          fullySpecified: false
+        }
+      },
+      /* config.module.rule('dep') */
+      {
+        test: /\.(js|mjs|cjs)$/,
+        include: [
+          /node_modules/
+        ],
+        exclude: [
+          function () { /* omitted long function */ }
+        ],
+        resolve: {
+          fullySpecified: false
+        }
+      },
+      /* config.module.rule('css') */
+      {
+        test: /\.css(\?.*)?$/,
+        oneOf: [
+          /* config.module.rule('css').oneOf('css-modules') */
+          {
+            resourceQuery: /modules/,
+            use: [
+              /* config.module.rule('css').oneOf('css-modules').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('css').oneOf('css-modules').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: {
+                    localIdentName: '[local]___[hash:base64:5]',
+                    getLocalIdent: undefined
+                  }
+                }
+              },
+              /* config.module.rule('css').oneOf('css-modules').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('css').oneOf('css') */
+          {
+            sideEffects: true,
+            use: [
+              /* config.module.rule('css').oneOf('css').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('css').oneOf('css').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: undefined
+                }
+              },
+              /* config.module.rule('css').oneOf('css').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('less') */
+      {
+        test: /\.less(\?.*)?$/,
+        oneOf: [
+          /* config.module.rule('less').oneOf('css-modules') */
+          {
+            resourceQuery: /modules/,
+            use: [
+              /* config.module.rule('less').oneOf('css-modules').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('less').oneOf('css-modules').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: {
+                    localIdentName: '[local]___[hash:base64:5]',
+                    getLocalIdent: undefined
+                  }
+                }
+              },
+              /* config.module.rule('less').oneOf('css-modules').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              /* config.module.rule('less').oneOf('css-modules').use('less-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/less-loader/index.js',
+                options: {
+                  implementation: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-utils/compiled/less/index.js',
+                  lessOptions: {
+                    modifyVars: {
+                      'test-bundle': '0.0.1',
+                      'font-family': 'Helvetica, Arial, \'PingFang SC\', \'Microsoft Yahei\', Meiryo, sans-serif',
+                      'form-item-margin-bottom': '4px',
+                      'control-padding-horizontal': '8px',
+                      'border-radius-base': '4px',
+                      'outline-color': 'transparent',
+                      'outline-width': '0px',
+                      'input-bg': 'transparent',
+                      'input-disabled-bg': 'transparent',
+                      'input-height-base': '24px',
+                      'input-height-lg': '32px',
+                      'input-height-sm': '16px',
+                      'select-background': 'transparent',
+                      'table-header-bg': 'transparent',
+                      'table-header-sort-bg': 'transparent',
+                      'pagination-font-family': 'Helvetica, Arial, \'PingFang SC\', \'Microsoft Yahei\', Meiryo, sans-serif',
+                      'collapse-header-bg': 'transparent',
+                      'collapse-content-bg': 'transparent',
+                      'collapse-header-padding': '0px',
+                      'collapse-header-padding-extra': '0px',
+                      'collapse-content-padding': '0px',
+                      'avatar-bg': 'none',
+                      'primary-color': '#e87722',
+                      'primary-2': '#e87722',
+                      'component-background': '#222222',
+                      'border-color-base': 'rgba(255, 255, 255, 15%)',
+                      'border-color-split': 'rgba(255, 255, 255, 15%)',
+                      'text-color': 'rgba(255, 255, 255, 65%)',
+                      'text-color-secondary': 'rgba(255, 255, 255, 45%)',
+                      'disabled-color': 'rgba(255, 255, 255, 25%)',
+                      'disabled-bg': '#4a4a4a',
+                      'heading-color': 'rgba(255, 255, 255, 85%)',
+                      'success-color': '#52c41a',
+                      'warning-color': '#faad14',
+                      'badge-text-color': '#fff',
+                      'item-hover-bg': '#e87722',
+                      'item-active-bg': '#e87722',
+                      'link-hover-color': '#e87722',
+                      'label-color': 'rgba(255, 255, 255, 65%)',
+                      'input-color': '#fff',
+                      'label-required-color': '#e87722',
+                      'input-placeholder-color': 'rgba(255, 255, 255, 45%)',
+                      'select-item-selected-bg': '#e87722',
+                      'tree-directory-selected-bg': '#e87722',
+                      'time-picker-selected-bg': '#e87722',
+                      'table-header-color': 'rgba(255, 255, 255, 45%)',
+                      'table-header-sort-active-bg': '#e87722',
+                      'table-row-hover-bg': '#e87722',
+                      'table-selected-row-bg': '#e87722',
+                      'table-expanded-row-bg': 'transparent',
+                      'table-header-bg-sm': 'transparent'
+                    },
+                    javascriptEnabled: true
+                  }
+                }
+              }
+            ]
+          },
+          /* config.module.rule('less').oneOf('css') */
+          {
+            sideEffects: true,
+            use: [
+              /* config.module.rule('less').oneOf('css').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('less').oneOf('css').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: undefined
+                }
+              },
+              /* config.module.rule('less').oneOf('css').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              /* config.module.rule('less').oneOf('css').use('less-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/less-loader/index.js',
+                options: {
+                  implementation: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-utils/compiled/less/index.js',
+                  lessOptions: {
+                    modifyVars: {
+                      'test-bundle': '0.0.1',
+                      'font-family': 'Helvetica, Arial, \'PingFang SC\', \'Microsoft Yahei\', Meiryo, sans-serif',
+                      'form-item-margin-bottom': '4px',
+                      'control-padding-horizontal': '8px',
+                      'border-radius-base': '4px',
+                      'outline-color': 'transparent',
+                      'outline-width': '0px',
+                      'input-bg': 'transparent',
+                      'input-disabled-bg': 'transparent',
+                      'input-height-base': '24px',
+                      'input-height-lg': '32px',
+                      'input-height-sm': '16px',
+                      'select-background': 'transparent',
+                      'table-header-bg': 'transparent',
+                      'table-header-sort-bg': 'transparent',
+                      'pagination-font-family': 'Helvetica, Arial, \'PingFang SC\', \'Microsoft Yahei\', Meiryo, sans-serif',
+                      'collapse-header-bg': 'transparent',
+                      'collapse-content-bg': 'transparent',
+                      'collapse-header-padding': '0px',
+                      'collapse-header-padding-extra': '0px',
+                      'collapse-content-padding': '0px',
+                      'avatar-bg': 'none',
+                      'primary-color': '#e87722',
+                      'primary-2': '#e87722',
+                      'component-background': '#222222',
+                      'border-color-base': 'rgba(255, 255, 255, 15%)',
+                      'border-color-split': 'rgba(255, 255, 255, 15%)',
+                      'text-color': 'rgba(255, 255, 255, 65%)',
+                      'text-color-secondary': 'rgba(255, 255, 255, 45%)',
+                      'disabled-color': 'rgba(255, 255, 255, 25%)',
+                      'disabled-bg': '#4a4a4a',
+                      'heading-color': 'rgba(255, 255, 255, 85%)',
+                      'success-color': '#52c41a',
+                      'warning-color': '#faad14',
+                      'badge-text-color': '#fff',
+                      'item-hover-bg': '#e87722',
+                      'item-active-bg': '#e87722',
+                      'link-hover-color': '#e87722',
+                      'label-color': 'rgba(255, 255, 255, 65%)',
+                      'input-color': '#fff',
+                      'label-required-color': '#e87722',
+                      'input-placeholder-color': 'rgba(255, 255, 255, 45%)',
+                      'select-item-selected-bg': '#e87722',
+                      'tree-directory-selected-bg': '#e87722',
+                      'time-picker-selected-bg': '#e87722',
+                      'table-header-color': 'rgba(255, 255, 255, 45%)',
+                      'table-header-sort-active-bg': '#e87722',
+                      'table-row-hover-bg': '#e87722',
+                      'table-selected-row-bg': '#e87722',
+                      'table-expanded-row-bg': 'transparent',
+                      'table-header-bg-sm': 'transparent'
+                    },
+                    javascriptEnabled: true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('sass') */
+      {
+        test: /\.(sass|scss)(\?.*)?$/,
+        oneOf: [
+          /* config.module.rule('sass').oneOf('css-modules') */
+          {
+            resourceQuery: /modules/,
+            use: [
+              /* config.module.rule('sass').oneOf('css-modules').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('sass').oneOf('css-modules').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: {
+                    localIdentName: '[local]___[hash:base64:5]',
+                    getLocalIdent: undefined
+                  }
+                }
+              },
+              /* config.module.rule('sass').oneOf('css-modules').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              /* config.module.rule('sass').oneOf('css-modules').use('sass-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/sass-loader/index.js'
+              }
+            ]
+          },
+          /* config.module.rule('sass').oneOf('css') */
+          {
+            sideEffects: true,
+            use: [
+              /* config.module.rule('sass').oneOf('css').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('sass').oneOf('css').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: undefined
+                }
+              },
+              /* config.module.rule('sass').oneOf('css').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              /* config.module.rule('sass').oneOf('css').use('sass-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/sass-loader/index.js'
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('stylus') */
+      {
+        test: /\.(styl|stylus)(\?.*)?$/,
+        oneOf: [
+          /* config.module.rule('stylus').oneOf('css-modules') */
+          {
+            resourceQuery: /modules/,
+            use: [
+              /* config.module.rule('stylus').oneOf('css-modules').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('stylus').oneOf('css-modules').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: {
+                    localIdentName: '[local]___[hash:base64:5]',
+                    getLocalIdent: undefined
+                  }
+                }
+              },
+              /* config.module.rule('stylus').oneOf('css-modules').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              /* config.module.rule('stylus').oneOf('css-modules').use('stylus-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/stylus-loader/index.js'
+              }
+            ]
+          },
+          /* config.module.rule('stylus').oneOf('css') */
+          {
+            sideEffects: true,
+            use: [
+              /* config.module.rule('stylus').oneOf('css').use('mini-css-extract-plugin') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/mini-css-extract-plugin/loader.js',
+                options: {
+                  publicPath: './',
+                  emit: true,
+                  esModule: true
+                }
+              },
+              /* config.module.rule('stylus').oneOf('css').use('css-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/node_modules/css-loader/dist/cjs.js',
+                options: {
+                  importLoaders: 1,
+                  esModule: true,
+                  url: {
+                    filter: function () { /* omitted long function */ }
+                  },
+                  'import': true,
+                  modules: undefined
+                }
+              },
+              /* config.module.rule('stylus').oneOf('css').use('postcss-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/postcss-loader/index.js',
+                options: {
+                  postcssOptions: {
+                    ident: 'postcss',
+                    plugins: [
+                      function () { /* omitted long function */ },
+                      {
+                        postcssPlugin: 'postcss-preset-env',
+                        plugins: [
+                          {
+                            postcssPlugin: 'postcss-unset-value',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-custom-properties',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-media-minmax',
+                            AtRule: {
+                              media: (atRule) => {
+                                transform(atRule);
+                              },
+                              'custom-media': (atRule) => {
+                                transform(atRule);
+                              }
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-initial',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-font-variant',
+                            Once(root) {
+                              root.walkRules(walkRule)
+                            }
+                          },
+                          {
+                            postcssPlugin: 'postcss-gap-properties',
+                            Declaration: function () { /* omitted long function */ }
+                          },
+                          {
+                            browsers: [
+                              'ie >= 11'
+                            ],
+                            info: function () { /* omitted long function */ },
+                            options: {
+                              overrideBrowserslist: [
+                                'ie >= 11'
+                              ],
+                              flexbox: 'no-2009'
+                            },
+                            postcssPlugin: 'autoprefixer',
+                            prepare: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-progressive-custom-properties',
+                            RuleExit: function () { /* omitted long function */ }
+                          },
+                          {
+                            postcssPlugin: 'postcss-preset-env',
+                            OnceExit: function () { /* omitted long function */ }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              /* config.module.rule('stylus').oneOf('css').use('stylus-loader') */
+              {
+                loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/stylus-loader/index.js'
+              }
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('asset') */
+      {
+        oneOf: [
+          /* config.module.rule('asset').oneOf('avif') */
+          {
+            test: /\.avif$/,
+            type: 'asset',
+            mimetype: 'image/avif',
+            parser: {
+              dataUrlCondition: {
+                maxSize: 10000
+              }
+            }
+          },
+          /* config.module.rule('asset').oneOf('image') */
+          {
+            test: /\.(bmp|gif|jpg|jpeg|png)$/,
+            type: 'asset',
+            parser: {
+              dataUrlCondition: {
+                maxSize: 10000
+              }
+            }
+          },
+          /* config.module.rule('asset').oneOf('fallback') */
+          {
+            type: 'asset/resource',
+            exclude: [
+              /^$/,
+              /\.(js|mjs|cjs|jsx|ts|tsx)$/,
+              /\.(css|less|sass|scss|styl|stylus)$/,
+              /\.html$/,
+              /\.json$/
+            ]
+          }
+        ]
+      },
+      /* config.module.rule('svgr') */
+      {
+        test: /\.svg$/,
+        issuer: /\.[jt]sx?$/,
+        type: 'javascript/auto',
+        use: [
+          /* config.module.rule('svgr').use('svgr-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/dist/loader/svgr.js',
+            options: {
+              svgoConfig: {
+                plugins: [
+                  {
+                    name: 'preset-default',
+                    params: {
+                      overrides: {
+                        removeTitle: false
+                      }
+                    }
+                  },
+                  'prefixIds'
+                ]
+              },
+              svgo: true
+            }
+          },
+          /* config.module.rule('svgr').use('url-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/url-loader/index.js',
+            options: {
+              limit: 10000,
+              fallback: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/file-loader/index.js'
+            }
+          }
+        ]
+      },
+      /* config.module.rule('svg') */
+      {
+        test: /\.svg$/,
+        use: [
+          /* config.module.rule('svg').use('svgo-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/svgo-loader/index.js',
+            options: {
+              configFile: false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  optimization: {
+    minimize: false
+  },
+  plugins: [
+    /* config.plugin('node-polyfill-provider') */
+    new ProvidePlugin(
+      {
+        Buffer: [
+          'buffer',
+          'Buffer'
+        ],
+        process: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/process/browser.js'
+      }
+    ),
+    /* config.plugin('mini-css-extract-plugin') */
+    new MiniCssExtractPlugin(
+      {
+        filename: '[name].[contenthash:8].css',
+        chunkFilename: '[name].[contenthash:8].chunk.css',
+        ignoreOrder: true
+      }
+    ),
+    /* config.plugin('ignore-moment-locale') */
+    new IgnorePlugin(
+      {
+        resourceRegExp: /^\.\/locale$/,
+        contextRegExp: /moment$/
+      }
+    ),
+    /* config.plugin('define') */
+    new DefinePlugin(
+      {
+        'process.env': {
+          NODE_ENV: '"development"',
+          PUBLIC_PATH: '"/"'
+        },
+        APP_TYPE: '""',
+        NODE_ENV: '"development"'
+      }
+    ),
+    /* config.plugin('progress-plugin-dev') */
+    new UmiProgressPlugin(),
+    /* config.plugin('manifest-plugin') */
+    new WebpackManifestPlugin(
+      {
+        fileName: 'asset-manifest.json',
+        basePath: '/'
+      }
+    ),
+    /* config.plugin('harmony-linking-error-plugin') */
+    new HarmonyLinkingErrorPlugin(),
+    /* config.plugin('case-sensitive-paths') */
+    new CaseSensitivePathsPlugin()
+  ],
+  entry: {
+    umi: [
+      '/Users/season/Documents/FWD/Venus/Venus-UI/src/.umi/umi.ts'
+    ]
+  }
+}ules/@umijs/bundler-webpack/compiled/url-loader/index.js',
+            options: {
+              limit: 10000,
+              fallback: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/file-loader/index.js'
+            }
+          }
+        ]
+      },
+      /* config.module.rule('svg') */
+      {
+        test: /\.svg$/,
+        use: [
+          /* config.module.rule('svg').use('svgo-loader') */
+          {
+            loader: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/compiled/svgo-loader/index.js',
+            options: {
+              configFile: false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  optimization: {
+    minimize: false
+  },
+  plugins: [
+    /* config.plugin('node-polyfill-provider') */
+    new ProvidePlugin(
+      {
+        Buffer: [
+          'buffer',
+          'Buffer'
+        ],
+        process: '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/process/browser.js'
+      }
+    ),
+    /* config.plugin('mini-css-extract-plugin') */
+    new MiniCssExtractPlugin(
+      {
+        filename: '[name].css',
+        chunkFilename: '[name].chunk.css',
+        ignoreOrder: true
+      }
+    ),
+    /* config.plugin('ignore-moment-locale') */
+    new IgnorePlugin(
+      {
+        resourceRegExp: /^\.\/locale$/,
+        contextRegExp: /moment$/
+      }
+    ),
+    /* config.plugin('define') */
+    new DefinePlugin(
+      {
+        'process.env': {
+          NODE_ENV: '"development"',
+          PUBLIC_PATH: '"/"'
+        },
+        APP_TYPE: '""',
+        NODE_ENV: '"development"'
+      }
+    ),
+    /* config.plugin('progress-plugin-dev') */
+    new UmiProgressPlugin(),
+    /* config.plugin('copy') */
+    new CopyPlugin(
+      {
+        patterns: [
+          {
+            from: '/Users/season/Documents/FWD/Venus/Venus-UI/public',
+            info: {
+              minimized: true
+            }
+          }
+        ]
+      }
+    ),
+    /* config.plugin('manifest-plugin') */
+    new WebpackManifestPlugin(
+      {
+        fileName: 'asset-manifest.json',
+        basePath: '/'
+      }
+    ),
+    /* config.plugin('hmr') */
+    new HotModuleReplacementPlugin(),
+    /* config.plugin('fastRefresh') */
+    new ReactRefreshPlugin(
+      {
+        overlay: false,
+        exclude: /node_modules/i,
+        include: /\.([cm]js|[jt]sx?|flow)$/i
+      }
+    ),
+    /* config.plugin('harmony-linking-error-plugin') */
+    new HarmonyLinkingErrorPlugin(),
+    /* config.plugin('case-sensitive-paths') */
+    new CaseSensitivePathsPlugin()
+  ],
+  entry: {
+    umi: [
+      '/Users/season/Documents/FWD/Venus/Venus-UI/node_modules/@umijs/bundler-webpack/client/client/client.js',
+      '/Users/season/Documents/FWD/Venus/Venus-UI/src/.umi/umi.ts'
+    ]
+  }
+}

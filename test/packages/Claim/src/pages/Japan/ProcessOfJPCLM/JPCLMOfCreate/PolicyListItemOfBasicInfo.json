@@ -1,0 +1,39 @@
+{
+  "layout": {
+    "gutter": 24,
+    "justify": "start",
+    "type": "flex"
+  },
+  "policyNo": {
+    "layout": {
+      "xs": {
+        "span": 12
+      },
+      "sm": {
+        "span": 12
+      },
+      "md": {
+        "span": 12
+      },
+      "lg": {
+        "span": 12
+      }
+    }
+  },
+  "basicPlanName": {
+    "layout": {
+      "xs": {
+        "span": 12
+      },
+      "sm": {
+        "span": 12
+      },
+      "md": {
+        "span": 12
+      },
+      "lg": {
+        "span": 12
+      }
+    }
+  }
+}

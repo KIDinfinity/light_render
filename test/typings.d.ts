@@ -1,0 +1,15 @@
+declare module '*.css';
+declare module '*.less';
+declare module '*.scss';
+declare module '*.sass';
+declare module '*.svg';
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.gif';
+declare module '*.bmp';
+declare module '*.tiff';
+declare module 'react-infinite-scroller';
+declare module 'react-redux';
+declare module 'nzh/cn';
+declare module 'safe-json-parse/tuple';

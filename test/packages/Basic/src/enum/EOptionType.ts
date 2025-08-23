@@ -1,0 +1,22 @@
+export enum EOptionType {
+  Submit = 'Submit',
+  Save = 'Save',
+  Reject = 'Reject',
+  BusinessCheck = 'BusinessCheck',
+  Withdrawal = 'Withdrawal',
+  proposalChange = ' proposalChange',
+  approve = ' approve',
+  Approve = 'approve',
+  Decline = 'decline',
+
+  AutoSave = 'AutoSave',
+  ReAssessment = 'ReAssessment',
+  GetInsuredInfo = 'GetInsuredInfo',
+  SaveClaimProcessDataListener = 'SaveClaimProcessDataListener',
+  handlerUpdate_handleSetSaveButtonConfig = 'handlerUpdate_handleSetSaveButtonConfig',
+  triggerSnapshotHook = 'triggerSnapshotHook',
+  diffSource = 'diffSource',
+  FollowUp = 'followUp',
+  sustainabilityCalculate = 'case.sustainability.customize.calculate',
+  sustainabilityConfirm = 'case.sustainability.confirm',
+}

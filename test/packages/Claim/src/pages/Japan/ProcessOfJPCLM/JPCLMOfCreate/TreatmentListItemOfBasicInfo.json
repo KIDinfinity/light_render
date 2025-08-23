@@ -1,0 +1,24 @@
+{
+  "fieldLayout": {
+    "xs": { "span": 24 },
+    "sm": { "span": 8 },
+    "md": { "span": 8 },
+    "lg": { "span": 8 }
+  },
+  "medicalProvider": {
+    "layout": {
+      "xs": { "span": 16 },
+      "sm": { "span": 16 },
+      "md": { "span": 16 },
+      "lg": { "span": 16 }
+    }
+  },
+  "department": {
+    "layout": {
+      "xs": { "span": 16 },
+      "sm": { "span": 16 },
+      "md": { "span": 16 },
+      "lg": { "span": 16 }
+    }
+  }
+}

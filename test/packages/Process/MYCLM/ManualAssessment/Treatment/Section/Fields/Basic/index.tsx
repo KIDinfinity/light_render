@@ -1,0 +1,60 @@
+import DateOfAdmission, { localFieldConfig as DateOfAdmissionConfig } from './DateOfAdmission';
+import DateOfDischarge, { localFieldConfig as DateOfDischargeConfig } from './DateOfDischarge';
+import DateOfConsultation, {
+  localFieldConfig as DateOfConsultationConfig,
+} from './DateOfConsultation';
+
+import Department, { localFieldConfig as DepartmentConfig } from './Department';
+import Doctor, { localFieldConfig as DoctorConfig } from './Doctor';
+import HospitalType, { localFieldConfig as HospitalTypeConfig } from './HospitalType';
+import Icu, { localFieldConfig as IcuConfig } from './Icu';
+import IcuFromDate, { localFieldConfig as IcuFromDateConfig } from './IcuFromDate';
+import IcuToDate, { localFieldConfig as IcuToDateConfig } from './IcuToDate';
+import IsHospitalInDevelopedCountry, {
+  localFieldConfig as IsHospitalInDevelopedCountryConfig,
+} from './IsHospitalInDevelopedCountry';
+import MedicalProvider, { localFieldConfig as MedicalProviderConfig } from './MedicalProvider';
+import MedicalProviderDescription, {
+  localFieldConfig as MedicalProviderDescriptionConfig,
+} from './MedicalProviderDescription';
+import MedicalProviderPlace, {
+  localFieldConfig as MedicalProviderPlaceConfig,
+} from './MedicalProviderPlace';
+import RoomType, { localFieldConfig as RoomTypeConfig } from './RoomType';
+import ChargedDay, { localFieldConfig as ChargedDayConfig } from './ChargedDay';
+
+export const localFieldConfigs = [
+  DateOfAdmissionConfig,
+  DateOfDischargeConfig,
+  DepartmentConfig,
+  DoctorConfig,
+  HospitalTypeConfig,
+  IcuConfig,
+  IcuFromDateConfig,
+  IcuToDateConfig,
+  IsHospitalInDevelopedCountryConfig,
+  MedicalProviderConfig,
+  MedicalProviderDescriptionConfig,
+  MedicalProviderPlaceConfig,
+  RoomTypeConfig,
+  DateOfConsultationConfig,
+  ChargedDayConfig,
+];
+
+export default {
+  ChargedDay,
+  DateOfConsultation,
+  DateOfAdmission,
+  DateOfDischarge,
+  Department,
+  Doctor,
+  HospitalType,
+  Icu,
+  IcuFromDate,
+  IcuToDate,
+  IsHospitalInDevelopedCountry,
+  MedicalProvider,
+  MedicalProviderDescription,
+  MedicalProviderPlace,
+  RoomType,
+};

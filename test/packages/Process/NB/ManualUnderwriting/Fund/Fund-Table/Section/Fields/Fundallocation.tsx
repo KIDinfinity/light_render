@@ -1,0 +1,100 @@
+import React, { useMemo } from 'react';
+import { Col } from 'antd';
+import lodash from 'lodash';
+import {
+  Authority,
+  Visible,
+  Editable,
+  Required,
+  FormItemNumber,
+  Rule,
+  Validator,
+} from 'basic/components/Form';
+import useGetAllocationVisibleByCondition from 'process/NB/ManualUnderwriting/_hooks/useGetAllocationVisibleByCondition';
+import useGetFundAllocationCfg from 'process/NB/ManualUnderwriting/_hooks/useGetFundAllocationCfg';
+import { fieldConfig } from './Fundallocation.config';
+
+export { fieldConfig } from './Fundallocation.config';
+
+export const FormItem = (data: any) => {
+  const { isShow, layout, form, editable, field, config } = data;
+  const fieldProps: any = fieldConfig['field-props'];
+  const allocationCfg = useGetFundAllocationCfg(field, form.getFieldValue('fundCode'));
+  const Rules = useMemo(() => {
+    const rules = {};
+    if (allocationCfg) {
+      rules.VLD_000850 = Validator.VLD_000850(
+        Number(allocationCfg.minAllocationPercentage),
+        Number(allocationCfg.maxAllocationPercentage)
+      );
+    }
+    return rules;
+  }, [allocationCfg]);
+  const allocationEditable = useMemo(
+    () =>
+      !allocationCfg ||
+      allocationCfg.maxAllocationPercentage !== allocationCfg.minAllocationPercentage,
+    [allocationCfg]
+  );
+  const getAllocationVisibleByCondition = useGetAllocationVisibleByCondition();
+  const visibleConditions = getAllocationVisibleByCondition(field);
+  const editableConditions = !allocationEditable;
+  const requiredConditions = Rule(
+    !lodash.isEmpty(config?.['required-condition'])
+      ? config['required-condition']
+      : fieldProps['required-condition'],
+    form,
+    ''
+  );
+
+  return (
+    isShow &&
+    ((config?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        <FormItemNumber
+          disabled={
+            !editable ||
+            ((config?.editable || fieldProps.editable) === Editable.Conditions
+              ? editableConditions
+              : (config?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId={config.label?.dictCode || fieldProps.label.dictCode}
+          labelTypeCode={config.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+          required={
+            config?.required === Required.Conditions
+              ? requiredConditions
+              : (config.required || fieldProps.required) === Required.Yes
+          }
+          labelType="inline"
+          hiddenPrefix
+          placeholder=" "
+          precision={0}
+          rules={lodash.compact(
+            (config?.rules || fieldProps['x-rules'])?.map((rule: string) => Rules[rule])
+          )}
+        />
+      </Col>
+    )
+  );
+};
+
+const Fundallocation = ({ field, config, isShow, layout, form, editable }: any) => (
+  <Authority>
+    <FormItem
+      field={field}
+      config={lodash.get(config, 'field-props')}
+      isShow={isShow}
+      layout={layout}
+      form={form}
+      editable={editable}
+    />
+  </Authority>
+);
+
+Fundallocation.displayName = 'fundAllocation';
+
+export default Fundallocation;

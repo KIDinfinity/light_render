@@ -1,0 +1,32 @@
+[
+  {
+    "region": "th",
+    "submission_channel": "Cube",
+    "total_count": 20000,
+    "stp_rate": 20
+  },
+  {
+    "region": "IB",
+    "submission_channel": "Cube",
+    "total_count": 22000,
+    "stp_rate": 10
+  },
+  {
+    "region": "IB",
+    "submission_channel": "Smart",
+    "total_count": 333,
+    "stp_rate": 2
+  },
+  {
+    "region": "Takaful",
+    "submission_channel": "Smart",
+    "total_count": 232,
+    "stp_rate": 2
+  },
+  {
+    "region": "Takaful",
+    "submission_channel": "Cube",
+    "total_count": 4442,
+    "stp_rate": 2
+  }
+]

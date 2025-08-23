@@ -1,0 +1,28 @@
+export default {
+  claimProcessData: {
+    insured: {},
+  },
+  insuredList: [],
+  policyOwnerList: [],
+  keyDownStatus: false,
+  showSearchModel: false,
+  searchInsuredObj: {
+    policySource: 'Individual',
+    firstName: '',
+    middleName: '',
+    surname: '',
+    dateOfBirth: '',
+    gender: '',
+    clientId: '',
+    policyId: '',
+    memberNo:'',
+    dependentNo:'',
+  },
+  saveAgentNoList: [],
+  repeatableServiceItemList: [],
+  popUpRepeatableServiceItemList: [],
+  popUpstatus: false,
+  popUpAddInvoiceItem: {},
+  roomTypeDict: [],
+  serviceItemFeesListMap: {},
+};

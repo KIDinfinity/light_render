@@ -1,0 +1,61 @@
+import React from 'react';
+import { FormLayout, FormItemInput, FormItemDatePicker } from 'basic/components/Form/FormSection';
+
+export default ({ form }: any) => (
+  <FormLayout layConf={{ default: 4, agentPhone: 5 }}>
+    <FormItemInput
+      form={form}
+      formName="policyName"
+      disabled
+      labelId="app.navigator.caseDetail.label.policy-name"
+    />
+    <FormItemDatePicker
+      form={form}
+      formName="policyIssueDate"
+      disabled
+      labelId="app.navigator.task-detail-of-data-capture.label.policy-issue-date"
+      format="L"
+    />
+    <FormItemInput
+      form={form}
+      formName="policyStatus"
+      disabled
+      labelId="app.navigator.task-detail-of-data-capture.label.policy-status"
+    />
+    <FormItemInput
+      form={form}
+      formName="agentName"
+      disabled
+      labelId="venus_claim.phowb.dataCapture.label.requestInformation.agentName"
+    />
+    <FormItemInput
+      form={form}
+      formName="agentPhone"
+      name="agentPhone"
+      disabled
+      labelId="venus_claim.phowb.dataCapture.label.requestInformation.agentPhone"
+    />
+    <FormItemDatePicker
+      form={form}
+      formName="billToDate"
+      disabled
+      labelId="venus_claim.phowb.dataCapture.label.requestInformation.billToDate"
+      format="L"
+    />
+    <FormItemDatePicker
+      form={form}
+      formName="payToDate"
+      name="payToDate"
+      disabled
+      labelId="venus_claim.phowb.dataCapture.label.requestInformation.payToDate"
+      format="L"
+    />
+    <FormItemInput
+      form={form}
+      formName="premiumStatus"
+      name="premiumStatus"
+      disabled
+      labelId="venus_claim.phowb.dataCapture.label.requestInformation.premiumStatus"
+    />
+  </FormLayout>
+);

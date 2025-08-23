@@ -1,0 +1,178 @@
+import React, { PureComponent } from 'react';
+import { connect } from 'dva';
+import type { Dispatch } from 'redux';
+import moment from 'moment';
+import lodash from 'lodash';
+import { Form } from 'antd';
+import type { FormComponentProps } from 'antd/lib/form';
+
+import {
+  operationDateLaterIncidentDate,
+  operationDateEarlierDeathDate,
+} from 'claimBasicProduct/pages/validators';
+import FormLayout from 'basic/components/Form/FormLayout';
+import { FormItemDatePicker, FormItemSelectPlus, formUtils } from 'basic/components/Form';
+import CardOfClaim from 'basic/components/Form/FormCard';
+import { withContextData } from '@/components/_store';
+
+import { procedureLayout } from '../FormLayout.json';
+
+const FORMID_PREFIX = 'ProcedureListItem';
+
+interface IProps extends FormComponentProps {
+  dispatch: Dispatch<any>;
+  incidentId: string;
+  procedureId: string;
+  treatmentId: string;
+  dateTimeOfDeath: Date;
+  incidentDate: Date;
+}
+
+@connect(
+  (
+    { PHCLMOfAppealCaseController, formCommonController, claimEditable }: any,
+    { incidentId, procedureId, withData: { caseType } }: any
+  ) => ({
+    procedureItem: caseType
+      ? PHCLMOfAppealCaseController[caseType].claimEntities.procedureListMap[procedureId]
+      : PHCLMOfAppealCaseController.claimEntities.procedureListMap[procedureId],
+    incidentDate: caseType
+      ? PHCLMOfAppealCaseController[caseType].claimEntities.incidentListMap[incidentId].incidentDate
+      : PHCLMOfAppealCaseController.claimEntities.incidentListMap[incidentId].incidentDate,
+    dateTimeOfDeath: caseType
+      ? lodash.get(
+          PHCLMOfAppealCaseController,
+          `${caseType}.claimProcessData.insured.dateTimeOfDeath`
+        )
+      : lodash.get(PHCLMOfAppealCaseController, 'claimProcessData.insured.dateTimeOfDeath'),
+    validating: formCommonController.validating,
+    taskNotEditable: claimEditable.taskNotEditable,
+  })
+)
+// @ts-ignore
+@Form.create<IProps>({
+  onFieldsChange(props: any, changedFields: any) {
+    const { dispatch, procedureId, treatmentId, validating } = props;
+
+    if (formUtils.shouldUpdateState(changedFields)) {
+      dispatch({
+        type: 'PHCLMOfAppealCaseController/saveProcedureItem',
+        payload: {
+          changedFields,
+          treatmentId,
+          procedureId,
+        },
+      });
+    }
+  },
+  mapPropsToFields(props: any) {
+    const { procedureItem } = props;
+
+    return formUtils.mapObjectToFields(procedureItem, {
+      procedureCode: (value: any) => value,
+      operationDate: (value: any) => (value ? moment(value) : null),
+    });
+  },
+})
+class ProcedureListItem extends PureComponent<IProps> {
+  componentDidMount = () => {
+    this.registeForm();
+  };
+
+  unRegisterForm = () => {
+    const { dispatch, form, procedureId } = this.props;
+
+    if (procedureId) {
+      dispatch({
+        type: 'formCommonController/unRegisterForm',
+        payload: {
+          form,
+          formId: `${FORMID_PREFIX}_${procedureId}`,
+        },
+      });
+    }
+  };
+
+  registeForm = () => {
+    const { dispatch, form, procedureId } = this.props;
+
+    if (procedureId) {
+      dispatch({
+        type: 'formCommonController/registerForm',
+        payload: {
+          form,
+          formId: `${FORMID_PREFIX}_${procedureId}`,
+        },
+      });
+    }
+  };
+
+  componentWillUnmount = () => {
+    this.unRegisterForm();
+  };
+
+  handleDelete = () => {
+    const { dispatch, treatmentId, procedureId } = this.props;
+
+    dispatch({
+      type: 'PHCLMOfAppealCaseController/removeProcedureItem',
+      payload: {
+        treatmentId,
+        procedureId,
+      },
+    });
+  };
+
+  render() {
+    const {
+      form,
+      incidentDate,
+      dateTimeOfDeath,
+      taskNotEditable: notEditable,
+      withData,
+    } = this.props;
+    const incidentDateValue = formUtils.queryValue(incidentDate);
+    const dateTimeOfDeathValue = formUtils.queryValue(dateTimeOfDeath);
+
+    const { appealNotEditable }: any = withData || {};
+    const taskNotEditable = notEditable || appealNotEditable;
+
+    return (
+      <CardOfClaim>
+        <Form layout="vertical">
+          <FormLayout json={procedureLayout}>
+            <FormItemSelectPlus
+              form={form}
+              disabled={taskNotEditable}
+              required
+              formName="procedureCode"
+              searchName="surgeryProcedure"
+              labelId="app.navigator.task-detail-of-data-capture.label.procedure-code"
+              dropdownCode="claim_dict007"
+              optionShowType="both"
+            />
+            <FormItemDatePicker
+              form={form}
+              disabled={taskNotEditable}
+              required
+              formName="operationDate"
+              labelId="app.navigator.task-detail-of-data-capture.label.date-of-operation"
+              rules={[
+                {
+                  validator: (rule: any, value: any, callback: Function) =>
+                    operationDateLaterIncidentDate(rule, value, callback, incidentDateValue),
+                },
+                {
+                  validator: (rule: any, value: any, callback: Function) =>
+                    operationDateEarlierDeathDate(rule, value, callback, dateTimeOfDeathValue),
+                },
+              ]}
+            />
+          </FormLayout>
+        </Form>
+      </CardOfClaim>
+    );
+  }
+}
+
+export default withContextData(ProcedureListItem);

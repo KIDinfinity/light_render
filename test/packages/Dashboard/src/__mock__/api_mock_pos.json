@@ -1,0 +1,170 @@
+{
+  "monitor_submission_pos": {
+    "apiTraceId": "f178a725-aca9-4e2d-a669-7797e68c9acc",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_submission_pos",
+      "dataList": [
+        {
+          "region": "TKF",
+          "submission_channel": "EMAIL",
+          "total_count": 9,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TKF",
+          "submission_channel": "Manual Create",
+          "total_count": 1,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "EMAIL",
+          "total_count": 44,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "Omne",
+          "total_count": 20750,
+          "stp_count": 16445,
+          "stp_rate": 80.53
+        },
+        {
+          "region": "TH",
+          "submission_channel": "SCAN",
+          "total_count": 1,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "Agent Assist",
+          "total_count": 22,
+          "stp_count": 20,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "BRANCH",
+          "total_count": 152,
+          "stp_count": 13,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "CCE",
+          "total_count": 1242,
+          "stp_count": 79,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "CP",
+          "total_count": 98,
+          "stp_count": 66,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "EMAIL",
+          "total_count": 1150,
+          "stp_count": 55,
+          "stp_rate": 0
+        },
+        {
+          "region": "FWDIB",
+          "submission_channel": "CP",
+          "total_count": 2,
+          "stp_count": 1,
+          "stp_rate": 0
+        }
+      ]
+    },
+    "messageList": null
+  },
+
+  "monitor_decision_pos": {
+    "apiTraceId": "5e5cf689-0066-46d8-bfdb-b343bb9465b5",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_decision_pos",
+      "dataList": [
+        {
+          "region": "TKF",
+          "current_activity_key": "POS Decision",
+          "status": "todo",
+          "total_count": 39
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "POS Decision",
+          "status": "pending",
+          "total_count": 279
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "POS Decision",
+          "status": "todo",
+          "total_count": 172
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "POS Decision",
+          "status": "pending",
+          "total_count": 38
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "POS Decision",
+          "status": "todo",
+          "total_count": 118
+        },
+        {
+          "region": "FWDIB",
+          "current_activity_key": "POS Decision",
+          "status": "todo",
+          "total_count": 16
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_in_progress_pos": {
+    "apiTraceId": "e607e2b3-8f35-4d9f-a9bd-21f6b4efdbdb",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_in_progress_pos",
+      "dataList": [
+        {
+          "region": "TKF"
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Auto Settlement",
+          "status": "todo",
+          "total_count": 1
+        },
+        {
+          "region": "PH"
+        },
+        {
+          "region": "FWDIB"
+        }
+      ]
+    },
+    "messageList": null
+  }
+}

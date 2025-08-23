@@ -1,0 +1,201 @@
+{
+  "claimantLayout": {
+    "fieldLayout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "relationshipWithInsured": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 6, "offset": 18, "pull": 18 },
+        "md": { "span": 6, "offset": 18, "pull": 18 },
+        "lg": { "span": 6, "offset": 18, "pull": 18 }
+      }
+    },
+    "address": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "insuredLayout": {
+    "fieldLayout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "address": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "serviceAgentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    }
+  },
+  "payeeLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    }
+  },
+  "incidentListItemOfBasicInfolayout": {
+    "fieldLayout": {
+      "gutter": 24,
+      "justify": "start",
+      "type": "flex"
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 12 },
+        "md": { "span": 12 },
+        "lg": { "span": 12 }
+      }
+    },
+    "fieldWithTreatmentOne": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 12 },
+        "md": { "span": 4 },
+        "lg": { "span": 4 }
+      }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    },
+    "fieldWithTreatmentTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 8 },
+        "lg": { "span": 8 }
+      }
+    }
+  },
+  "incidentListItemOfShortLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  },
+  "treatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "diagnosisExpendLayout": {
+    "fieldLayout": {
+      "xs": { "span": 6 },
+      "sm": { "span": 6 },
+      "md": { "span": 6 },
+      "lg": { "span": 6 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 6 },
+        "sm": { "span": 6 },
+        "md": { "span": 6 },
+        "lg": { "span": 6 }
+      }
+    }
+  },
+  "diagnosisLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "procedureLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "invoiceLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 12 },
+        "sm": { "span": 12 },
+        "md": { "span": 12 },
+        "lg": { "span": 12 }
+      }
+    }
+  },
+  "serviceItemLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  }
+}

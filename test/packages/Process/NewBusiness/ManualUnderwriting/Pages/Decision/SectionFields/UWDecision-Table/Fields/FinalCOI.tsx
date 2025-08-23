@@ -1,0 +1,63 @@
+import React from 'react';
+import { Col } from 'antd';
+import { Authority, Editable, FormItemNumber, Visible, RuleByForm } from 'basic/components/Form';
+import { fieldConfig } from './Uptoage.config';
+
+export { fieldConfig } from './Uptoage.config';
+
+const FormItem = ({ isShow, layout, form, editable, field, config, disabled }: any) => {
+  const fieldProps: any = fieldConfig['field-props'];
+
+  const visibleConditions = true;
+  const editableConditions = !RuleByForm(fieldProps['editable-condition'], form);
+  const requiredConditions = !RuleByForm(fieldProps['editable-condition'], form);
+
+  return (
+    isShow &&
+    ((config?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        <FormItemNumber
+          disabled={
+            !editable ||
+            disabled ||
+            ((config?.editable || fieldProps.editable) === Editable.Conditions
+              ? editableConditions
+              : (config?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId={config.label?.dictCode || fieldProps.label.dictCode}
+          labelTypeCode={config.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+          required={requiredConditions}
+          labelType="inline"
+          pattern={/^\d{0,20}(\.99|\.9[0-8]*|\.[0-8]\d*)?$/g}
+          hiddenPrefix
+          precision={2}
+          placeholder=" "
+          objectName="nb.policyList.coverageList"
+          objectFieldName="finalCoi"
+        />
+      </Col>
+    )
+  );
+};
+
+const FinalCOI = ({ field, config, form, editable, layout, isShow, disabled }: any) => (
+  <Authority>
+    <FormItem
+      field={field}
+      config={config?.['field-props']}
+      isShow={isShow}
+      layout={layout}
+      form={form}
+      editable={editable}
+      disabled={disabled}
+    />
+  </Authority>
+);
+
+FinalCOI.displayName = 'finalCoi';
+
+export default FinalCOI;

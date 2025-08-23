@@ -1,0 +1,15 @@
+export default {
+  visible: false,
+  selectClient: '',
+  selectQuestionnaire: '',
+  roleByClientMap: {},
+  sectionMap: {},
+  customerQuestionnaireList: [],
+  error: {},
+  validating: false,
+  processData: [],
+  entities: {},
+  otherPayload: {},
+  isNB: true,
+  isAgentName: true,
+};

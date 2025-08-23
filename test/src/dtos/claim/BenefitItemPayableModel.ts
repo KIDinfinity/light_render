@@ -1,0 +1,35 @@
+export interface IBenefitItemPayable {
+  id: string;
+  claimNo: string;
+  payableId: string;
+  treatmentPayableId: string;
+  invoicePayableId: string;
+  incidentId: string;
+  treatmentId: string;
+  invoiceId: string;
+  policyNo: string;
+  productCode: string;
+  benefitTypeCode: string;
+  benefitItemCode: string;
+  expenseAmount: number;
+  deductibleAmount: number;
+  calculationAmount: number;
+  calculationDays: number;
+  payableDays: number;
+  coInsuranceAmount: number;
+  insurerCoInsuranceAmount: number;
+  payableAmount: number;
+  remark: string;
+  systemCalculationAmount: number;
+  assessorOverrideAmount: number;
+  calculationPerDay: number;
+  payablePerDay: number;
+  uncoverAmount: number;
+  serviceItems: string;
+  isAdd: boolean;
+  payableAmountBeforeDeductible: number;
+  deductibleNetExpense: number;
+  systemPayableAmountBeforeDeductible: number;
+  productPlan: string;
+  savingAmount: number;
+}

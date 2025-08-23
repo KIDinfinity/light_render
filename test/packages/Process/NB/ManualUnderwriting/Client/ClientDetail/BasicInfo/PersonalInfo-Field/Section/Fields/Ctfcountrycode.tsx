@@ -1,0 +1,75 @@
+import React from 'react';
+import useGetRequiredByRole from 'process/NB/ManualUnderwriting/_hooks/useGetRequiredByRole';
+import useGetCountryDropdown from 'process/NB/ManualUnderwriting/_hooks/useGetCountryDropdown';
+import { Col } from 'antd';
+
+import { Authority, Editable, FormItemSelect, Visible, RuleByForm } from 'basic/components/Form';
+import { fieldConfig } from './Ctfcountrycode.config';
+
+export { fieldConfig } from './Ctfcountrycode.config';
+
+const FormItem = ({ isShow, layout, form, editable, field, config, handleFocus }: any) => {
+  const fieldProps: any = fieldConfig['field-props'];
+  const dicts = useGetCountryDropdown();
+  const visibleConditions = RuleByForm(fieldProps['visible-condition'], form, '');
+  const editableConditions = !RuleByForm(fieldProps['editable-condition'], form);
+  const requiredConditions = false;
+  const requiredByRole = useGetRequiredByRole({
+    requiredConditions,
+    config,
+    localConfig: fieldConfig,
+  });
+
+  return (
+    isShow &&
+    ((config?.['field-props']?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.['field-props']?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        <FormItemSelect
+          dicts={dicts}
+          disabled={
+            !editable ||
+            ((config?.['field-props']?.editable || fieldProps.editable) === Editable.Conditions
+              ? editableConditions
+              : (config?.['field-props']?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId="333"
+          labelTypeCode={
+            config?.['field-props']?.label?.dictTypeCode || fieldProps.label.dictTypeCode
+          }
+          required={requiredByRole}
+          hiddenPrefix
+          // labelType="inline"
+          precision={0}
+          onFocus={() => {
+            const value = form.getFieldValue(field);
+            handleFocus({ value, field });
+          }}
+        />
+      </Col>
+    )
+  );
+};
+
+const Ctfcountrycode = ({ form, editable, layout, isShow, handleFocus, config }: any) => {
+  return (
+    <Authority>
+      <FormItem
+        field={fieldConfig?.field}
+        config={config}
+        isShow={isShow}
+        layout={layout}
+        form={form}
+        editable={editable}
+        handleFocus={handleFocus}
+      />
+    </Authority>
+  );
+};
+
+Ctfcountrycode.displayName = 'ctfPlace';
+
+export default Ctfcountrycode;

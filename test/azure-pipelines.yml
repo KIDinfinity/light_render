@@ -1,0 +1,109 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- nb-uat
+
+variables:
+#  - group: ph-owb-sit-ecr-secret
+  - name: npm_config_cache
+    value: $(Pipeline.Workspace)/.npm
+  - name: npm_dist_cache
+    value: $(Build.Repository.LocalPath)/dist
+  - name: npm_umi_cache
+    value: $(Build.Repository.LocalPath)/src/.umi
+  - name: DOCKER_REPOSITORY
+    value: 525258145328.dkr.ecr.ap-southeast-1.amazonaws.com/owb/venus-ui
+  - name: tag
+    value: 0.0.1
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'npm | "$(Agent.OS)" | package-lock.json'
+    restoreKeys: |
+       npm | "$(Agent.OS)"
+    path: $(npm_config_cache)
+  displayName: Cache npm
+
+- task: Cache@2
+  inputs:
+    key: 'dist | "$(Agent.OS)" | package-lock.json'
+    restoreKeys: |
+      dist | "$(Agent.OS)"
+    path: $(npm_dist_cache)
+  displayName: Cache npm
+
+- task: Cache@2
+  inputs:
+    key: 'umi | "$(Agent.OS)" | package-lock.json'
+    restoreKeys: |
+      umi | "$(Agent.OS)"
+    path: $(npm_umi_cache)
+  displayName: Cache npm
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+- script: |
+    npm run bootstrap
+  displayName: 'npm run bootstrap'
+
+- script: |
+    commit_message=$(git log -1 --pretty=%B)
+
+    # Extract the version using regex
+    if [[ $commit_message =~ V([0-9]+\.[0-9]+\.[0-9]+_[A-Z]{2}_[0-9]{8}) ]]; then
+      version="${BASH_REMATCH[1]}"
+      echo "##vso[task.setvariable variable=version]$version"
+    else
+      version=${Build.SourceVersion}
+      echo "##vso[task.setvariable variable=version]$(Build.SourceVersion)"
+      exit 1
+    fi
+  displayName: 'Extract version from commit message'
+- script: |
+    commit_message=$(git log -1 --pretty=%B)
+
+    # Extract the version using regex
+    if [[ $commit_message =~ ([A-Z]+-[0-9]+) ]]; then
+      jira_variable="${BASH_REMATCH[1]}"
+      echo "##vso[task.setvariable variable=jira_variable]$jira_variable"
+    fi
+  displayName: 'Extract JIRA variable from commit message'
+- script: |
+     VERSION=${version} JIRA=${JIRA} npm run build
+  displayName: 'npm run build'
+
+- script: |
+    cp -rf dist docker/
+    docker login --username owbvnmsitregistry --password PB2+/wgjQmmI+5CIqcGAvot6AhTsbYNd owbvnmsitregistry.azurecr.io
+    docker build -t owbvnmsitregistry.azurecr.io/venus-ui:0.0.1 docker/
+    docker push owbvnmsitregistry.azurecr.io/venus-ui:0.0.1
+  displayName: 'docker build'
+
+- task: DownloadSecureFile@1
+  name: kubeConfigFile
+  inputs:
+    secureFile: 'config'
+- task: CmdLine@2
+  inputs:
+    script: |
+      #kubectl config --kubeconfig=$(kubeConfigFile.secureFilePath) view
+      kubectl rollout restart deployment venus-ui --kubeconfig=$(kubeConfigFile.secureFilePath)
+# - task: Docker@2
+#   inputs:
+#     command: 'login'
+
+
+# - task: Docker@2
+#   inputs:
+#     command: 'buildAndPush'
+#     Dockerfile: '**/Dockerfile'
+#     tags: '0.0.1'

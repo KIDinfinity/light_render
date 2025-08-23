@@ -1,0 +1,39 @@
+// 事故JP数据模型
+export interface IJPIncident {
+  acauseOfDeath: string;
+  bcauseOfA: string;
+  causeOfDeath: string;
+  ccauseOfB: string;
+  certificateDate: Date;
+  cervicalCancerCin: string;
+  claimNo: string;
+  creator: string;
+  deathDate: Date;
+  deleted: number;
+  disabilityDegreeDate: Date;
+  disabilityName: string;
+  drinking: string;
+  drivingLicense: string;
+  gmtCreate: Date;
+  gmtModified: Date;
+  highlyDisabilityCode: string;
+  id: string;
+  incidentId: string;
+  informationPerfectionDate: Date;
+  insuredType: string;
+  laborConstrainedOfAmi: string;
+  modifier: string;
+  oneCauseOfC: string;
+  periodFromAToDeath: string;
+  periodFromBToDeath: string;
+  periodFromCToDeath: string;
+  periodFromOneToDeath: string;
+  periodFromTwoToDeath: string;
+  requirementNo: string;
+  requiringNursingDate: Date;
+  sequelaeNameOfStroke: string;
+  sequelaeOfStroke: string;
+  transId: string;
+  twoDiagnosisName: string;
+  waivedReason: string;
+}

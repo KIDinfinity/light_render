@@ -1,0 +1,151 @@
+export const fieldConfig = {
+  section: 'Exclusion-Field',
+  field: 'reason',
+  fieldType: 'Text',
+  'field-props': {
+    editable: 'Y',
+    'editable-condition': {
+      combine: '||',
+      conditions: [{ left: { domain: '', field: '' }, operator: '', right: '' }],
+    },
+    required: 'N',
+    label: {
+      dictTypeCode: 'Label_BIZ_policy',
+      dictCode: 'UWDecisionReason',
+    },
+    expand: 'Y',
+    visible: 'Y',
+    'x-layout': {
+      // 480px
+      xs: {
+        span: 6,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 576px
+      sm: {
+        span: 6,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 768px
+      md: {
+        span: 6,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 992px
+      lg: {
+        span: 6,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 1200px
+      xl: {
+        span: 6,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 1600px
+      xxl: {
+        span: 6,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+    },
+    'modal-layout': {
+      // 480px
+      xs: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 6,
+      },
+      // 576px
+      sm: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 6,
+      },
+      // 768px
+      md: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 6,
+      },
+      // 992px
+      lg: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 6,
+      },
+      // 1200px
+      xl: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 6,
+      },
+      // 1600px
+      xxl: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+    },
+    'main-page-layout': {
+      // 480px
+      xs: {
+        span: 3,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 576px
+      sm: {
+        span: 3,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 768px
+      md: {
+        span: 3,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 992px
+      lg: {
+        span: 3,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 1200px
+      xl: {
+        span: 3,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+      // 1600px
+      xxl: {
+        span: 3,
+        offset: 0,
+        pull: 0,
+        order: 3,
+      },
+    },
+  },
+};

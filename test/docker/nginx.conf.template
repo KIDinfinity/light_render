@@ -1,0 +1,171 @@
+server {
+    listen 80;
+
+    # gzip config
+    gzip on;
+    gzip_min_length 1k;
+    gzip_comp_level 9;
+    gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png image/svg+xml image/webp font/ttf application/json;
+    gzip_vary on;
+    gzip_disable "MSIE [1-6]\.";
+    gzip_proxied any;
+    client_max_body_size 100M;
+    # log config
+    error_log /var/log/nginx/nginx-error.log debug;
+
+    # proxy config
+    proxy_buffering off;
+    proxy_max_temp_file_size 0;
+    # proxy_buffers 64 8k;
+    # proxy_buffer_size 4k;
+    proxy_connect_timeout 120s;
+    proxy_send_timeout 120s;
+    proxy_read_timeout 120s;
+
+    # add header
+    add_header Content-Security-Policy "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:; img-src * data:; media-src *; frame-src * blob:;";
+    add_header X-XSS-Protection        "1;mode=block";
+    add_header X-Content-Type-Options  nosniff;
+    add_header Strict-Transport-Security "max-age=31536000";
+    add_header X-Frame-Options "SAMEORIGIN";
+
+    root /usr/share/nginx/html;
+
+    error_page 404 /index.html;
+
+    # 其他代理配置
+    # location /jp-sit/api {
+    #    proxy_pass http://10.22.28.132:9100/api;
+    # }
+    # location /bs-sit/api {
+    #    proxy_pass http://10.22.40.43:9100/api;
+    # }
+    # location /presit/api {
+    #     proxy_pass http://10.22.42.2:9100/api;
+    # }
+    # location /ph-sit/api {
+    #     proxy_pass http://10.22.60.4:9100/api;
+    # }
+    # location /th-sit/api {
+    #     proxy_pass http://10.22.40.48:9100/api;
+    # }
+    # location /hk-sit/api {
+    #    proxy_pass http://10.22.60.2:9100/api;
+    # }
+
+    location ~ ^/rabbitmq(/?)(.*) {
+        proxy_pass http://rcs-rabbitmq:15672/$2;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location ~ ^/kibana_vn_busit(/?)(.*) {
+        proxy_pass http://10.154.143.81:5601/$2;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /api {
+        proxy_pass http://${NGINX_HOST}:${NGINX_PORT};
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        client_max_body_size 100M;
+        sendfile on;
+    }
+
+    location /api/mc/ws {
+        proxy_pass http://${NGINX_HOST}:${NGINX_PORT};
+        proxy_http_version 1.1;
+        proxy_read_timeout   300s;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+
+    location /api/doc {
+        proxy_pass http://${NGINX_HOST}:${NGINX_PORT};
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        client_max_body_size 100M;
+        sendfile on;
+    }
+
+    location /share {
+        proxy_pass http://10.22.28.134:8080;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /_search {
+        proxy_pass http://${ELASTIC_API_HOST}:${ELASTIC_API_PORT};
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        client_max_body_size 100M;
+        sendfile on;
+    }
+
+    # location ~* \.css$ {
+    #     if ($request_method = 'OPTIONS') {
+    #         add_header 'Access-Control-Max-Age' 1728000;
+    #        add_header 'Access-Control-Allow-Origin' '*';
+    #        add_header 'Access-Control-Allow-Methods' 'GET, OPTIONS';
+    #         add_header 'Content-Type' 'text/plain charset=UTF-8';
+    #        add_header 'Content-Length' 0;
+    #         add_header 'Allow' 'OPTIONS,GET';
+    #        return 204;
+    #    }
+    #     if ($request_method = 'GET') {
+    #         add_header 'Access-Control-Allow-Origin' '*';
+    #        add_header 'Access-Control-Allow-Headers' 'Content-Type;Accept';
+    #    }
+    # }
+
+    # location ~* \/index\.html$ {
+    #     if ($request_method = 'OPTIONS') {
+    #         add_header 'Access-Control-Max-Age' 1728000;
+    #         add_header 'Access-Control-Allow-Origin' '*';
+    #         add_header 'Access-Control-Allow-Methods' 'GET, OPTIONS';
+    #         add_header 'Content-Type' 'text/plain charset=UTF-8';
+    #         add_header 'Content-Length' 0;
+    #         add_header 'Allow' 'OPTIONS,GET';
+    #         return 204;
+    #     }
+    #     if ($request_method = 'GET') {
+    #         add_header 'Access-Control-Allow-Origin' '*';
+    #         add_header 'Access-Control-Allow-Headers' 'Content-Type;Accept';
+    #     }
+    # }
+
+    location /vnvoice/ {
+        internal;
+        proxy_pass ${BU_RECORD_URL};
+        proxy_set_header x-api-key ${X_API_KEY};
+    }
+
+    location /vnenroll/ {
+        internal;
+        proxy_pass ${BU_ENROLL_URL};
+        proxy_set_header x-api-key ${X_API_KEY};
+    }
+
+    # 静态资源处理
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|otf|map|json)$ {
+        try_files $uri =404;
+        expires 6M;
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    # 单页应用处理，所有非静态资源的请求都返回 index.html
+    location / {
+        try_files $uri /index.html;
+    }
+
+}

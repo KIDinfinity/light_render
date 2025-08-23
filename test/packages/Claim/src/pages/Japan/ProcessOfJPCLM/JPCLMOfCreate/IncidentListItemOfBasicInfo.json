@@ -1,0 +1,40 @@
+{
+  "fieldLayout": {
+    "xs": { "span": 24 },
+    "sm": { "span": 8 },
+    "md": { "span": 8 },
+    "lg": { "span": 8 }
+  },
+  "claimType": {
+    "layout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 16 },
+      "md": { "span": 16 },
+      "lg": { "span": 16 }
+    }
+  },
+  "incidentPlace": {
+    "layout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 24 },
+      "md": { "span": 24 },
+      "lg": { "span": 24 }
+    }
+  },
+  "incidentInDetail": {
+    "layout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 24 },
+      "md": { "span": 24 },
+      "lg": { "span": 24 }
+    }
+  },
+  "partOfBodyInjured": {
+    "layout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 24 },
+      "md": { "span": 24 },
+      "lg": { "span": 24 }
+    }
+  }
+}

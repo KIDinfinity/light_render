@@ -1,0 +1,18 @@
+{
+  "policyInfoLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  },
+  "treatmentInfoLayout": {
+    "fieldLayout": {
+      "xs": { "span": 6 },
+      "sm": { "span": 6 },
+      "md": { "span": 6 },
+      "lg": { "span": 6 }
+    }
+  }
+}

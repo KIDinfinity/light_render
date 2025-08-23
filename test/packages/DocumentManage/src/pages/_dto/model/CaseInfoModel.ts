@@ -1,0 +1,30 @@
+export interface CaseInfoModel {
+  activityName?: string;
+  assessmentType?: null;
+  assignee?: string;
+  batchNo?: null;
+  businessNo?: string;
+  caseCategory?: string;
+  caseDueDate?: null;
+  dueDate?: null;
+  duration?: null;
+  endTime?: null;
+  inheritSource?: number;
+  initialDataInherit?: number;
+  inquiryBusinessNo?: string;
+  insured?: string;
+  pageController?: string;
+  procActOrder?: number;
+  processDefId?: string;
+  processInstanceId?: string;
+  rejected?: false;
+  startTime?: Date;
+  submissionChannel?: null;
+  submissionDate?: Date;
+  submissionId?: null;
+  taskDefKey?: string;
+  taskId?: string;
+  taskOrder?: number;
+  taskStatus?: string;
+  urgent?: boolean;
+}

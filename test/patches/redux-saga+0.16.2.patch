@@ -1,0 +1,218 @@
+diff --git a/node_modules/redux-saga/es/.DS_Store b/node_modules/redux-saga/es/.DS_Store
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/redux-saga/es/internal/channel.js b/node_modules/redux-saga/es/internal/channel.js
+index a3e852e..18dcd24 100644
+--- a/node_modules/redux-saga/es/internal/channel.js
++++ b/node_modules/redux-saga/es/internal/channel.js
+@@ -13,17 +13,75 @@ export var isEnd = function isEnd(a) {
+ export function emitter() {
+   var subscribers = [];
+ 
+-  function subscribe(sub) {
+-    subscribers.push(sub);
++  function subscribe(sub, modelName) {
++    if(modelName) {
++      if(subscribers[modelName])
++        subscribers[modelName].push(sub)
++      else
++        subscribers[modelName] = [sub]
++    } else {
++      subscribers.push(sub);
++    }
++
+     return function () {
+-      return remove(subscribers, sub);
++      if(modelName) {
++        return remove(subscribers[modelName], sub)
++      } else {
++        return remove(subscribers, sub);
++      }
+     };
+   }
+ 
+-  function emit(item) {
+-    var arr = subscribers.slice();
+-    for (var i = 0, len = arr.length; i < len; i++) {
+-      arr[i](item);
++  var listener = {}
++  subscribe.updateListener = function (type, controller) {
++    if(!listener[type]) {
++      listener[type] = {
++        type,
++        controllers: []
++      }
++    }
++    if(listener[type].controllers.indexOf(controller) === -1)
++      listener[type].controllers.push(controller)
++  }
++
++  function emit(item, modelName) {
++    function iterateSubscribers(arr) {
++      for (var i = 0, len = arr.length; i < len; i++) {
++        arr[i](item);
++      }
++    }
++    if(modelName && subscribers[modelName]) {
++      var listeningModels = Object.keys(listener).map(function (key) {
++        var listenerItem = listener[key]
++        if(!subscribe.matcher) {
++          console.error('Matcher wasn\'t assigned to channel/subscribe. by geoff')
++          subscribe.matcher = function (pattern) {
++            return (typeof pattern === 'undefined' ? 'undefined' : _typeof(pattern)) === 'symbol' ? function (input) {
++              return input.type === pattern;
++            } : function (input) {
++              return input.type === String(pattern);
++            };
++          }
++        }
++        var matcher = subscribe.matcher(listenerItem.type)
++        if(matcher(item))
++          return listenerItem.controllers
++        else
++          return []
++      }).flat() ;
++      listeningModels.push(modelName)
++      listeningModels = listeningModels.filter(function (item, index, self) {
++        return self.indexOf(item) === index;
++      });
++      var modelArray = listeningModels.map(function (controllerName) {
++        return subscribers[controllerName] || [];
++      }).flat();
++      iterateSubscribers(subscribers.concat(modelArray))
++    } else {
++      var fullArray = Object.keys(subscribers).map(function(key) {
++        return subscribers[key]
++      }).flat();
++      iterateSubscribers(fullArray)
+     }
+   }
+ 
+@@ -175,7 +233,7 @@ export function eventChannel(subscribe) {
+   };
+ }
+ 
+-export function stdChannel(subscribe) {
++export function stdChannel(subscribe, modelName) {
+   var chan = eventChannel(function (cb) {
+     return subscribe(function (input) {
+       if (input[SAGA_ACTION]) {
+@@ -185,7 +243,7 @@ export function stdChannel(subscribe) {
+       asap(function () {
+         return cb(input);
+       });
+-    });
++    }, modelName);
+   });
+ 
+   return _extends({}, chan, {
+diff --git a/node_modules/redux-saga/es/internal/middleware.js b/node_modules/redux-saga/es/internal/middleware.js
+index fb00bc3..46831cf 100644
+--- a/node_modules/redux-saga/es/internal/middleware.js
++++ b/node_modules/redux-saga/es/internal/middleware.js
+@@ -64,7 +64,13 @@ export default function sagaMiddlewareFactory() {
+           sagaMonitor.actionDispatched(action);
+         }
+         var result = next(action); // hit reducers
+-        sagaEmitter.emit(action);
++        const splitedArr = action.type && action.type.split && action.type.split('/')
++
++        if(splitedArr && splitedArr[0]) {
++          sagaEmitter.emit(action, splitedArr[0]);
++        } else {
++          sagaEmitter.emit(action);
++        }
+         return result;
+       };
+     };
+diff --git a/node_modules/redux-saga/es/internal/proc.js b/node_modules/redux-saga/es/internal/proc.js
+index 2bcc794..c4f8abf 100644
+--- a/node_modules/redux-saga/es/internal/proc.js
++++ b/node_modules/redux-saga/es/internal/proc.js
+@@ -182,6 +182,7 @@ export default function proc(iterator) {
+   var subscribe = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {
+     return noop;
+   };
++  subscribe.matcher = matcher;
+   var dispatch = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : noop;
+   var getState = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : noop;
+   var parentContext = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};
+@@ -189,6 +190,7 @@ export default function proc(iterator) {
+   var parentEffectId = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : 0;
+   var name = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : 'anonymous';
+   var cont = arguments[8];
++  var modelName = arguments[9];
+ 
+   check(iterator, is.iterator, NOT_ITERATOR_ERROR);
+ 
+@@ -209,7 +211,8 @@ export default function proc(iterator) {
+ 
+     log('error', 'uncaught at ' + name, message || err.message || err);
+   };
+-  var stdChannel = _stdChannel(subscribe);
++
++  var stdChannel = _stdChannel(subscribe, modelName);
+   var taskContext = Object.create(parentContext);
+   /**
+     Tracks the current effect cancellation
+@@ -429,10 +432,10 @@ export default function proc(iterator) {
+     // prettier-ignore
+     return (
+       // Non declarative effect
+-      is.promise(effect) ? resolvePromise(effect, currCb) : is.helper(effect) ? runForkEffect(wrapHelper(effect), effectId, currCb) : is.iterator(effect) ? resolveIterator(effect, effectId, name, currCb)
++      is.promise(effect) ? resolvePromise(effect, currCb) : is.helper(effect) ? runForkEffect(wrapHelper(effect), effectId, currCb, effect, true) : is.iterator(effect) ? resolveIterator(effect, effectId, name, currCb)
+ 
+       // declarative effects
+-      : is.array(effect) ? runParallelEffect(effect, effectId, currCb) : (data = asEffect.take(effect)) ? runTakeEffect(data, currCb) : (data = asEffect.put(effect)) ? runPutEffect(data, currCb) : (data = asEffect.all(effect)) ? runAllEffect(data, effectId, currCb) : (data = asEffect.race(effect)) ? runRaceEffect(data, effectId, currCb) : (data = asEffect.call(effect)) ? runCallEffect(data, effectId, currCb) : (data = asEffect.cps(effect)) ? runCPSEffect(data, currCb) : (data = asEffect.fork(effect)) ? runForkEffect(data, effectId, currCb) : (data = asEffect.join(effect)) ? runJoinEffect(data, currCb) : (data = asEffect.cancel(effect)) ? runCancelEffect(data, currCb) : (data = asEffect.select(effect)) ? runSelectEffect(data, currCb) : (data = asEffect.actionChannel(effect)) ? runChannelEffect(data, currCb) : (data = asEffect.flush(effect)) ? runFlushEffect(data, currCb) : (data = asEffect.cancelled(effect)) ? runCancelledEffect(data, currCb) : (data = asEffect.getContext(effect)) ? runGetContextEffect(data, currCb) : (data = asEffect.setContext(effect)) ? runSetContextEffect(data, currCb) : /* anything else returned as is */currCb(effect)
++      : is.array(effect) ? runParallelEffect(effect, effectId, currCb) : (data = asEffect.take(effect)) ? runTakeEffect(data, currCb) : (data = asEffect.put(effect)) ? runPutEffect(data, currCb) : (data = asEffect.all(effect)) ? runAllEffect(data, effectId, currCb) : (data = asEffect.race(effect)) ? runRaceEffect(data, effectId, currCb) : (data = asEffect.call(effect)) ? runCallEffect(data, effectId, currCb) : (data = asEffect.cps(effect)) ? runCPSEffect(data, currCb) : (data = asEffect.fork(effect)) ? runForkEffect(data, effectId, currCb, effect) : (data = asEffect.join(effect)) ? runJoinEffect(data, currCb) : (data = asEffect.cancel(effect)) ? runCancelEffect(data, currCb) : (data = asEffect.select(effect)) ? runSelectEffect(data, currCb) : (data = asEffect.actionChannel(effect)) ? runChannelEffect(data, currCb) : (data = asEffect.flush(effect)) ? runFlushEffect(data, currCb) : (data = asEffect.cancelled(effect)) ? runCancelledEffect(data, currCb) : (data = asEffect.getContext(effect)) ? runGetContextEffect(data, currCb) : (data = asEffect.setContext(effect)) ? runSetContextEffect(data, currCb) : /* anything else returned as is */currCb(effect)
+     );
+   }
+ 
+@@ -453,14 +456,22 @@ export default function proc(iterator) {
+   }
+ 
+   function resolveIterator(iterator, effectId, name, cb) {
+-    proc(iterator, subscribe, dispatch, getState, taskContext, options, effectId, name, cb);
++    proc(iterator, subscribe, dispatch, getState, taskContext, options, effectId, name, cb, modelName);
+   }
+ 
+   function runTakeEffect(_ref2, cb) {
+     var channel = _ref2.channel,
+         pattern = _ref2.pattern,
+         maybe = _ref2.maybe;
+-
++    if(subscribe.updateListener) {
++      if(pattern) {
++        if(typeof pattern !== 'string' || pattern.split('/')[0] !== modelName) {
++          subscribe.updateListener(pattern, modelName)
++        }
++      }
++    } else {
++      console.error('Take effect don\'t have access to proper subscribe as expected. by geoff')
++    }
+     channel = channel || stdChannel;
+     var takeCb = function takeCb(inp) {
+       return inp instanceof Error ? cb(inp, true) : isEnd(inp) && !maybe ? cb(CHANNEL_END) : cb(inp);
+@@ -551,7 +562,7 @@ export default function proc(iterator) {
+ 
+     try {
+       suspend();
+-      var _task = proc(taskIterator, subscribe, dispatch, getState, taskContext, options, effectId, fn.name, detached ? null : noop);
++      var _task = proc(taskIterator, subscribe, dispatch, getState, taskContext, options, effectId, fn.name, detached ? null : noop, modelName);
+ 
+       if (detached) {
+         cb(_task);
+diff --git a/node_modules/redux-saga/es/internal/runSaga.js b/node_modules/redux-saga/es/internal/runSaga.js
+index 58f1633..d2aa7a9 100644
+--- a/node_modules/redux-saga/es/internal/runSaga.js
++++ b/node_modules/redux-saga/es/internal/runSaga.js
+@@ -45,8 +45,7 @@ export function runSaga(storeInterface, saga) {
+ 
+     sagaMonitor.effectTriggered({ effectId: effectId, root: true, parentEffectId: 0, effect: { root: true, saga: saga, args: args } });
+   }
+-
+-  var task = proc(iterator, subscribe, wrapSagaDispatch(dispatch), getState, context, { sagaMonitor: sagaMonitor, logger: logger, onError: onError }, effectId, saga.name);
++  var task = proc(iterator, subscribe, wrapSagaDispatch(dispatch), getState, context, { sagaMonitor: sagaMonitor, logger: logger, onError: onError }, effectId, saga.name, void 0, arguments && arguments[1] && arguments[1].modelName);
+ 
+   if (sagaMonitor) {
+     sagaMonitor.effectResolved(effectId, task);

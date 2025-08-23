@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  venus-ui_build-test:
+    image: venus_ui-test:latest
+    container_name: 'venus-ui_build_test'
+    volumes:
+      - ./dist:/fwd/ui/dist
+      - ./src/.umi:/fwd/ui/src/.umi
+    network_mode: bridge

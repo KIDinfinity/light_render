@@ -1,0 +1,25 @@
+enum Operator {
+  in = 'in',
+  belongsTo = 'belongs to',
+  notBelongTo = 'not belongs to',
+  isBlank = 'is blank',
+  isNotBlank = 'is not blank',
+  equal = '=',
+  notEqual = '!=',
+  notIn = 'not in',
+  grantThan = '>',
+  lessThan = '<',
+  grantThanEqual = '>=',
+  lessThanEqual = '<=',
+  min = 'min',
+  max = 'max',
+  others = 'others',
+  matches = 'matches',
+  notMatches = 'notMatches',
+  notMin = 'notMin',
+  notMax = 'notMax',
+  contains = 'contains',
+  notContains = 'notContains',
+}
+
+export default Operator;

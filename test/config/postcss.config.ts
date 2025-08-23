@@ -1,0 +1,47 @@
+// ['width',
+// 'height',
+// 'padding',
+// 'padding-top',
+// 'padding-left',
+// 'padding-right',
+// 'padding-bottom',
+// 'margin',
+// 'margin-top',
+// 'margin-left',
+// 'margin-right',
+// 'margin-bottom',
+// 'top',
+// 'left',
+// 'right',
+// 'bottom',
+// 'font-size',
+// 'min-width',
+// 'max-width',
+// 'min-height',
+// 'max-height',
+// 'gap',
+// 'background',
+// 'line-height',
+// 'border',
+// 'border-top',
+// 'border-bottom',
+// 'border-left',
+// 'border-right',
+// 'transform',
+// 'border-radius',
+// 'border',
+// 'border-top-left-radius',
+// 'border-bottom-left-radius',
+// ]
+
+const pxtorem = {
+  rootValue: 14,
+  propList: ['*'],
+  selectorBlackList: ['html', /^.disabled_pxtorem_/],
+  replace: true,
+  mediaQuery: false,
+  remUnit: 192, // 设计稿宽度的 1/10（1920px / 10）
+  baseDpr: 2,   // 基于设备像素比（可选）
+};
+
+export { pxtorem };

@@ -1,0 +1,65 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: venus-ui
+  namespace: owb
+  labels:
+    app: venus-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: venus-ui
+  template:
+    metadata:
+      labels:
+        app: venus-ui
+    spec:
+      volumes:
+        - name: configmap-volume
+          configMap:
+            name: registration-service
+            items:
+              - key: key.properties
+                path: key.properties
+            defaultMode: 420
+        - name: logs-volume
+          emptyDir: {}
+      containers:
+        - name: venus-ui
+          image: {{registry}}/owb/venus-ui:{{version}}
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: venus-ui
+          resources:
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 200m
+              memory: 256Mi
+          volumeMounts:
+            - name: configmap-volume
+              mountPath: /fwd/venus/key.properties
+              subPath: key.properties
+            - name: logs-volume
+              mountPath: /fwd/venus/logs
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      securityContext: {}
+      schedulerName: default-scheduler
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  minReadySeconds: 15
+  revisionHistoryLimit: 10
+  progressDeadlineSeconds: 600

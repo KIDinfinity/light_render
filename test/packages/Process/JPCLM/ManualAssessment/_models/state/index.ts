@@ -1,0 +1,52 @@
+export default {
+  claimProcessData: {
+    exchangeRateList: [],
+  },
+  claimEntities: {},
+  treatmentPayableAddItem: null,
+  currencyModalShowStatus: false,
+  invoiceCurrencyObj: {
+    invoiceId: '',
+    invoiceCurrency: '',
+    exchangeDate: '',
+  },
+  exchangeDateModalShowStatus: false,
+  exchangeRateListForInvoice: [],
+  policyOwnerList: [],
+  searchInsuredObj: {
+    policySource: 'Individual',
+    firstName: '',
+    middleName: '',
+    surname: '',
+    dateOfBirth: '',
+    gender: '',
+    clientId: '',
+    policyId: '',
+  },
+  saveAgentNoList: [],
+  isClickClaimRegister: false,
+  procedurePayableItemAdd: {},
+  otherProcedurePayableItemAdd: {},
+  decisionMapping: [],
+  taskDetail: {},
+  serialClaim: {
+    show: false,
+    allList: [],
+    filterList: [],
+    payableData: {},
+    filterParams: {},
+    treatmentPayableList: [],
+  },
+  DrugsDetail:{
+    allList:[],
+    filterList:[],
+    show:false,
+    drugsListStore:[],
+    total:0,
+    filterParams:{},
+    searchState:false,
+    page:1,
+    idx:0
+  },
+  claimPayableGroupList: []
+};

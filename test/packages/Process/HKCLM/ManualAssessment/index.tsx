@@ -1,0 +1,438 @@
+import React, { Component } from 'react';
+import { NAMESPACE } from './activity.config';
+
+import { connect } from 'dva';
+import lodash from 'lodash';
+import { Row, Col, notification } from 'antd';
+import type { Dispatch } from 'redux';
+import { createNormalizeData, denormalizeClaimData } from '@/utils/claimUtils';
+import { formatMessageApi } from '@/utils/dictFormatMessage';
+import SectionTitle from 'claim/components/SectionTitle';
+import CaseSplit, { ESplitTypes } from 'claim/pages/CaseSplit';
+import HospitalIncomeModal from 'claim/components/CalculationPathModal/HospitalIncomeModal';
+import OutPatientModal from 'claim/components/CalculationPathModal/OutPatientModal';
+import InpatientPerDayModal from 'claim/components/CalculationPathModal/InpatientPerDayModal';
+import type { IDictionary } from '@/dtos/dicts';
+import type { IPolicy } from '@/dtos/claim';
+import moment from 'moment';
+import setEnvoyHoc from 'bpm/components/Hoc/setEnvoyHoc';
+import setInformationHoc from 'bpm/components/Hoc/setInformationHoc';
+import setInsured360Hoc from 'bpm/components/Hoc/setInsured360Hoc';
+import changeWorkSpaceHoc from 'bpm/components/Hoc/changeWorkSpaceHoc';
+import setClaimEditableHoc from 'claim/components/Hoc/setClaimEditableHoc';
+
+import PaymentAllocation from 'claim/pages/PaymentAllocation';
+import dictionaryConfig from './DictionaryByTypeCodes.config';
+import Insured from './Insured/InsuredV2';
+import Claimant from './Claimant/ClaimantV2';
+import ServiceAgent from './ServiceAgent/ServiceAgentV2';
+import AssessmentResult from './ClaimResult/AssessmentResult';
+import AssessmentHandle from './ClaimResult/AssessmentHandle';
+import IncidentList from './Incident/List';
+import { wholeEntities } from './_models/dto/EntriesModel';
+import { updateSplitDataByIncident, updateSplitDataByPolicy } from './_models/functions';
+import FurtherClaimModal from 'claim/pages/HongKong/FurtherClaim';
+import PopUpPayable from './PopUpPayable';
+import PopUpEditPayable from './PopUpEditPayable';
+import ServiceItemBreakdown from './ServiceItemBreakdown';
+import { getReAssessmentWarn } from 'process/Utils';
+import PageContainer from 'basic/components/Elements/PageContainer';
+import getRedepositError from 'claim/pages/PaymentAllocation/_function/getRedepositError';
+
+const layout = {
+  xs: { span: 12 },
+  sm: { span: 12 },
+  md: { span: 12 },
+  lg: { span: 12 },
+};
+interface IProps {
+  dispatch: Dispatch<any>;
+  claimProcessData: any;
+  claimEntities: any;
+  userId: string;
+  taskDetail: any;
+  buttonList: any;
+  dictsClaimType: IDictionary[];
+  saveSnapshot: Function;
+  listPolicy: IPolicy[];
+  taskNotEditable?: boolean;
+}
+
+@connect(
+  ({
+    [NAMESPACE]: modelnamepsace,
+    user,
+    claimEditable,
+    dictionaryController,
+    navigatorInformationController,
+    workspaceSwitchOn,
+  }: any) => ({
+    claimProcessData: modelnamepsace.claimProcessData,
+    claimEntities: modelnamepsace.claimEntities,
+    userId: lodash.get(user, 'currentUser.userId'),
+    dictsClaimType: dictionaryController.ClaimType,
+    listPolicy: modelnamepsace.listPolicy,
+    tabs: navigatorInformationController.tabs,
+    isShowRemark: workspaceSwitchOn.isShow.isShowRemark,
+    taskNotEditable: claimEditable.taskNotEditable,
+    diagnosisListMap: modelnamepsace.claimEntities.diagnosisListMap,
+  })
+)
+@changeWorkSpaceHoc
+@setEnvoyHoc
+@setInformationHoc
+@setInsured360Hoc
+@setClaimEditableHoc
+class HKOfManualAssessment extends Component<IProps> {
+  state = {
+    beneficiaryModeOpen: false,
+    isRegisterTrigger: false,
+  };
+
+  componentDidMount = async () => {
+    await this.getClaimData();
+    await this.getDropdown();
+    this.openAllocationDataChannel();
+    await this.getExchangeRateForInvoiceCurrencyPayout();
+    this.getRepeatableByServiceCode();
+    this.getServiceItemFeesListMap();
+    this.getSurgeryProcedureByRegion();
+    const { dispatch, taskDetail } = this.props;
+
+    dispatch({
+      type: `${NAMESPACE}/getListBenefitFactors`,
+      payload: {
+        claimNo: taskDetail?.inquiryBusinessNo,
+      },
+    });
+
+    const taskResponse = await dispatch({
+      type: `${NAMESPACE}/getClaim`,
+    });
+
+    // 保存理赔比较数据
+    dispatch({
+      type: `${NAMESPACE}/initCompareClaimData`,
+      payload: {
+        taskId: taskDetail.taskId,
+        claimData: taskResponse?.resultData?.businessData,
+      },
+    });
+    await dispatch({
+      type: `${NAMESPACE}/getLatestOcrStatus`,
+      payload: {
+        caseNo: taskDetail?.processInstanceId,
+      },
+    });
+  };
+
+  getSurgeryProcedureByRegion = () => {
+    const { dispatch } = this.props;
+    dispatch({
+      type: `${NAMESPACE}/getSurgeryProcedureByRegion`,
+    });
+  };
+
+  componentWillUnmount = () => {
+    const { dispatch } = this.props;
+    dispatch({
+      type: `${NAMESPACE}/clearClaimProcessData`,
+    });
+
+    dispatch({
+      type: 'formCommonController/clearForm',
+    });
+  };
+
+  getExchangeRateForInvoiceCurrencyPayout = async () => {
+    const { dispatch, claimEntities }: any = this.props;
+
+    const invoiceKeyList = lodash
+      .map(claimEntities.treatmentListMap, (item) => item.invoiceList)
+      .flat();
+
+    const dateList = invoiceKeyList
+      .map((key) => {
+        const date = claimEntities?.invoiceListMap?.[key]?.exchangeDate;
+        return moment(date)?.isValid() ? moment(date).format('YYYY-MM-DD') : false;
+      })
+      .filter((bool) => bool);
+    dateList.push(moment().format('YYYY-MM-DD'));
+
+    await dispatch({
+      type: `${NAMESPACE}/getExchangeRate`, //入口处请求汇率
+      payload: { dateList },
+    });
+    await dispatch({
+      type: `${NAMESPACE}/handleExchangeRateForInvoiceCurrencyPayout`,
+    });
+  };
+
+  getClaimData = async () => {
+    const { dispatch, businessData = {}, taskDetail }: any = this.props;
+
+    const newBusinessData = {
+      ...businessData,
+      processInstanceId: taskDetail.processInstanceId,
+      ...lodash.pick(taskDetail, ['taskId', 'taskDefKey']),
+    };
+
+    await dispatch({
+      type: `${NAMESPACE}/saveClaimProcessData`,
+      payload: newBusinessData,
+    });
+  };
+
+  getDropdown = async () => {
+    const { dispatch, taskDetail }: any = this.props;
+
+    await dispatch({
+      type: `${NAMESPACE}/queryListPolicy`,
+      payload: {
+        claimNo: taskDetail?.businessNo || taskDetail?.inquiryBusinessNo,
+      },
+    });
+
+    dispatch({
+      type: 'dictionaryController/findDictionaryByTypeCodes',
+      payload: dictionaryConfig?.HKManualAssessment,
+    });
+
+    dispatch({
+      type: 'dictionaryController/nationalityDropdown',
+    });
+    dispatch({
+      type: 'dictionaryController/bankDropdown',
+    });
+    dispatch({
+      type: 'dictionaryController/occupationDropdown',
+    });
+
+    dispatch({
+      type: `${NAMESPACE}/checkRegisterMcs`,
+      payload: {
+        caseNo: taskDetail?.caseNo,
+      },
+    });
+    dispatch({
+      type: `${NAMESPACE}/getAgentNoList`,
+      payload: {
+        claimNo: taskDetail?.businessNo,
+      },
+    });
+  };
+
+  handleBeneficiaryOpen = () => {
+    this.setState({
+      beneficiaryModeOpen: true,
+    });
+  };
+
+  handleBeneficiaryClose = () => {
+    this.setState({
+      beneficiaryModeOpen: false,
+    });
+  };
+
+  handleReAssessment = async () => {
+    const { dispatch } = this.props;
+    await dispatch({
+      type: `${NAMESPACE}/setBreakdownConfirm`,
+    });
+    // TODO：这里也许用回调到这里去掉用effer更好(promise)
+    getReAssessmentWarn({ nameSpace: NAMESPACE, dispatch });
+  };
+
+  updatePaymentAmount = async (claimData: any) => {
+    const { dispatch }: any = this.props;
+    const result = await dispatch({
+      type: `${NAMESPACE}/updatePayableAmount`,
+      payload: createNormalizeData(claimData, wholeEntities),
+    });
+    const { claimProcessData, claimEntities } = result;
+    return denormalizeClaimData(claimProcessData, claimEntities);
+  };
+
+  updateClaimProcessData = async (claimProcessData: any, fnShowLoading: Function) => {
+    const { dispatch,taskDetail }: any = this.props;
+    // 更新前端页面数据
+    dispatch({
+      type: `${NAMESPACE}/saveClaimProcessData`,
+      payload: { ...claimProcessData, ...lodash.pick(taskDetail, ['taskId', 'taskDefKey']) },
+    });
+    // 更新snapshot数据
+    const result = await dispatch({
+      type: 'claimCaseController/saveSnapshot',
+      payload: {
+        postData: claimProcessData,
+      },
+    });
+    if (!lodash.get(result, 'success')) {
+      notification.error({
+        message: 'Re-Assessment failed!',
+      });
+    }
+    if (lodash.isFunction(fnShowLoading)) fnShowLoading(false);
+  };
+
+  updatePostData = (postData: any, splitType: string) => {
+    switch (splitType) {
+      case ESplitTypes.Incident:
+        return updateSplitDataByIncident(postData);
+      case ESplitTypes.Policy:
+      default:
+        return updateSplitDataByPolicy(postData);
+    }
+  };
+
+  openAllocationDataChannel = () => {
+    const { dispatch, listPolicy } = this.props;
+    const result: any = dispatch({
+      type: `${NAMESPACE}/getDenormalizedData`,
+    });
+
+    return result?.then?.((claimData: any) => {
+      lodash.set(claimData, 'listPolicy', listPolicy);
+
+      dispatch({
+        type: 'paymentAllocation/openDataChannel',
+        payload: { claimData },
+      });
+
+      return claimData;
+    });
+  };
+
+  getRepeatableByServiceCode = () => {
+    const { dispatch }: any = this.props;
+    dispatch({
+      type: `${NAMESPACE}/getRepeatableByServiceCode`,
+      payload: {},
+    });
+  };
+
+  getServiceItemFeesListMap = () => {
+    const { dispatch, claimEntities }: any = this.props;
+
+    lodash.map(claimEntities.incidentListMap, (item: any) => {
+      dispatch({
+        type: `${NAMESPACE}/getServiceItemFeesListMap`,
+        payload: { serviceItemList: claimEntities.serviceItemListMap, incidentId: item?.id },
+      });
+    });
+  };
+
+  handleAllocationOpen = () => {
+    const { dispatch, taskNotEditable } = this.props;
+    if (!taskNotEditable) {
+      dispatch({
+        type: `${NAMESPACE}/hanldExchangeRateForPolicy`,
+      });
+    }
+    const result: any = dispatch({
+      type: `${NAMESPACE}/getDenormalizedData`,
+    });
+
+    result?.then?.((claimData: any) => {
+      dispatch({
+        type: 'paymentAllocation/allocationOpen',
+        payload: { claimData },
+      });
+      this.handleBeneficiaryOpen();
+    });
+  };
+
+  handleAllocationClose = () => {
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: 'paymentAllocation/toggleModal',
+      payload: { opened: false },
+    });
+
+    const backData: any = dispatch({
+      type: 'paymentAllocation/getClaimData',
+    });
+
+    backData?.then?.((claimData: any) => {
+      if (!lodash.isEmpty(claimData)) {
+        dispatch({
+          type: `${NAMESPACE}/savePaymentAllocation`,
+          payload: claimData,
+        });
+      }
+    });
+    this.handleBeneficiaryClose();
+  };
+  handleAllocationError = async () => {
+    const { dispatch, taskNotEditable } = this.props;
+    if (taskNotEditable) return [];
+    const claimData: any = await dispatch({
+      type: 'paymentAllocation/getClaimData',
+    });
+    const errors = getRedepositError(claimData, (v) => v === 'VLD_000991');
+
+    return errors;
+  };
+  render() {
+    const { beneficiaryModeOpen } = this.state;
+    const { dictsClaimType, listPolicy, taskDetail, buttonList } = this.props;
+    return (
+      <>
+        <PageContainer pageConfig={taskDetail}>
+          <Row gutter={24}>
+            <Col {...layout}>
+              <Insured />
+            </Col>
+            <Col {...layout}>
+              <Claimant />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <ServiceAgent />
+            </Col>
+          </Row>
+          <SectionTitle
+            title={formatMessageApi({
+              Label_BIZ_Claim: 'app.navigator.task-detail-of-data-capture.title',
+            })}
+          />
+          <AssessmentResult />
+          <AssessmentHandle
+            handleBeneficiaryOpen={this.handleAllocationOpen}
+            open={beneficiaryModeOpen}
+            handleReAssessment={this.handleReAssessment}
+            taskDetail={taskDetail}
+            buttonList={buttonList}
+          />
+          <IncidentList />
+          <CaseSplit
+            updatePaymentAmount={this.updatePaymentAmount}
+            updateClaimProcessData={this.updateClaimProcessData}
+            updatePostData={this.updatePostData}
+            claimTypes={dictsClaimType}
+            listPolicy={listPolicy}
+            taskDetail={taskDetail}
+            tabConfig={{
+              document: { disabled: true },
+            }}
+          />
+          <PaymentAllocation
+            onCancel={this.handleAllocationClose}
+            onError={this.handleAllocationError}
+          />
+          <HospitalIncomeModal title="modal" />
+          <OutPatientModal />
+          <InpatientPerDayModal />
+          <PopUpPayable />
+          <PopUpEditPayable />
+          <ServiceItemBreakdown />
+          <FurtherClaimModal namespace={NAMESPACE} />
+        </PageContainer>
+      </>
+    );
+  }
+}
+
+export default HKOfManualAssessment;

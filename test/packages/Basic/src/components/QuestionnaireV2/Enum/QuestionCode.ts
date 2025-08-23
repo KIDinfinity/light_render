@@ -1,0 +1,9 @@
+enum QuestionCode {
+  FILLING = 'FILLING',
+  TEXT = 'TEXT',
+  SINGLE_OPTION = 'SINGLE_OPTION',
+  MULTI_OPTION = 'MULTI_OPTION',
+  MULTI_OPTION_GROUP = 'MULTI_OPTION_GROUP',
+}
+
+export default QuestionCode;

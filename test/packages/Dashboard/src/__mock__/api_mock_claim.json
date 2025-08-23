@@ -1,0 +1,212 @@
+{
+  "monitor_envoy_sum": {
+    "apiTraceId": "4d0fb740-8c92-43f1-a548-a74587f086ea",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_submission_claim",
+      "dataList": [
+        {
+          "region": "JP",
+          "submission_channel": "Omne",
+          "total_count": 510,
+          "stp_count": 17,
+          "stp_rate": 4.17
+        },
+        {
+          "region": "JP",
+          "submission_channel": "Paper",
+          "total_count": 2326,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "Digital",
+          "total_count": 13739,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "iClaim",
+          "total_count": 601,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "OMNE",
+          "total_count": 1789,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "TH",
+          "submission_channel": "Paper",
+          "total_count": 1026,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "CLMPORTAL",
+          "total_count": 4,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "Cube",
+          "total_count": 1,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "EMAIL",
+          "total_count": 66,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "Omne",
+          "total_count": 6,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "PH",
+          "submission_channel": "Paper",
+          "total_count": 10,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "HK",
+          "submission_channel": "Agent Assist",
+          "total_count": 1275,
+          "stp_count": 139,
+          "stp_rate": 13.64
+        },
+        {
+          "region": "HK",
+          "submission_channel": "Assurance",
+          "total_count": 216,
+          "stp_count": 0,
+          "stp_rate": 0
+        },
+        {
+          "region": "HK",
+          "submission_channel": "eServices",
+          "total_count": 788,
+          "stp_count": 170,
+          "stp_rate": 26.81
+        },
+        {
+          "region": "HK",
+          "submission_channel": "Paper",
+          "total_count": 1045,
+          "stp_count": 0,
+          "stp_rate": 0
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_manual_assess_claim": {
+    "apiTraceId": "6fc737f1-1b9b-45c0-bf5d-191406461576",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_manual_assess_claim",
+      "dataList": [
+        {
+          "region": "JP",
+          "current_activity_key": "Manual Assessment",
+          "status": "pending",
+          "total_count": 184
+        },
+        {
+          "region": "JP",
+          "current_activity_key": "Manual Assessment",
+          "status": "todo",
+          "total_count": 455
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Manual Assessment",
+          "status": "pending",
+          "total_count": 5300
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Manual Assessment",
+          "status": "todo",
+          "total_count": 12638
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Manual Assessment",
+          "status": "pending",
+          "total_count": 644
+        },
+        {
+          "region": "PH",
+          "current_activity_key": "Manual Assessment",
+          "status": "todo",
+          "total_count": 52
+        },
+        {
+          "region": "HK",
+          "current_activity_key": "Manual Assessment",
+          "status": "pending",
+          "total_count": 1534
+        },
+        {
+          "region": "HK",
+          "current_activity_key": "Manual Assessment",
+          "status": "todo",
+          "total_count": 153
+        }
+      ]
+    },
+    "messageList": null
+  },
+  "monitor_in_progress_claim": {
+    "apiTraceId": "1bbdd99a-ec34-4900-99bd-a19c9c799809",
+    "success": true,
+    "status": null,
+    "responseData": {
+      "region": null,
+      "companyCode": null,
+      "monitorCategory": "monitor_in_progress_claim",
+      "dataList": [
+        {
+          "region": "JP",
+          "current_activity_key": "Claim Settlement",
+          "total_count": 1
+        },
+        {
+          "region": "TH",
+          "current_activity_key": "Auto Assessment",
+          "total_count": 27
+        },
+        {
+          "region": "PH"
+        },
+        {
+          "region": "HK",
+          "current_activity_key": "Claim Settlement",
+          "total_count": 4
+        }
+      ]
+    },
+    "messageList": null
+  }
+}

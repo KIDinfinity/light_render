@@ -1,0 +1,440 @@
+{
+  "id": "DAS_PH_CLM_00004_03",
+  "creator": "hedy",
+  "chartTypeTitle": "双折线图",
+  "gmtCreate": "2020-10-08T20:05:01.000+0000",
+  "modifier": "PHOWB-4852",
+  "gmtModified": "2025-03-05T16:00:00.000+0000",
+  "deleted": 0,
+  "transId": "7c439e55-c58e-457a-b763-14293b8d8cf8",
+  "dashboardCode": "DAS_PH_CLM_00004_03",
+  "dashboardName": "Claim Request Average TAT (Today)",
+  "linkedReportStatisticCode": null,
+  "description": null,
+  "dashboardType": "B",
+  "frequency": 30,
+  "region": "PH",
+  "remark": null,
+  "chartValueCategory": null,
+  "softcopyFileType": null,
+  "softcopyLocation": null,
+  "softcopyName": null,
+  "orderByExpression": null,
+  "xAxisFormat": null,
+  "dataFormat": "number",
+  "visible": 1,
+  "sequence": 1,
+  "department": null,
+  "dashboardCategory": "Volumn",
+  "seriesNo": "performance_00001",
+  "dashboardSearchFieldList": [
+    {
+      "id": "77396d0c-26eb-7a25-c39c-94e03c954dfc",
+      "creator": "PHOWB-4852",
+      "gmtCreate": "2025-03-05T16:00:00.000+0000",
+      "modifier": "PHOWB-4852",
+      "gmtModified": "2025-03-05T16:00:00.000+0000",
+      "deleted": 0,
+      "transId": "2ce2061d-bafc-b8f1-1721-439c51409f6c",
+      "dashboardCode": "DAS_PH_CLM_00004_03",
+      "fieldName": "submission_date",
+      "componentType": "date_range",
+      "componentSequence": 1,
+      "componentSize": null,
+      "defaultValue": ["2025-02-28T16:00:00.000Z", "2025-03-24T16:00:00.000Z"],
+      "whereOperation": "between",
+      "otherDefaultValue": null,
+      "required": 1,
+      "format": null,
+      "limit": 366,
+      "unit": null,
+      "editable": 1,
+      "visible": 1,
+      "fieldCaption": "Submission Date",
+      "layout": 12,
+      "whereOperator": "between",
+      "dropdownDatas": [],
+      "description": null
+    },
+    {
+      "id": "aa3d4285-0543-43b6-87e6-8c26a9942150",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-29T00:12:44.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-29T00:12:44.000+0000",
+      "deleted": 0,
+      "transId": "7eb3e984-728b-4978-90d5-71f86d7c9082",
+      "dashboardCode": "DAS_PH_CLM_00004_03",
+      "fieldName": "case_complete_date",
+      "componentType": "date_range",
+      "componentSequence": 2,
+      "componentSize": null,
+      "defaultValue": ["2025-02-28T16:00:00.000Z", "2025-03-24T16:00:00.000Z"],
+      "whereOperation": "between",
+      "otherDefaultValue": null,
+      "required": 0,
+      "format": null,
+      "limit": 366,
+      "unit": null,
+      "editable": 1,
+      "visible": 1,
+      "fieldCaption": "Complete Date",
+      "layout": 12,
+      "whereOperator": "between",
+      "dropdownDatas": [],
+      "description": null
+    },
+    {
+      "id": "d98636b7-83f0-440e-a6a7-c34906e1340c",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-29T00:12:44.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-29T00:12:44.000+0000",
+      "deleted": 0,
+      "transId": "7eb3e984-728b-4978-90d5-71f86d7c9082",
+      "dashboardCode": "DAS_PH_CLM_00004_03",
+      "fieldName": "case_category",
+      "componentType": "multi_drop_down",
+      "componentSequence": 3,
+      "componentSize": null,
+      "defaultValue": "",
+      "whereOperation": "in",
+      "otherDefaultValue": null,
+      "required": 0,
+      "format": null,
+      "limit": null,
+      "unit": null,
+      "editable": 0,
+      "visible": 2,
+      "fieldCaption": "Case Category",
+      "layout": 12,
+      "whereOperator": "in",
+      "dropdownDatas": [
+        {
+          "key": "BP_CLM_CTG007",
+          "value": "Minor Claims Process"
+        },
+        {
+          "key": "BP_CLM_CTG008",
+          "value": "Major Claims Process"
+        },
+        {
+          "key": "BP_PAPER_CTG002",
+          "value": "Paper Submission Process For Claims"
+        }
+      ],
+      "description": null
+    }
+  ],
+  "miscTypeList": [
+    {
+      "id": "3e080789-972f-4ca5-8ae6-db6e2be539fc",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "submission_channel",
+      "miscType": "Dropdown_COM_SubmissionChannel",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_COM_SubmissionChannel"
+    },
+    {
+      "id": "3e088306-0ce6-4dff-8512-2897e6a8cf44",
+      "creator": "jack",
+      "gmtCreate": "2025-03-19T00:57:56.000+0000",
+      "modifier": "PHOWB-4875",
+      "gmtModified": "2025-03-19T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "722f7055-c022-43b8-82f2-e27ae4a628ba",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "critical_illness_name",
+      "miscType": "Dropdown_CLM_CriticalIllness",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_CLM_CriticalIllness"
+    },
+    {
+      "id": "3ed0c855-8d07-4d09-afbd-8ce70a2a0d8e",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "case_category",
+      "miscType": "Label_BPM_CaseCategory",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Label_BPM_CaseCategory"
+    },
+    {
+      "id": "494dd277-5600-4794-80d0-683847f49c99",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "is_meet_sla",
+      "miscType": "Dropdown_POS_ifMeetSLA",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_POS_ifMeetSLA"
+    },
+    {
+      "id": "9e8ec0a9-daba-4535-b4e8-dbd7c8bd0850",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "claim_type",
+      "miscType": "Dropdown_CLM_ClaimTypeForDashboard",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_CLM_ClaimTypeForDashboard"
+    },
+    {
+      "id": "a41cc5c2-59f6-46a8-8d99-952703a51bd1",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "case_status",
+      "miscType": "Label_BPM_TaskActivity",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Label_BPM_TaskActivity"
+    },
+    {
+      "id": "a67a16ff-fe4e-11ea-8ac5-0242ac110005",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "a67a1714-fe4e-11ea-8ac5-0242ac110005",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "total_claim_case",
+      "miscType": "Label_COM_ReportCenter",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Label_COM_ReportCenter"
+    },
+    {
+      "id": "bdf089f7-56b0-4174-a967-93ae47b0c850",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "incident_payable_amount_range",
+      "miscType": "Dropdown_CLM_AmountRange",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_CLM_AmountRange"
+    },
+    {
+      "id": "d2076738-f0c8-4d9a-9e1e-642a8158be77",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "digital_flag",
+      "miscType": "Dropdown_CLM_IsDigital",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_CLM_IsDigital"
+    },
+    {
+      "id": "d9666870-3356-449b-96db-c0a040cae979",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "clean_flag",
+      "miscType": "Dropdown_POS_isClean",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_POS_isClean"
+    },
+    {
+      "id": "efdc9c27-615b-493f-a05b-b6b69453f7fc",
+      "creator": "hedy",
+      "gmtCreate": "2020-09-27T00:57:56.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-09-27T00:57:56.000+0000",
+      "deleted": 0,
+      "transId": "f3ac4740-39e0-4671-9100-3f79638c7a2d",
+      "reportCode": "PH_CLM_00004",
+      "fieldName": "fraud_flag",
+      "miscType": "Dropdown_CLM_IsFraud",
+      "extendMiscType": null,
+      "companyCode": null,
+      "dropDownKey": "Dropdown_CLM_IsFraud"
+    }
+  ],
+  "dashboardStatisticRelationList": [
+    {
+      "id": "5c3dba84-e6a8-474e-bf05-15509d93059a",
+      "creator": "hedy",
+      "gmtCreate": "2020-11-03T00:52:12.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-11-03T00:52:12.000+0000",
+      "deleted": 0,
+      "transId": "f6b0f877-7014-4e5a-b89b-20e8fb4c1c84",
+      "reportCode": "PH_CLM_00004",
+      "dashboardCode": "DAS_PH_CLM_00004_03",
+      "statisticCode": "STATS_PH_CLM_00004_06",
+      "chartType": "line_chart",
+      "sequence": null
+    },
+    {
+      "id": "d631e756-6db1-42b7-98e5-25b095e036b1",
+      "creator": "hedy",
+      "gmtCreate": "2020-11-03T00:52:12.000+0000",
+      "modifier": "PHOWB-3612",
+      "gmtModified": "2020-11-03T00:52:12.000+0000",
+      "deleted": 0,
+      "transId": "f6b0f877-7014-4e5a-b89b-20e8fb4c1c84",
+      "reportCode": "PH_CLM_00004",
+      "dashboardCode": "DAS_PH_CLM_00004_03",
+      "statisticCode": "STATS_PH_CLM_00004_07",
+      "chartType": "line_chart",
+      "sequence": null
+    }
+  ],
+  "dropdownOptions": [
+    {
+      "miscType": "Label_BPM_CaseCategory",
+      "fieldName": "case_category",
+      "values": ["BP_CLM_CTG007", "BP_CLM_CTG008", "BP_PAPER_CTG002"]
+    }
+  ],
+  "dashboardSeriesConfigVO": {
+    "id": "fd73ba23-8653-d494-c4cf-73f0c5856ad0",
+    "creator": "PHOWB-4852",
+    "gmtCreate": "2025-03-05T16:00:00.000+0000",
+    "modifier": "PHOWB-4852",
+    "gmtModified": "2025-03-05T16:00:00.000+0000",
+    "deleted": 0,
+    "transId": "2ce2061d-bafc-b8f1-1721-439c51409f6c",
+    "seriesNo": "performance_00001",
+    "series": "performance series",
+    "regionCode": "ph",
+    "sequenceNoInSeries": 1,
+    "category": "performance"
+  },
+  "format": null,
+  "miscType": {
+    "submission_channel": "Dropdown_COM_SubmissionChannel",
+    "critical_illness_name": "Dropdown_CLM_CriticalIllness",
+    "case_category": "Label_BPM_CaseCategory",
+    "is_meet_sla": "Dropdown_POS_ifMeetSLA",
+    "claim_type": "Dropdown_CLM_ClaimTypeForDashboard",
+    "case_status": "Label_BPM_TaskActivity",
+    "total_claim_case": "Label_COM_ReportCenter",
+    "incident_payable_amount_range": "Dropdown_CLM_AmountRange",
+    "digital_flag": "Dropdown_CLM_IsDigital",
+    "clean_flag": "Dropdown_POS_isClean",
+    "fraud_flag": "Dropdown_CLM_IsFraud"
+  },
+  "title": "Claim Request Average TAT (Today)",
+  "showFilter": true,
+  "width": 320,
+  "forceFit": false,
+  "data": {
+    "data": [
+      [
+        {
+          "claim_type": "AC",
+          "claim_type_dictCode": "AC",
+          "field_statistic_6": "Actual TAT",
+          "average_actual_tat": 0.43
+        }
+      ],
+      [
+        {
+          "claim_type": "AC",
+          "claim_type_dictCode": "AC",
+          "field_statistic_7": "SLA",
+          "average_standard_sla": 5
+        }
+      ]
+    ],
+    "leftSerieField": "field_statistic_6",
+    "rightSerieField": "field_statistic_7",
+    "xField": "claim_type",
+    "yField": ["average_actual_tat", "average_standard_sla"]
+  },
+  "chartData": {
+    "data": [
+      [
+        {
+          "claim_type": "AC",
+          "claim_type_dictCode": "AC",
+          "field_statistic_6": "Actual TAT",
+          "average_actual_tat": 0.43
+        },
+        {
+          "claim_type": "BC",
+          "claim_type_dictCode": "BC",
+          "field_statistic_6": "Actual TAT",
+          "average_actual_tat": 0.1
+        },
+        {
+          "claim_type": "CC",
+          "claim_type_dictCode": "CC",
+          "field_statistic_6": "Actual TAT",
+          "average_actual_tat": 0.32
+        }
+      ],
+      [
+        {
+          "claim_type": "AC",
+          "claim_type_dictCode": "AC",
+          "field_statistic_7": "SLA",
+          "average_standard_sla": 5
+        },
+        {
+          "claim_type": "BC",
+          "claim_type_dictCode": "BC",
+          "field_statistic_7": "SLA",
+          "average_standard_sla": 10
+        },
+        {
+          "claim_type": "CC",
+          "claim_type_dictCode": "CC",
+          "field_statistic_7": "SLA",
+          "average_standard_sla": 8
+        }
+      ]
+    ],
+    "leftSerieField": "field_statistic_6",
+    "rightSerieField": "field_statistic_7",
+    "xField": "claim_type",
+    "yField": ["average_actual_tat", "average_standard_sla"]
+  },
+  "showTooltip": false,
+  "dashboardVersion": "common",
+  "chartType": "DualLine"
+}

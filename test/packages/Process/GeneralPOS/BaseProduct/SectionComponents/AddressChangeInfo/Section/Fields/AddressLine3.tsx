@@ -1,0 +1,174 @@
+import { Region, tenant } from '@/components/Tenant';
+import { Col } from 'antd';
+import {
+  Authority,
+  Editable,
+  FormItemInput,
+  FormItemSelect,
+  Required,
+  Rule,
+  Visible,
+  Validator,
+} from 'basic/components/Form';
+import lodash from 'lodash';
+import useGetCurrentLevelAddress from 'process/GeneralPOS/BaseProduct/_hooks/useGetCurrentLevelAddress';
+import useIsCurrentRegion from 'process/GeneralPOS/BaseProduct/_hooks/useIsCurrentRegion';
+import { AddressLevelEnum } from 'process/GeneralPOS/common/Enum';
+import React from 'react';
+import { localFieldConfig } from './AddressLine3.config';
+
+export { localFieldConfig } from './AddressLine3.config';
+import { isDataCapture } from 'process/GeneralPOS/common/utils';
+import { useSelector } from 'dva';
+import { MessageType } from 'claim/enum/medicalSearchMessageType';
+import { formatMessageApi } from '@/utils/dictFormatMessage';
+import { NAMESPACE } from 'process/GeneralPOS/BaseProduct/activity.config';
+
+export const FormItem = ({
+  isShow,
+  layout,
+  form,
+  editable,
+  field,
+  config,
+  recoverObj,
+  OnRecover,
+  transactionId,
+}: any) => {
+  const fieldProps: any = localFieldConfig['field-props'];
+  const dicts = useGetCurrentLevelAddress({
+    addressLevel: AddressLevelEnum.City,
+    transactionId,
+  });
+  const otherParams = tenant.region({
+    [Region.PH]: {
+      recoverValue: recoverObj[localFieldConfig.field],
+      OnRecover,
+    },
+    [Region.MY]: {},
+    notMatch: {},
+  });
+  const selectDicts = tenant.region({
+    [Region.TH]: {
+      dicts,
+      dictCode: 'code',
+      dictName: 'description',
+    },
+    notMatch: { dicts, dictCode: 'subCode', dictName: 'subName' },
+  });
+  const { caseCategory } = useSelector(({ processTask }: any) => processTask.getTask) || {};
+  const isCurrentRegion = useIsCurrentRegion({ form });
+  const visibleConditions = true;
+  const editableConditions = !Rule(fieldProps['editable-condition'], form, '');
+  const requiredConditions = Rule(fieldProps['required-condition'], form, '');
+  const isHistory = useSelector(({ [NAMESPACE]: modelnamepsace }: any) => modelnamepsace.isHistory);
+  const isDataCaptureCase = isDataCapture({ caseCategory });
+
+  const value = form.getFieldValue(field);
+  const Rules = {
+    VLD_000002: Validator.VLD_000002(undefined, 30),
+  };
+  const maxLength = 30;
+  const valueToString = lodash.toString(value);
+
+  const warningMessage = () => {
+    const warns = [];
+    if (isHistory) {
+      return warns;
+    }
+    if (tenant.isPH() && isDataCaptureCase && valueToString?.length > maxLength) {
+      warns.push({
+        messageType: MessageType.Information,
+        message: formatMessageApi({ Label_COM_WarningMessage: 'ERR_000003' }, maxLength),
+      });
+    }
+    return warns;
+  };
+
+  return (
+    isShow &&
+    ((config?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        {[Region.MY].includes(tenant.region()) || !isCurrentRegion ? (
+          <FormItemInput
+            allowClear
+            disabled={
+              !editable ||
+              ((config?.editable || fieldProps.editable) === Editable.Conditions
+                ? !editableConditions
+                : (config?.editable || fieldProps.editable) === Editable.No)
+            }
+            form={form}
+            formName={config.name || field}
+            labelId={config.label?.dictCode || fieldProps.label.dictCode}
+            labelTypeCode={config.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+            required={
+              (config.required || fieldProps.required) === Required.Conditions
+                ? requiredConditions
+                : (config.required || fieldProps.required) === Required.Yes
+            }
+            rules={lodash.compact(
+              (config?.['x-rules'] || fieldProps['x-rules'])?.map((rule: string) => Rules[rule])
+            )}
+            warningMessage={warningMessage()}
+            {...otherParams}
+          />
+        ) : (
+          <FormItemSelect
+            {...selectDicts}
+            disabled={
+              !editable ||
+              ((config?.editable || fieldProps.editable) === Editable.Conditions
+                ? !editableConditions
+                : (config?.editable || fieldProps.editable) === Editable.No)
+            }
+            form={form}
+            formName={config.name || field}
+            labelId={config.label?.dictCode || fieldProps.label.dictCode}
+            labelTypeCode={config.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+            required={
+              (config.required || fieldProps.required) === Required.Conditions
+                ? requiredConditions
+                : (config.required || fieldProps.required) === Required.Yes
+            }
+            rules={lodash.compact(
+              (config?.['x-rules'] || fieldProps['x-rules'])?.map((rule: string) => Rules[rule])
+            )}
+            {...otherParams}
+          />
+        )}
+      </Col>
+    )
+  );
+};
+
+const AddressLine3 = ({
+  isShow,
+  layout,
+  form,
+  editable,
+  recoverObj,
+  OnRecover,
+  transactionId,
+  config,
+}: any) => (
+  <Authority>
+    <FormItem
+      isShow={isShow}
+      layout={layout}
+      form={form}
+      editable={editable}
+      recoverObj={recoverObj}
+      OnRecover={OnRecover}
+      transactionId={transactionId}
+      field={localFieldConfig.field}
+      config={config}
+    />
+  </Authority>
+);
+
+AddressLine3.displayName = localFieldConfig.field;
+
+export default AddressLine3;
