@@ -1,0 +1,89 @@
+# Node.js with React
+## Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+
+trigger:
+  - presit
+name: $(Build.SourceVersion)
+variables:
+  - group: CI-Params
+  - name: npm_config_cache
+    value: $(Pipeline.Workspace)/.npm
+  - name: npm_dist_cache
+    value: $(Build.Repository.LocalPath)/dist
+  - name: npm_umi_cache
+    value: $(Build.Repository.LocalPath)/src/.umi
+  - name: DOCKER_REPOSITORY
+    value: 862001241225.dkr.ecr.ap-southeast-1.amazonaws.com/owb/opus-generate
+
+
+
+pool:
+  vmImage: ubuntu-latest
+
+
+steps:
+#   - script: pwd
+#     displayName: 'where am i  '
+#   - script: |
+#       echo "Pipeline.Workspace = $(Pipeline.Workspace)"
+#       echo "Build.Repository.LocalPath = $(Build.Repository.LocalPath)"
+#       echo "Agent.OS = $(Agent.OS)"
+#       echo "npm_config_cache = $(npm_config_cache)"
+#       echo "npm_dist_cache = $(npm_dist_cache)"
+#       echo "npm_umi_cache = $(npm_umi_cache)"
+#       echo "Agent.BuildDirectory = $(Agent.BuildDirectory)"
+#     displayName: 'deplay the variables '
+#   - task: Cache@2
+#     inputs:
+#       key: 'npm | "$(Agent.OS)" | package-lock.json'
+#       restoreKeys: |
+#         npm | "$(Agent.OS)"
+#       path: $(npm_config_cache)
+#     displayName: Cache npm
+
+#   - task: Cache@2
+#     inputs:
+#       key: 'dist | "$(Agent.OS)" | package-lock.json'
+#       restoreKeys: |
+#         dist | "$(Agent.OS)"
+#       path: $(npm_dist_cache)
+#     displayName: Cache npm
+
+#   - task: Cache@2
+#     inputs:
+#       key: 'umi | "$(Agent.OS)" | package-lock.json'
+#       restoreKeys: |
+#         umi | "$(Agent.OS)"
+#       path: $(npm_umi_cache)
+#     displayName: Cache npm
+
+#   - task: NodeTool@0
+#     inputs:
+#       versionSpec: '16.4.2'
+#     displayName: 'Install Node.js'
+#   - script: |
+#       npm run bootstrap
+#     displayName: 'npm run bootstrap'
+#   - script: |
+#       npm run build
+#     displayName: 'npm run build'
+
+  - script: |
+      docker build -t $(ACR)/owb/venus-ui:testsidecar .
+    displayName: 'docker build'
+
+
+  - task: ECRPushImage@1
+    inputs:
+      awsCredentials: 'AWS_ECR'
+      regionName: 'ap-southeast-1'
+      sourceImageName: '$(ACR)/owb/venus-ui'
+      sourceImageTag: 'testsidecar'
+      pushTag: 'testsidecar'
+      repositoryName: 'owb/venus-ui'
+    displayName: 'Push to ECR'
+
+#### remove npm install -g npm@8.5.5 in 20240804

@@ -1,0 +1,400 @@
+2024-11-21 15:32:01,367 INFO 82937 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2024-11-21 15:32:01,375 INFO 82937 [egg:core] dump config after load, 5ms
+2024-11-21 15:32:01,472 INFO 82937 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2024-11-21 15:32:01,472 INFO 82937 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2024-11-21 15:32:01,473 INFO 82937 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2024-11-21 15:32:01,473 INFO 82937 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2024-11-21 15:32:01,473 INFO 82937 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2024-11-21 15:32:01,473 INFO 82937 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2024-11-21 15:32:01,473 INFO 82937 [egg-watcher:agent] watcher start success
+2024-11-21 15:32:01,484 INFO 82937 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [354ms] - #0 Process Start
+                       ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [382ms] - #1 Application Start
+                        ▇ [8ms] - #2 Load Plugin
+                         ▇ [12ms] - #3 Load Config
+                         ▇ [1ms] - #4 Require(0) config/config.default.js
+                         ▇ [1ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                         ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                         ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                         ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                         ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                         ▇ [1ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                         ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                         ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                         ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                         ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                         ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                         ▇ [1ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                         ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                         ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                         ▇ [0ms] - #19 Require(15) config/config.default.js
+                         ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                         ▇ [1ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                         ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                         ▇ [0ms] - #23 Require(19) node_modules/egg/config/config.local.js
+                         ▇▇▇▇▇▇▇ [117ms] - #24 Load extend/agent.js
+                         ▇ [14ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+                          ▇▇▇▇▇▇ [94ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                                 ▇ [7ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                                 ▇▇▇▇ [65ms] - #28 Load extend/context.js
+                                 ▇▇ [30ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                                   ▇ [4ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                                    ▇ [0ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                                    ▇ [13ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                     ▇ [11ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                     ▇ [6ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                      ▇▇▇ [54ms] - #35 Load agent.js
+                                      ▇ [3ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                      ▇ [0ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                      ▇ [22ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                        ▇ [7ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                        ▇ [11ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                         ▇ [5ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                         ▇ [2ms] - #42 Require(35) node_modules/egg/agent.js
+                                          ▇▇▇▇▇▇▇ [104ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                          ▇▇▇ [46ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                          ▇▇▇▇▇▇▇ [104ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2024-11-21 15:32:01,484 INFO 82937 [egg:core] dump config after ready, 6ms
+2024-11-21 15:32:02,377 INFO 82937 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/226838/Documents/company/opus-generate/app/public","stat":{"dev":16777231,"mode":16877,"nlink":2,"uid":1122541459,"gid":538686963,"rdev":0,"blksize":4096,"ino":30308961,"size":64,"blocks":0,"atimeMs":1732174322364.8975,"mtimeMs":1732174322364.8975,"ctimeMs":1732174322364.8975,"birthtimeMs":1732174322364.8975,"atime":"2024-11-21T07:32:02.365Z","mtime":"2024-11-21T07:32:02.365Z","ctime":"2024-11-21T07:32:02.365Z","birthtime":"2024-11-21T07:32:02.365Z"},"remove":false,"isDirectory":true,"isFile":false}
+2024-11-21 15:32:34,335 INFO 83501 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2024-11-21 15:32:34,339 INFO 83501 [egg:core] dump config after load, 2ms
+2024-11-21 15:32:34,356 INFO 83501 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2024-11-21 15:32:34,357 INFO 83501 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2024-11-21 15:32:34,357 INFO 83501 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2024-11-21 15:32:34,357 INFO 83501 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2024-11-21 15:32:34,357 INFO 83501 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2024-11-21 15:32:34,357 INFO 83501 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2024-11-21 15:32:34,357 INFO 83501 [egg-watcher:agent] watcher start success
+2024-11-21 15:32:34,365 INFO 83501 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [208ms] - #0 Process Start
+                                  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [96ms] - #1 Application Start
+                                  ▇ [4ms] - #2 Load Plugin
+                                   ▇ [6ms] - #3 Load Config
+                                   ▇ [0ms] - #4 Require(0) config/config.default.js
+                                   ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                   ▇ [1ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                   ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                   ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                   ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                   ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                   ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                   ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                   ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                    ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                    ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                    ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                    ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                                    ▇ [1ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                    ▇ [0ms] - #19 Require(15) config/config.default.js
+                                    ▇ [1ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                    ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                    ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                    ▇ [0ms] - #23 Require(19) node_modules/egg/config/config.local.js
+                                    ▇▇▇ [21ms] - #24 Load extend/agent.js
+                                    ▇ [1ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+                                    ▇▇▇ [19ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                                       ▇ [1ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                                        ▇▇▇ [20ms] - #28 Load extend/context.js
+                                        ▇ [7ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                                         ▇ [1ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                                         ▇ [0ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                                         ▇ [9ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                          ▇ [1ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                           ▇ [10ms] - #35 Load agent.js
+                                           ▇ [0ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                           ▇ [1ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                           ▇ [3ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                           ▇ [0ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                           ▇ [5ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                            ▇ [1ms] - #42 Require(35) node_modules/egg/agent.js
+                                             ▇▇▇ [21ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [15ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇▇ [27ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2024-11-21 15:32:34,365 INFO 83501 [egg:core] dump config after ready, 2ms
+2024-11-21 15:38:11,441 INFO 86434 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2024-11-21 15:38:11,450 INFO 86434 [egg:core] dump config after load, 6ms
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2024-11-21 15:38:11,519 INFO 86434 [egg-watcher:agent] watcher start success
+2024-11-21 15:38:11,571 INFO 86434 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [407ms] - #0 Process Start
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [255ms] - #1 Application Start
+                               ▇ [7ms] - #2 Load Plugin
+                               ▇ [12ms] - #3 Load Config
+                               ▇ [1ms] - #4 Require(0) config/config.default.js
+                               ▇ [1ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                               ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                ▇ [1ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                                ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                ▇ [0ms] - #19 Require(15) config/config.default.js
+                                ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                ▇ [0ms] - #23 Require(19) node_modules/egg/config/config.local.js
+                                ▇▇ [28ms] - #24 Load extend/agent.js
+                                ▇ [1ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+                                ▇ [25ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                                  ▇ [1ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                                  ▇ [23ms] - #28 Load extend/context.js
+                                  ▇ [7ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                                   ▇ [2ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                                   ▇ [1ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                                   ▇ [10ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                    ▇ [0ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                    ▇ [1ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                    ▇▇▇ [48ms] - #35 Load agent.js
+                                    ▇ [0ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                    ▇ [0ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                    ▇ [4ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                    ▇ [1ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                    ▇▇▇ [41ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                        ▇ [0ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                        ▇ [0ms] - #42 Require(35) node_modules/egg/agent.js
+                                        ▇▇▇▇▇ [77ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                        ▇▇ [28ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                        ▇▇▇▇▇▇▇▇▇ [122ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2024-11-21 15:38:11,571 INFO 86434 [egg:core] dump config after ready, 5ms
+2024-11-21 15:38:32,683 INFO 86829 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2024-11-21 15:38:32,686 INFO 86829 [egg:core] dump config after load, 2ms
+2024-11-21 15:38:32,702 INFO 86829 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2024-11-21 15:38:32,703 INFO 86829 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2024-11-21 15:38:32,703 INFO 86829 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2024-11-21 15:38:32,703 INFO 86829 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2024-11-21 15:38:32,703 INFO 86829 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2024-11-21 15:38:32,703 INFO 86829 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2024-11-21 15:38:32,703 INFO 86829 [egg-watcher:agent] watcher start success
+2024-11-21 15:38:32,709 INFO 86829 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [215ms] - #0 Process Start
+                                   ▇▇▇▇▇▇▇▇▇▇▇▇▇ [82ms] - #1 Application Start
+                                    ▇ [4ms] - #2 Load Plugin
+                                     ▇ [6ms] - #3 Load Config
+                                     ▇ [1ms] - #4 Require(0) config/config.default.js
+                                     ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                     ▇ [1ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                     ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                     ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                     ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                     ▇ [1ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                      ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                      ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                      ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                      ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                      ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                      ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                      ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                                      ▇ [1ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                      ▇ [0ms] - #19 Require(15) config/config.default.js
+                                      ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                      ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                      ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                      ▇ [0ms] - #23 Require(19) node_modules/egg/config/config.local.js
+                                      ▇▇▇ [20ms] - #24 Load extend/agent.js
+                                      ▇ [0ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+                                      ▇▇▇ [18ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                                         ▇ [1ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                                          ▇ [10ms] - #28 Load extend/context.js
+                                          ▇ [3ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                                          ▇ [1ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                                          ▇ [0ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                                          ▇ [5ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                           ▇ [1ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                           ▇ [9ms] - #35 Load agent.js
+                                           ▇ [0ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                           ▇ [1ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                           ▇ [2ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                            ▇ [5ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                             ▇ [1ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                             ▇ [0ms] - #42 Require(35) node_modules/egg/agent.js
+                                             ▇▇▇ [19ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [12ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇ [23ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2024-11-21 15:38:32,709 INFO 86829 [egg:core] dump config after ready, 2ms
+2025-09-26 12:09:40,119 INFO 51010 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-09-26 12:09:40,126 INFO 51010 [egg:core] dump config after load, 6ms
+2025-09-26 12:09:40,228 INFO 51010 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2025-09-26 12:09:40,228 INFO 51010 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2025-09-26 12:09:40,228 INFO 51010 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2025-09-26 12:09:40,229 INFO 51010 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2025-09-26 12:09:40,229 INFO 51010 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2025-09-26 12:09:40,229 INFO 51010 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2025-09-26 12:09:40,229 INFO 51010 [egg-watcher:agent] watcher start success
+2025-09-26 12:09:40,309 INFO 51010 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇ [244ms] - #0 Process Start
+             ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [653ms] - #1 Application Start
+             ▇ [4ms] - #2 Load Plugin
+              ▇ [7ms] - #3 Load Config
+              ▇ [0ms] - #4 Require(0) config/config.default.js
+              ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+              ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+              ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+              ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+              ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+              ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+              ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+              ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+              ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+              ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+              ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+              ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+              ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+              ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+              ▇ [0ms] - #19 Require(15) config/config.default.js
+              ▇ [1ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+              ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+              ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+              ▇ [1ms] - #23 Require(19) node_modules/egg/config/config.local.js
+              ▇▇▇▇▇▇▇▇ [160ms] - #24 Load extend/agent.js
+              ▇ [6ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+              ▇▇▇▇▇▇▇▇ [147ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                       ▇ [5ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                       ▇▇▇▇▇▇▇▇▇▇ [187ms] - #28 Load extend/context.js
+                       ▇▇▇ [56ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                          ▇ [10ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                           ▇ [3ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                           ▇▇▇▇▇ [93ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                ▇ [12ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                 ▇ [11ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                 ▇▇▇▇▇ [100ms] - #35 Load agent.js
+                                 ▇ [2ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                 ▇ [2ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                  ▇ [27ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                   ▇ [6ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                   ▇▇▇ [57ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                       ▇ [4ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                       ▇ [2ms] - #42 Require(35) node_modules/egg/agent.js
+                                       ▇▇▇▇▇▇ [109ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                       ▇▇ [41ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                       ▇▇▇▇▇▇▇▇▇▇ [186ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2025-09-26 12:09:40,309 INFO 51010 [egg:core] dump config after ready, 3ms
+2025-09-26 12:10:06,997 INFO 55742 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-09-26 12:10:07,000 INFO 55742 [egg:core] dump config after load, 1ms
+2025-09-26 12:10:07,018 INFO 55742 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2025-09-26 12:10:07,018 INFO 55742 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2025-09-26 12:10:07,018 INFO 55742 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2025-09-26 12:10:07,018 INFO 55742 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2025-09-26 12:10:07,019 INFO 55742 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2025-09-26 12:10:07,019 INFO 55742 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2025-09-26 12:10:07,019 INFO 55742 [egg-watcher:agent] watcher start success
+2025-09-26 12:10:07,024 INFO 55742 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [263ms] - #0 Process Start
+                                    ▇▇▇▇▇▇▇▇▇▇▇▇ [92ms] - #1 Application Start
+                                     ▇ [5ms] - #2 Load Plugin
+                                      ▇ [6ms] - #3 Load Config
+                                      ▇ [0ms] - #4 Require(0) config/config.default.js
+                                      ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                      ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                      ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                      ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                      ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                      ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                      ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                      ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                      ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                      ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                      ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                      ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                      ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                                      ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                      ▇ [0ms] - #19 Require(15) config/config.default.js
+                                       ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                       ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                       ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                       ▇ [1ms] - #23 Require(19) node_modules/egg/config/config.local.js
+                                       ▇▇▇ [24ms] - #24 Load extend/agent.js
+                                       ▇ [1ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+                                       ▇▇ [21ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                                          ▇ [0ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                                          ▇▇ [16ms] - #28 Load extend/context.js
+                                          ▇ [5ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                                           ▇ [1ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [8ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [0ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                            ▇ [0ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                            ▇ [10ms] - #35 Load agent.js
+                                            ▇ [1ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                            ▇ [3ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                             ▇ [1ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                             ▇ [4ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                              ▇ [0ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                              ▇ [1ms] - #42 Require(35) node_modules/egg/agent.js
+                                              ▇▇ [21ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                              ▇ [14ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                              ▇▇▇ [23ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2025-09-26 12:10:07,024 INFO 55742 [egg:core] dump config after ready, 2ms
+2025-09-26 12:14:26,662 INFO 96115 [egg:logger] init all loggers with options: {"dir":"/Users/226838/Documents/company/opus-generate/logs/opus-generate","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"opus-generate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-09-26 12:14:26,666 INFO 96115 [egg:core] dump config after load, 2ms
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher] Start watching: ["/Users/226838/Documents/company/opus-generate/app","/Users/226838/Documents/company/opus-generate/config","/Users/226838/Documents/company/opus-generate/mocks","/Users/226838/Documents/company/opus-generate/mocks_proxy","/Users/226838/Documents/company/opus-generate/app.js"]
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app"
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/config"
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks"
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/mocks_proxy"
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher] Start watching: "/Users/226838/Documents/company/opus-generate/app.js"
+2025-09-26 12:14:26,683 INFO 96115 [egg-watcher:agent] watcher start success
+2025-09-26 12:14:26,813 INFO 96115 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [252ms] - #0 Process Start
+                           ▇▇▇▇▇▇▇▇ [83ms] - #1 Application Start
+                           ▇ [6ms] - #2 Load Plugin
+                            ▇ [7ms] - #3 Load Config
+                            ▇ [0ms] - #4 Require(0) config/config.default.js
+                            ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                            ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                            ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                            ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                            ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                            ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                            ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                            ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                             ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                             ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                             ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                             ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                             ▇ [0ms] - #17 Require(13) node_modules/egg-cors/config/config.default.js
+                             ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                             ▇ [0ms] - #19 Require(15) config/config.default.js
+                             ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                             ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                             ▇ [1ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                             ▇ [0ms] - #23 Require(19) node_modules/egg/config/config.local.js
+                             ▇ [16ms] - #24 Load extend/agent.js
+                             ▇ [1ms] - #25 Require(20) node_modules/egg-security/app/extend/agent.js
+                             ▇ [15ms] - #26 Require(21) node_modules/egg-schedule/app/extend/agent.js
+                               ▇ [0ms] - #27 Require(22) node_modules/egg-logrotator/app/extend/agent.js
+                               ▇ [13ms] - #28 Load extend/context.js
+                               ▇ [3ms] - #29 Require(23) node_modules/egg-security/app/extend/context.js
+                               ▇ [0ms] - #30 Require(24) node_modules/egg-jsonp/app/extend/context.js
+                               ▇ [0ms] - #31 Require(25) node_modules/egg-i18n/app/extend/context.js
+                               ▇ [6ms] - #32 Require(26) node_modules/egg-multipart/app/extend/context.js
+                                ▇ [1ms] - #33 Require(27) node_modules/egg-view/app/extend/context.js
+                                ▇ [0ms] - #34 Require(28) node_modules/egg/app/extend/context.js
+                                ▇ [10ms] - #35 Load agent.js
+                                ▇ [1ms] - #36 Require(29) node_modules/egg-security/agent.js
+                                ▇ [0ms] - #37 Require(30) node_modules/egg-onerror/agent.js
+                                ▇ [2ms] - #38 Require(31) node_modules/egg-watcher/agent.js
+                                ▇ [0ms] - #39 Require(32) node_modules/egg-schedule/agent.js
+                                ▇ [5ms] - #40 Require(33) node_modules/egg-development/agent.js
+                                 ▇ [1ms] - #41 Require(34) node_modules/egg-logrotator/agent.js
+                                 ▇ [0ms] - #42 Require(35) node_modules/egg/agent.js
+                                 ▇▇ [20ms] - #43 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                 ▇ [13ms] - #44 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                 ▇▇ [24ms] - #45 Before Start in node_modules/egg-development/agent.js:8:9
+2025-09-26 12:14:26,813 INFO 96115 [egg:core] dump config after ready, 125ms

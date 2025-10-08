@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC\"-//OPENHTMLTOPDF//DOC XHTML Character Entities Only 1.0//EN\"\"\">
+<html>
+
+<head>
+  <style>
+    * {
+      font-size: 10pt;
+      font-family: 'FWD Circular TT Book'
+    }
+
+    html {
+      height: 100vh;
+      font-size: 9pt;
+      padding: 0;
+      margin: 0
+    }
+
+    @page {
+      size: letter;
+      margin: 102px 32px 103px 32px;
+
+      @top-center {
+        width: 49%;
+        content: element(top-center)
+      }
+
+      @top-right {
+        content: element(logo)
+      }
+
+      @bottom-right {
+        content: \"Page\" counter(page)\"|\" counter(pages);
+        color: #e87722;
+        font-size: 9pt;
+        margin: 0 32px 0 0;
+        padding: 0 32px 0 0
+      }
+
+      @bottom-left {
+        width: 75%;
+        content: element(enterprise)
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'FWD Circular TT Book';
+      font-size: 10pt;
+      color: #172F28
+    }
+
+    top-center {
+      position: running(top-center)
+    }
+
+    #logo {
+      position: running(logo)
+    }
+
+    enterprise {
+      position: running(enterprise);
+      color: #172F28;
+      font-size: 9pt;
+      transform: translate(-28px, -14px)scale(0.9)
+    }
+
+    slogan {
+      position: running(slogan);
+      color: #E87721;
+      font-size: 12pt
+    }
+
+    ul {
+      margin: 1%0;
+      padding: 0 0 0 4%
+    }
+
+    li {
+      padding: 2px 0
+    }
+
+    .BoldFont {
+      font-family: 'FWD Circular TT Bold'
+    }
+
+    .GrayModle {
+      background: #F2F2F2;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 10pt;
+      padding: 1%;
+      min-height: 90px;
+      vertical-align: bottom;
+      margin-top: 25px;
+      page-break-inside: avoid
+    }
+
+    .Icon {
+      display: inline-block;
+      margin-top: -33px;
+      border-radius: 50%;
+      background: white;
+      height: 50px
+    }
+
+    .PleaseContact {
+      font-size: 9pt;
+      color: #3C4C4E;
+      page-break-inside: avoid
+    }
+
+    .NoSignature {
+      page-break-before: avoid;
+      page-break-inside: avoid
+    }
+
+    .NoPageBreakSection {
+      display: block;
+      page-break-before: auto;
+      page-break-inside: avoid;
+      page-break-after: auto
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 0
+    }
+
+    td {
+      padding: 2px;
+      border: 0;
+      vertical-align: top
+    }
+
+    th {
+      text-align: left;
+      border: 0;
+      font-weight: normal;
+      font-family: 'FWD Circular TT Bold'
+    }
+
+    .squareType {
+      list-style-type: none;
+      padding-left: 18px;
+      position: relative
+    }
+
+    .squareType li:before {
+      content: \"\";
+      width: 4px;
+      height: 4px;
+      background: #172F28;
+      position: absolute;
+      display: inline-block;
+      margin: 6px
+    }
+
+    .Signature {
+      page-break-inside: avoid
+    }
+
+    .tableTh {
+      border: 1px solid#CDCDCD;
+      font-weight: normal;
+      font-family: 'FWD Circular TT Bold'
+    }
+
+    .NoPageBreakTr tr {
+      page-break-inside: avoid
+    }
+
+    .thLang* {
+      font-family: 'tahoma'
+    }
+  </style>
+</head>
+
+<body>
+  <top-center></top-center>
+  <div id=\"logo\">
+    <div style='display: block'>
+      <img width=\"100px\"
+        src=\"data:image/png;base64,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\" />
+    </div>
+  </div>
+  <page-after id=\"p1\">
+    <div style=\"margin:0 36pt 0\">
+      <div class=\"BoldFont\" style=\"font-size:15pt;text-align:left;font-weight:500;margin-bottom:40pt\"><span
+          style=\"font-size:18pt\">U</span>NDERWRITING<span style=\"font-size:18pt\">A</span>SSESSMENT<span
+          style=\"font-size:18pt\">W</span>ORKSHEET</div>
+      <table border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" style=\"border:0;float:none\">
+        <tr>
+          <td style=\"width:60%\">
+            <p style=\"text-align:left\">Application Number:<#if applicationNo??>${applicationNo}</#if>
+            </p>
+          </td>
+          <td style=\"width:39%\">
+            <p style=\"text-align:right\">Time of Generation</p>
+            <p style=\"text-align:right\">
+              <#if createTime??>${createTime}</#if>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Insured Information</div>
+      <table cellspacing=\"0\">
+        <tr>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0\">Insured Name</p>
+            <div style=\"border-left:1pt solid transparent\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p style=\"font-family:tahoma\">${item.insuredName}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Age</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.age}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Gender</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.gender}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" style=\"border:0;float:none\">
+        <tr>
+          <td style=\"width:60%\">
+            <p style=\"text-align:left\">Application Number:<#if applicationNo??>${applicationNo}</#if>
+            </p>
+          </td>
+          <td style=\"width:39%\">
+            <p style=\"text-align:right\">Time of Generation</p>
+            <p style=\"text-align:right\">
+              <#if createTime??>${createTime}</#if>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Insured Information</div>
+      <table cellspacing=\"0\">
+        <tr>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0\">Insured Name</p>
+            <div style=\"border-left:1pt solid transparent\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p style=\"font-family:tahoma\">${item.insuredName}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Age</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.age}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Gender</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.gender}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" style=\"border:0;float:none\">
+        <tr>
+          <td style=\"width:60%\">
+            <p style=\"text-align:left\">Application Number:<#if applicationNo??>${applicationNo}</#if>
+            </p>
+          </td>
+          <td style=\"width:39%\">
+            <p style=\"text-align:right\">Time of Generation</p>
+            <p style=\"text-align:right\">
+              <#if createTime??>${createTime}</#if>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Insured Information</div>
+      <table cellspacing=\"0\">
+        <tr>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0\">Insured Name</p>
+            <div style=\"border-left:1pt solid transparent\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p style=\"font-family:tahoma\">${item.insuredName}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Age</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.age}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Gender</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.gender}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" style=\"border:0;float:none\">
+        <tr>
+          <td style=\"width:60%\">
+            <p style=\"text-align:left\">Application Number:<#if applicationNo??>${applicationNo}</#if>
+            </p>
+          </td>
+          <td style=\"width:39%\">
+            <p style=\"text-align:right\">Time of Generation</p>
+            <p style=\"text-align:right\">
+              <#if createTime??>${createTime}</#if>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Insured Information</div>
+      <table cellspacing=\"0\">
+        <tr>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0\">Insured Name</p>
+            <div style=\"border-left:1pt solid transparent\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p style=\"font-family:tahoma\">${item.insuredName}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Age</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.age}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Gender</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.gender}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table border=\"0\" cellPadding=\"0\" cellSpacing=\"0\" style=\"border:0;float:none\">
+        <tr>
+          <td style=\"width:60%\">
+            <p style=\"text-align:left\">Application Number:<#if applicationNo??>${applicationNo}</#if>
+            </p>
+          </td>
+          <td style=\"width:39%\">
+            <p style=\"text-align:right\">Time of Generation</p>
+            <p style=\"text-align:right\">
+              <#if createTime??>${createTime}</#if>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Insured Information</div>
+      <table cellspacing=\"0\">
+        <tr>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0\">Insured Name</p>
+            <div style=\"border-left:1pt solid transparent\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p style=\"font-family:tahoma\">${item.insuredName}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Age</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.age}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Gender</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if insuredTableList?has_content>
+                <#list insuredTableList as item>
+                  <p>${item.gender}</p>
+                </#list>
+              </#if>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Coverage Information</div>
+      <table cellspacing=\"0\">
+        <tr>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0\">Insured Name</p>
+            <div style=\"border-left:1pt solid transparent\">
+              <#if coverageTableList?has_content>
+                <#list coverageTableList as item>
+                  <p style=\"font-family:tahoma\">${item.insuredName}</p>
+                  <#list item.productInfo as itemProduct>
+                    <#if itemProduct_index&lt;(item.productInfo?size-1)>
+                      <p></p>
+                    </#if>
+                  </#list>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Product Name</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if coverageTableList?has_content>
+                <#list coverageTableList as item>
+                  <#list item.productInfo as itemProduct>
+                    <p>${itemProduct.productName}</p>
+                  </#list>
+                </#list>
+              </#if>
+            </div>
+          </td>
+          <td style=\"vertical-align:top;width:33%\">
+            <p style=\"color:#3C4C4E;margin:0 0 0 6pt\">Sum Assured</p>
+            <div style=\"border-left:1pt solid;padding-left:6pt\">
+              <#if coverageTableList?has_content>
+                <#list coverageTableList as item>
+                  <#list item.productInfo as itemProduct>
+                    <p>${itemProduct.sumAssured}</p>
+                  </#list>
+                </#list>
+              </#if>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div style=\"text-decoration:underline\">Underwriting Comment</div>
+      <#if commentTableList?has_content>
+        <#list commentTableList as item>
+          <p style=\"text-align:right;margin:0\">${item.commentDate}</p>
+          <div style=\"width:100%;border-bottom:1pt solid\"></div>
+          <#list item.comments as itemComment>
+            <table cellspacing=\"0\">
+              <tr>
+                <td width=\"60%\" class=\"thLang\" style=\"text-align:left;font-family:tahoma\">${itemComment.userName}</td>
+                <td width=\"39%\" style=\"text-align:right\">${itemComment.commentTime}</td>
+              </tr>
+              <tr>
+                <td class=\"thLang\" style=\"font-family:tahoma\">${itemComment.comment}</td>
+              </tr>
+            </table>
+          </#list>
+        </#list>
+      </#if>
+      <div style=\"text-align:center;margin:40pt 0 0\">-----------------------------------------------------------End of
+        Report------------------------------------------------------</div>
+    </div>
+  </page-after>
+</body>
+
+</html>
