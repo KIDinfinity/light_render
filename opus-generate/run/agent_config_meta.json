@@ -1,302 +1,303 @@
 {
-  "keys": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-  "middleware": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
+  "keys": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+  "middleware": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
   "security": {
     "csrf": {
-      "enable": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-      "type": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "useSession": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "cookieName": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "sessionName": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "headerName": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "bodyName": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "rotateWhenInvalid": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "supportedRequests": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+      "type": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "rotateWhenInvalid": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
       "cookieOptions": {
-        "signed": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+        "signed": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
       }
     },
-    "domainWhiteList": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
+    "domainWhiteList": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
     "xframe": {
-      "enable": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-      "value": "/Users/226838/Documents/company/opus-generate/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+      "value": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js"
     },
-    "protocolWhiteList": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
     "hsts": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "maxAge": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "maxAge": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "policy": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "ipExceptionList": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "hostnameExceptionList": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js",
-      "checkAddress": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+      "ipBlackList": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "hostnameExceptionList": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
     }
   },
   "cors": {
-    "origin": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-    "credentials": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-    "allowMethods": "/Users/226838/Documents/company/opus-generate/config/config.default.js"
+    "origin": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+    "credentials": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+    "allowMethods": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js"
   },
   "static": {
-    "prefix": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-    "dir": "/Users/226838/Documents/company/opus-generate/config/config.default.js",
-    "dynamic": "/Users/226838/Documents/company/opus-generate/node_modules/egg-static/config/config.default.js",
-    "preload": "/Users/226838/Documents/company/opus-generate/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/226838/Documents/company/opus-generate/node_modules/egg-static/config/config.prod.js",
-    "maxFiles": "/Users/226838/Documents/company/opus-generate/node_modules/egg-static/config/config.default.js",
-    "maxAge": "/Users/226838/Documents/company/opus-generate/node_modules/egg-static/config/config.prod.js"
+    "prefix": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+    "dir": "/Users/infinity/Documents/project/light_render/opus-generate/config/config.default.js",
+    "dynamic": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-static/config/config.prod.js",
+    "maxFiles": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-static/config/config.default.js",
+    "maxAge": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-static/config/config.prod.js"
   },
   "session": {
-    "maxAge": "/Users/226838/Documents/company/opus-generate/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/226838/Documents/company/opus-generate/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/226838/Documents/company/opus-generate/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/226838/Documents/company/opus-generate/node_modules/egg-session/config/config.default.js",
-    "logValue": "/Users/226838/Documents/company/opus-generate/node_modules/egg-session/config/config.default.js"
+    "maxAge": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "/Users/226838/Documents/company/opus-generate/node_modules/egg-security/config/config.default.js"
+    "shtml": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/226838/Documents/company/opus-generate/node_modules/egg-jsonp/config/config.default.js",
-    "callback": "/Users/226838/Documents/company/opus-generate/node_modules/egg-jsonp/config/config.default.js",
-    "csrf": "/Users/226838/Documents/company/opus-generate/node_modules/egg-jsonp/config/config.default.js"
+    "limit": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/226838/Documents/company/opus-generate/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/226838/Documents/company/opus-generate/node_modules/egg-onerror/config/config.default.js",
-    "templatePath": "/Users/226838/Documents/company/opus-generate/node_modules/egg-onerror/config/config.default.js"
+    "errorPageUrl": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "/Users/226838/Documents/company/opus-generate/node_modules/egg-i18n/config/config.default.js",
-    "dirs": "/Users/226838/Documents/company/opus-generate/node_modules/egg-i18n/config/config.default.js",
-    "queryField": "/Users/226838/Documents/company/opus-generate/node_modules/egg-i18n/config/config.default.js",
-    "cookieField": "/Users/226838/Documents/company/opus-generate/node_modules/egg-i18n/config/config.default.js",
-    "cookieDomain": "/Users/226838/Documents/company/opus-generate/node_modules/egg-i18n/config/config.default.js",
-    "cookieMaxAge": "/Users/226838/Documents/company/opus-generate/node_modules/egg-i18n/config/config.default.js"
+    "defaultLocale": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/226838/Documents/company/opus-generate/node_modules/egg-watcher/config/config.default.js",
+    "type": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-watcher/config/config.default.js",
     "eventSources": {
-      "default": "/Users/226838/Documents/company/opus-generate/node_modules/egg-watcher/config/config.default.js",
-      "development": "/Users/226838/Documents/company/opus-generate/node_modules/egg-watcher/config/config.default.js"
+      "default": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "/Users/226838/Documents/company/opus-generate/node_modules/egg-schedule/config/config.default.js",
-      "file": "/Users/226838/Documents/company/opus-generate/node_modules/egg-schedule/config/config.default.js"
+      "consoleLevel": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/226838/Documents/company/opus-generate/node_modules/egg-schedule/config/config.default.js"
+    "directory": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "autoFields": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "defaultParamCharset": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "fields": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "fileSize": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "files": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "whitelist": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "allowArrayField": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "mode": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js",
-      "disable": "/Users/226838/Documents/company/opus-generate/node_modules/egg-multipart/config/config.default.js"
+      "cron": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js",
-    "hourDelimiter": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js",
-    "filesRotateBySize": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js",
-    "maxFiles": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js",
-    "rotateDuration": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js",
-    "maxDays": "/Users/226838/Documents/company/opus-generate/node_modules/egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-logrotator/config/config.default.js"
   },
   "view": {
-    "root": "/Users/226838/Documents/company/opus-generate/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/226838/Documents/company/opus-generate/node_modules/egg-view/config/config.default.js",
-    "defaultExtension": "/Users/226838/Documents/company/opus-generate/node_modules/egg-view/config/config.default.js",
-    "defaultViewEngine": "/Users/226838/Documents/company/opus-generate/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/226838/Documents/company/opus-generate/node_modules/egg-view/config/config.default.js"
+    "root": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-view/config/config.default.js",
+    "defaultExtension": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg-view/config/config.default.js"
   },
-  "env": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "name": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "cookies": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "proxy": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "maxIpsCount": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "maxProxyCount": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "protocolHeaders": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "ipHeaders": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "hostHeaders": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+  "env": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "name": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "version": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "description": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "private": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+    "name": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "version": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "description": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "private": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
     "egg": {
-      "declarations": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "declarations": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
-      "egg": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "egg-cors": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "puppeteer": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "cheerio": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "egg": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "puppeteer": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "egg-bin": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "egg-mock": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "eslint": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "eslint-config-egg": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "egg-bin": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "node": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "stop": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "dev": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "test": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "test:local": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "cov": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "lint": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "ci": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "start": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "stop": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "dev": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "test": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "test:local": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "cov": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "lint": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "ci": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "repository": {
-      "type": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "url": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "type": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "url": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
-    "author": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "license": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "author": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "license": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "HOME": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+  "baseDir": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+    "ignore": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
     "timing": {
-      "slowBootActionMinDuration": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "slowBootActionMinDuration": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     }
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "notFound": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "sitefile": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "middlewares": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "httpClient": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "bodyparser": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "pageUrl": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "cacheControl": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "/favicon.ico": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "cacheControl": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "strict": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+    "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "strict": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "depth": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "arrayLimit": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "depth": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
-    "onerror": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "onerror": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "env": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "level": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "outputJSON": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "coreLogName": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "agentLogName": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "errorLogName": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "coreLogger": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "allowDebugAtProd": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "enablePerformanceTimer": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "enableFastContextLogger": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "dir": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "env": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "level": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "coreLogger": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "allowDebugAtProd": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "enableFastContextLogger": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+    "enableDNSCache": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "timeout": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     },
-    "useHttpClientNext": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "useHttpClientNext": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
   "meta": {
-    "enable": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "logging": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "enable": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "logging": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "workerStartTimeout": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-  "serverTimeout": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
+  "coreMiddleware": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "port": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-      "hostname": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+      "path": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "port": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js",
-    "responseTimeout": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+    "maxWaitTime": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/226838/Documents/company/opus-generate/node_modules/egg/config/config.default.js"
+  "onClientError": "/Users/infinity/Documents/project/light_render/opus-generate/node_modules/egg/config/config.default.js"
 }
