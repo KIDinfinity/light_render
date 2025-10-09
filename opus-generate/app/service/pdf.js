@@ -1,5 +1,7 @@
 const puppeteer = require('puppeteer');
 const Service = require('egg').Service;
+const cheerio = require('cheerio');
+const he = require('he');
 
 class PDFService extends Service {
   // @ts-ignore
@@ -78,7 +80,29 @@ class PDFService extends Service {
         width: 1920,
         height: 1080,
       });
+      //方案一：动态获取（需要运维配合把服务器主机域名ip配置到FONT_BASE_URL环境变量）----
+      // const baseUrl = process.env.FONT_BASE_URL || 'http://localhost:7001';
+      // console.log("baseUrl____",baseUrl)
+      // const fontUrl = `${baseUrl}/public/fonts/FWDCircularTT-Book.ttf`;
+      // const boldFontUrl = `${baseUrl}/public/fonts/FWDCircularTT-Bold.ttf`;
 
+      // const fontStyle = `
+      //   <style>
+      //     @font-face {
+      //       font-family: 'FWD Circular TT Book';
+      //       src: url('${fontUrl}') format('truetype');
+      //     }
+      //     @font-face {
+      //       font-family: 'FWD Circular TT Bold';
+      //       src: url('${boldFontUrl}') format('truetype');
+      //     }
+      //     body {
+      //       font-family: 'FWD Circular TT Book' !important;
+      //     }
+      //   </style>
+      // `;
+      //------------------------------------------------------------------------
+      // 方案二：把字体文件转成base64字符串嵌入到style中（缺点是字体文件较大时会导致html内容过大，影响性能）----
       const transBase64 = require('../utils/transBase64')?.transBase64;
       console.log("transBase64___",transBase64)
       const path = require('path');
@@ -87,61 +111,53 @@ class PDFService extends Service {
         { path: path.resolve(appRoot, 'app/public/fonts/FWDCircularTT-Book.ttf'), name: 'FWD Circular TT Book' },
         { path: path.resolve(appRoot, 'app/public/fonts/FWDCircularTT-Bold.ttf'), name: 'FWD Circular TT Bold' },
       ];
-      // await page.addScriptTag({ path: path.resolve(appRoot, 'app/public/plugins/paged.js') });
+
       let cssOutput = '';
       fonts.forEach(font => {
         cssOutput += transBase64(font.path, font.name);
       });
       const fontStyle = `<style>${cssOutput} body { font-family: 'FWD Circular TT Book' ; }</style>`;
       //------------------------------------------------------------------------
-      const pagedJsUrl = 'https://unpkg.com/pagedjs/dist/paged.polyfill.js';
       const finalContent = content.replace(/<head>/i, `<head>${fontStyle}`)
 
 
+    const $ = cheerio.load(content);
 
+    let rawHtml = $('#headerComponent').html();
+    // let headerTemplate = he.decode(rawHtml); // 反转义
+
+    const headerTemplate = `
+      <style>
+        .pdf-header {
+          font-size: 12px;
+          color: #333;
+          width: 100%;
+          text-align: center;
+          padding: 10px 0;
+        }
+      </style>
+      <div class="pdf-header">testHeader</div>
+    `;
+    console.log("-=-=-=-=-=-=")
+    console.log(headerTemplate)
+    console.log("-=-=-=-=-=-=")
+    console.log("============")
+    console.log($)
+    console.log("=============")
+      const footerTemplate = "<div>testFooter</div>"
       // 设置内容
-      await page.setContent(finalContent,{ waitUntil: 'load' });
-      await page.addScriptTag({ url: pagedJsUrl });
-    
-
-  await page.evaluate(() => {
-    const template = document.querySelector('template[data-ref="pagedjs-content"]');
-    if (template) {
-      const clone = template.content.cloneNode(true);
-      document.body.appendChild(clone);
-    }
-
-  // 显式启动分页
-  if (window.PagedPolyfill) {
-    window.PagedPolyfill.preview();
-  }
-
-  });
-
-  await page.evaluate(() => {
-    console.log("test____")
-    console.log("=====================")
-    console.log(document.body.innerHTML)
-    console.log("=====================")
-    return new Promise((resolve) => {
-      document.addEventListener('pagedjs:rendered', () => {
-        resolve();
-      });
-    });
-  });
-
-
+      await page.setContent(finalContent);
       // 返回PDF Buffer
       const pdfBuffer = await page.pdf({
         headerTemplate,
-        // footerTemplate,
+        footerTemplate,
         margin: {
           top: 50,
           bottom: 50,
           left: 0,
           right: 0,
         },
-        displayHeaderFooter: false,
+        displayHeaderFooter: true,
         printBackground: true,
       });
       this.ctx.logger.info('pdfBuffer');
