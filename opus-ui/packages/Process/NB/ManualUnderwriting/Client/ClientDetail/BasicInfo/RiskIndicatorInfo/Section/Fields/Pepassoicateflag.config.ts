@@ -1,0 +1,62 @@
+export const fieldConfig = {
+  section: 'RiskIndicatorInfo',
+  field: 'pepAssoicateFlag',
+  fieldType: 'Dropdown',
+  'field-props': {
+    editable: 'Y',
+    label: {
+      dictTypeCode: 'Label_BIZ_Individual',
+      dictCode: 'AssociatedwithPEP',
+    },
+    expand: 'Y',
+    required: 'C',
+    visible: 'N',
+    'x-layout': {
+      // 480px
+      xs: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+      // 576px
+      sm: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+      // 768px
+      md: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+      // 992px
+      lg: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+      // 1200px
+      xl: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+      // 1600px
+      xxl: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 2,
+      },
+    },
+    'x-dict': {
+      dictTypeCode: 'Dropdown_COM_YN',
+    },
+  },
+};

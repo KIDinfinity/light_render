@@ -1,0 +1,13 @@
+declare module 'webpack-theme-color-replacer';
+declare module 'webpack-theme-color-replacer/client';
+declare module 'case-sensitive-paths-webpack-plugin';
+declare module '*.less';
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.json';
+declare module 'hotkeys-js';
+declare module 'flattenjs';
+declare module '@antv/data-set';
+declare module 'dva' {
+  export * from 'umi';
+}

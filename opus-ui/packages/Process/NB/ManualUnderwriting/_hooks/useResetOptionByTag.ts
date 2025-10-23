@@ -1,0 +1,19 @@
+import { useCallback } from 'react';
+import { useDispatch } from 'dva';
+import { NAMESPACE } from 'process/NB/ManualUnderwriting/activity.config';
+
+export default ({ id }: any) => {
+  const dispatch = useDispatch();
+
+  return useCallback(() => {
+    dispatch({
+      type: `${NAMESPACE}/changeBasicInfoFields`,
+      payload: {
+        changedFields: {
+          vulnerableCustomerOption: '',
+        },
+        id,
+      },
+    });
+  }, [dispatch, id]);
+};

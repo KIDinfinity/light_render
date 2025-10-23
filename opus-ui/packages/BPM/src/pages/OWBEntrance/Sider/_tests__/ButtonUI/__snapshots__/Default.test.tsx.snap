@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test icon default 1`] = `
+<button
+  className="test-box testIcon testClassName undefined"
+  data-role="bpmButton-testButtonCode"
+  data-trigger="testButtonCode"
+  onClick={[Function]}
+  type="button"
+>
+  <span>
+     this is icon
+  </span>
+  <span>
+    default button
+  </span>
+</button>
+`;

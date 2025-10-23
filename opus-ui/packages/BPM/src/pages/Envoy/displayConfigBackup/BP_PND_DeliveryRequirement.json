@@ -1,0 +1,62 @@
+{
+  "envoyTo": { "visible": true, "editable": true, "sort": 2 },
+  "pendingMemo": {
+    "sort": 3,
+    "visible": true,
+    "editable": true,
+    "children": {
+      "memoClientRole": { "visible": true },
+      "memoClientId": { "visible": true },
+      "subInfos": { "visible": false, "multiple": false },
+      "pendingDescription": {
+        "type": "SubTypeCode"
+      }
+    }
+  },
+  "dispatchDate": { "visible": true, "editable": true, "sort": 4 },
+  "channelContent": {
+    "visible": false,
+    "children": {
+      "letter": {
+        "channelInfo": { "visible": true, "editable": true, "sort": 1 },
+        "channelTpl": { "visible": true, "editable": true, "sort": 2 }
+      },
+      "sms": {
+        "channelInfo": { "visible": true, "editable": true, "sort": 1 },
+        "channelTpl": { "visible": true, "editable": true, "sort": 2 }
+      },
+      "email": {
+        "channelInfo": { "visible": true, "editable": true, "sort": 1 },
+        "channelTpl": { "visible": true, "editable": true, "sort": 2 }
+      }
+    },
+    "sort": 5
+  },
+  "switch": { "visible": true, "editable": true },
+  "reminder": {
+    "visible": true,
+    "children": {
+      "sendDay": { "visible": true, "editable": true, "sort": 1 },
+      "envoyTo": { "visible": true, "editable": true, "sort": 2 },
+      "dispatchDate": { "visible": true, "editable": true, "sort": 3 },
+      "channelContent": {
+        "visible": false,
+        "children": {
+          "letter": {
+            "channelInfo": { "visible": true, "editable": true, "sort": 2 },
+            "channelTpl": { "visible": true, "editable": true, "sort": 1 }
+          },
+          "sms": {
+            "channelInfo": { "visible": true, "editable": true, "sort": 2 },
+            "channelTpl": { "visible": true, "editable": true, "sort": 1 }
+          },
+          "email": {
+            "channelInfo": { "visible": true, "editable": true, "sort": 1 },
+            "channelTpl": { "visible": true, "editable": true, "sort": 2 }
+          }
+        },
+        "sort": 4
+      }
+    }
+  }
+}

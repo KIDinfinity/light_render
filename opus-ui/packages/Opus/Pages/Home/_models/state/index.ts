@@ -1,0 +1,147 @@
+import { ReactComponent as IconAccount } from 'opus/Assets/icon-account.svg';
+import { ReactComponent as IconTeam } from 'opus/Assets/icon-team.svg';
+import { ModalTabs } from 'opus/Enums';
+
+export default {
+  isMember: false,
+  organizationList: [],
+  headerTabList: [
+    {
+      tabIndex: ModalTabs.myTeamTask,
+      dictCode: 'TeamTask',
+      typeCode: 'Label_COM_Opus',
+      icon: IconTeam,
+      isMember: false,
+    },
+    {
+      tabIndex: ModalTabs.myTask,
+      dictCode: 'MyTask',
+      typeCode: 'Label_COM_Opus',
+      icon: IconAccount,
+      isMember: true,
+    },
+  ],
+  organizationCode: '',
+  durationType: 'D',
+  taskDurationType: 'D',
+  teamSummary: {},
+  taskSummary: {
+    total: 0,
+    todo: 0,
+    pending: 0,
+    complete: 0,
+  },
+  taskType: '',
+
+  // 当前选中的配置
+  configurationItem: {
+    categoryCode: '',
+    name: '',
+    modalTab: '',
+    taskKey: '',
+  },
+  taskData: {
+    showFilter: false,
+    fieldList: [
+      {
+        fieldName: 'Agent Channel',
+        sortable: false,
+        sequence: 1,
+        filter: true,
+        fieldType: 'select',
+        filterName: 'agentChannelCode',
+      },
+      {
+        fieldName: 'Claim No',
+        sortable: true,
+        sequence: 2,
+        fieldType: 'input',
+        filterName: 'inquiryBusinessNo',
+        filter: true,
+      },
+      {
+        fieldName: 'Policy Owner Name',
+        sortable: false,
+        sequence: 3,
+        filter: false,
+      },
+      {
+        fieldName: 'Insured Name',
+        sortable: false,
+        sequence: 4,
+        filter: false,
+      },
+      {
+        fieldName: 'Task Remaining Time',
+        sortable: true,
+        sequence: 5,
+        filter: false,
+      },
+      {
+        fieldName: 'Assignee',
+        sortable: false,
+        sequence: 6,
+        filter: true,
+        fieldType: 'select',
+        filterName: 'userName',
+      },
+      {
+        fieldName: 'Status',
+        sortable: false,
+        sequence: 7,
+        filter: false,
+      },
+      {
+        fieldName: 'Case Type',
+        sortable: false,
+        sequence: 8,
+        filter: false,
+      },
+      {
+        fieldName: 'Submission date',
+        sortable: true,
+        sequence: 9,
+        fieldType: 'time',
+        filterName: 'submissionDate',
+        filter: true,
+      },
+      {
+        fieldName: 'Modal Premium Amount',
+        sortable: true,
+        sequence: 10,
+        filter: false,
+      },
+      {
+        fieldName: 'Sum Assured',
+        sortable: true,
+        sequence: 11,
+        filter: false,
+      },
+      {
+        fieldName: 'Activity',
+        sortable: false,
+        sequence: 12,
+        filter: false,
+      },
+    ],
+    filterChoice: {},
+    filterDatas: {},
+    sorterParamsForfilterChoice: {},
+    total: 0,
+    list: [],
+    current: 1,
+  },
+  taskLeaveOver: [],
+  incompleteCases: {
+    filterChoice: {},
+    filterDatas: {},
+    sortName: '',
+    sortOrder: '',
+    total: 0,
+    list: [],
+    current: 1,
+  },
+  slaPercentage: '0%',
+  resources: [0, 0],
+  businessCode: '',
+};

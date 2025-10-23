@@ -1,0 +1,18 @@
+import { produce } from 'immer';
+
+const addClaimPayableItem = (state: any, action: any) => {
+  const { addClaimPayableItem } = action.payload;
+
+  const nextState = produce(state, (draft: any) => {
+    const draftState = draft;
+    draftState.claimProcessData.claimPayableList = [
+      ...draftState.claimProcessData.claimPayableList,
+      addClaimPayableItem.id,
+    ];
+    draftState.claimEntities.claimPayableListMap[addClaimPayableItem.id] = addClaimPayableItem;
+  });
+
+  return { ...nextState };
+};
+
+export default addClaimPayableItem;

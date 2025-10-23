@@ -1,0 +1,16 @@
+export default {
+  reportListMap: {},
+  activeTabKey: '',
+  reportMetadata: {},
+  searchDefault: {},
+  tableReport: {},
+  collapseState: false,
+  covariance: {},
+  statisticCode: '',
+  batchSumUpStatistic: {},
+  form: null,
+  statisticCodeList: [],
+  isPrintTable: true,
+  printParams: {},
+  previewModal: false,
+};

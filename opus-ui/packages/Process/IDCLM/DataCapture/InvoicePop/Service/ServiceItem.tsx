@@ -1,0 +1,110 @@
+import React from 'react';
+import { NAMESPACE } from '../../activity.config';
+
+import { Form } from 'antd';
+import { connect, useDispatch, useSelector } from 'dva';
+import { formUtils, FormBorderCard } from 'basic/components/Form';
+import lodash from 'lodash';
+import { getNotRepeatableCodes } from 'claim/pages/utils/getNotRepeatableCodes';
+import styles from '../style.less';
+import Section, { ServiceFields as Fields } from '../Section';
+
+const ServiceItem = ({ form, invoiceId, serviceId }: any) => {
+  const dispatch = useDispatch();
+  const editable = !useSelector(({ claimEditable }: any) => claimEditable.taskNotEditable);
+
+  const removePopUpService = () => {
+    dispatch({
+      type: `${NAMESPACE}/removePopUpService`,
+      payload: {
+        invoiceId,
+        serviceId,
+      },
+    });
+  };
+  const invoiceList = useSelector(
+    ({ [NAMESPACE]: modelnamepsace }: any) => modelnamepsace.popUpInvoiceList
+  );
+  const serviceAddItem = lodash.find(invoiceList, { id: invoiceId })?.serviceAddItem;
+  const hasEmptyItem = !lodash.isEmpty(serviceAddItem);
+
+  const serviceItemListMap = lodash.map(invoiceList, (invoice: any) => invoice.serviceItemList);
+  const repeatableServiceItemList = useSelector(
+    ({ [NAMESPACE]: modelnamepsace }: any) => modelnamepsace.repeatableServiceItemList
+  );
+  const notRepeatableCodeList = getNotRepeatableCodes({
+    repeatableServiceItemList,
+    invoiceId,
+    serviceItemListMap: lodash.flatten(serviceItemListMap),
+  });
+
+  const onSelect = (value: any) => {
+    dispatch({
+      type: `${NAMESPACE}/getRepeatableByServiceCode`,
+      payload: {
+        codes: [value],
+        invoiceId,
+        serviceItemList: lodash.flatten(serviceItemListMap),
+      },
+    });
+  };
+  return (
+    <div className={styles.serviceItem}>
+      <FormBorderCard
+        type="weight"
+        button={{ visiable: editable && hasEmptyItem, callback: removePopUpService }}
+      >
+        <Section form={form} editable={editable} section="InvoicePopUp.Service" register={false}>
+          <Fields.ServiceItem
+            invoiceId={invoiceId}
+            notRepeatableCodeList={notRepeatableCodeList}
+            onSelect={onSelect}
+          />
+          <Fields.Expense />
+          <Fields.Unit />
+          <Fields.OtherInsurerPaidAmount />
+          <Fields.SurgeryClass />
+        </Section>
+      </FormBorderCard>
+    </div>
+  );
+};
+
+export default connect(({ formCommonController }: any) => ({
+  validating: formCommonController.validating,
+}))(
+  Form.create<any>({
+    onFieldsChange(props: any, changedFields: any) {
+      const { dispatch, validating, serviceId, invoiceId } = props;
+      if (formUtils.shouldUpdateState(changedFields)) {
+        if (validating) {
+          setTimeout(() => {
+            dispatch({
+              type: `${NAMESPACE}/saveEntry`,
+              target: 'savePopUpServiceItem',
+              payload: {
+                changedFields,
+                serviceId,
+                invoiceId,
+              },
+            });
+          }, 0);
+        } else {
+          dispatch({
+            type: `${NAMESPACE}/saveFormData`,
+            target: 'savePopUpServiceItem',
+            payload: {
+              changedFields,
+              serviceId,
+              invoiceId,
+            },
+          });
+        }
+      }
+    },
+    mapPropsToFields(props: any) {
+      const { serviceItem } = props;
+      return formUtils.mapObjectToFields(serviceItem);
+    },
+  })(ServiceItem)
+);

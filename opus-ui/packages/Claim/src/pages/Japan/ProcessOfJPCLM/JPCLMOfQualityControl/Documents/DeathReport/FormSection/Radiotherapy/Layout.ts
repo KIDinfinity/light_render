@@ -1,0 +1,23 @@
+export default {
+  fieldLayout: {
+    xs: { span: 24 },
+    sm: { span: 4 },
+    md: { span: 4 },
+    lg: { span: 4 },
+  },
+  radiationTherapyType: {
+    xs: { span: 24 },
+    sm: { span: 6 },
+    md: { span: 6 },
+    lg: { span: 6 },
+  },
+};
+
+export const LayoutSection = {
+  fieldLayout: {
+    xs: { span: 8 },
+    sm: { span: 8 },
+    md: { span: 8 },
+    lg: { span: 8 },
+  },
+};

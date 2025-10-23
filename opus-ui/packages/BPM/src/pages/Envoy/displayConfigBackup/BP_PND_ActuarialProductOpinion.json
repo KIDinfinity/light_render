@@ -1,0 +1,63 @@
+{
+  "envoyTo": { "visible": false, "editable": false, "sort": 2 },
+  "retry": { "visible": true, "editable": true },
+  "pendingMemo": {
+    "sort": 3,
+    "visible": true,
+    "editable": true,
+    "children": {
+      "memoClientRole": { "visible": false },
+      "memoClientId": { "visible": false },
+      "memoRemark": { "visible": true },
+      "pendingDescription": {
+        "type": "SubTypeCode"
+      }
+    }
+  },
+  "dispatchDate": { "visible": false, "editable": false, "sort": 4 },
+  "channelContent": {
+    "visible": false,
+    "children": {
+      "letter": {
+        "channelInfo": { "visible": false, "editable": false, "sort": 1 },
+        "channelTpl": { "visible": false, "editable": false, "sort": 2 }
+      },
+      "sms": {
+        "channelInfo": { "visible": false, "editable": false, "sort": 1 },
+        "channelTpl": { "visible": false, "editable": false, "sort": 2 }
+      },
+      "email": {
+        "channelInfo": { "visible": false, "editable": false, "sort": 1 },
+        "channelTpl": { "visible": false, "editable": false, "sort": 2 }
+      }
+    },
+    "sort": 5
+  },
+  "switch": { "visible": false, "editable": false },
+  "reminder": {
+    "visible": false,
+    "children": {
+      "sendDay": { "visible": false, "editable": false, "sort": 1 },
+      "envoyTo": { "visible": false, "editable": false, "sort": 2 },
+      "dispatchDate": { "visible": false, "editable": false, "sort": 3 },
+      "channelContent": {
+        "visible": false,
+        "children": {
+          "letter": {
+            "channelInfo": { "visible": false, "editable": false, "sort": 2 },
+            "channelTpl": { "visible": false, "editable": false, "sort": 1 }
+          },
+          "sms": {
+            "channelInfo": { "visible": false, "editable": false, "sort": 2 },
+            "channelTpl": { "visible": false, "editable": false, "sort": 1 }
+          },
+          "email": {
+            "channelInfo": { "visible": false, "editable": false, "sort": 1 },
+            "channelTpl": { "visible": false, "editable": false, "sort": 2 }
+          }
+        },
+        "sort": 4
+      }
+    }
+  }
+}

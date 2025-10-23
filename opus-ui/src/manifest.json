@@ -1,0 +1,14 @@
+{
+  "name": "Ant Design Pro",
+  "short_name": "Ant Design Pro",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "theme_color": "#002140",
+  "background_color": "#FFF",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48"
+    }
+  ]
+}

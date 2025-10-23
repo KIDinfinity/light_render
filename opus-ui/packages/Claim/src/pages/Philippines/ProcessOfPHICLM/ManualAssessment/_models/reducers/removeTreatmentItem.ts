@@ -1,0 +1,25 @@
+import { produce } from 'immer';
+import { deteteDataByIncidentAndTreatmentId } from '@/utils/claimUtils';
+import { wholeEntities } from '../dto/EntriesModel';
+
+const removeTreatmentItem = (state: any, action: any) => {
+  const { incidentId, treatmentId } = action.payload;
+  const { claimEntities, claimProcessData } = state;
+  const result = deteteDataByIncidentAndTreatmentId(
+    claimProcessData,
+    claimEntities,
+    incidentId,
+    treatmentId,
+    wholeEntities
+  );
+
+  const nextState = produce(state, (draft: any) => {
+    const draftState = draft;
+    draftState.claimProcessData = result.claimProcessData;
+    draftState.claimEntities = result.claimEntities;
+  });
+
+  return { ...nextState };
+};
+
+export default removeTreatmentItem;

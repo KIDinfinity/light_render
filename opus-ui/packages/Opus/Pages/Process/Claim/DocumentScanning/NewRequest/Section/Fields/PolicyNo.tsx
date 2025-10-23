@@ -1,0 +1,86 @@
+import React from 'react';
+import { Col } from 'antd';
+import { Authority, Editable, FormItemInput, Required, Visible } from 'basic/components/Form';
+import { useDispatch, useSelector } from 'dva';
+import { NAMESPACE } from '../../../activity.config';
+
+import { localFieldConfig } from './PolicyNo.config';
+export { localFieldConfig } from './PolicyNo.config';
+
+export const FormItem = ({ isShow, layout, form, editable, field, config }: any) => {
+  const dispatch = useDispatch();
+
+  const fieldProps: any = localFieldConfig['field-props'];
+  const taskDetail = useSelector((state: any) => state.processTask.getTask);
+
+  const visibleConditions = true;
+  const editableConditions = true;
+  const requiredConditions = true;
+  return (
+    isShow &&
+    ((config?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        <FormItemInput
+          disabled={
+            !editable ||
+            ((config?.editable || fieldProps.editable) === Editable.Conditions
+              ? !editableConditions
+              : (config?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId={config.label?.dictCode || fieldProps.label.dictCode}
+          labelTypeCode={config.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+          required={
+            (config.required || fieldProps.required) === Required.Conditions
+              ? requiredConditions
+              : (config.required || fieldProps.required) === Required.Yes
+          }
+          onBlur={async (e: any) => {
+            const result = await dispatch({
+              type: `${NAMESPACE}/getInsuredInfo`,
+              payload: {
+                policyNo: e?.target.value,
+              },
+            });
+
+            if (result) {
+              const dataForSubmit = await dispatch({
+                type: `${NAMESPACE}/getDataForSubmit`,
+                payload: {
+                  taskDetail,
+                },
+              });
+
+              await dispatch({
+                type: `${NAMESPACE}/updateDocScanningCase`,
+                payload: {
+                  dataForSubmit,
+                },
+              });
+            }
+          }}
+        />
+      </Col>
+    )
+  );
+};
+
+const PolicyNo = ({ field, config, isShow, layout, form, editable }: any) => (
+  <Authority>
+    <FormItem
+      field={field}
+      config={config}
+      isShow={isShow}
+      layout={layout}
+      form={form}
+      editable={editable}
+    />
+  </Authority>
+);
+
+PolicyNo.displayName = localFieldConfig.field;
+
+export default PolicyNo;

@@ -1,0 +1,10 @@
+import { produce } from 'immer';
+import lodash from 'lodash';
+
+export default (state: any, action: any) => {
+  const { facultativeInfo } = action?.payload;
+  const nextState = produce(state, (draftState: any) => {
+    lodash.set(draftState, 'facultativeInfo', facultativeInfo);
+  });
+  return { ...nextState };
+};

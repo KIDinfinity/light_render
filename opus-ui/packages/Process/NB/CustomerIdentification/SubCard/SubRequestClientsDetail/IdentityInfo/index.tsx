@@ -1,0 +1,10 @@
+import React from 'react';
+import SubRequestClientsDetail from 'process/NB/CustomerIdentification/SuspectClients/SuspectClientsDetail';
+
+const IdentityInfo = ({ item, columnList, policy }: any) => {
+  return <SubRequestClientsDetail item={item} policy={policy} columnList={columnList} />;
+};
+
+IdentityInfo.displayName = 'identityInfo';
+
+export default IdentityInfo;

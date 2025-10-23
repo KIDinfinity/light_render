@@ -1,0 +1,63 @@
+const localFieldConfig = {
+  atomGroupCode: 'JP_CLM_CTG001.JP_CLM_ACT001',
+  caseCategory: 'JP_CLM_CTG001',
+  activityCode: 'JP_CLM_ACT001',
+  section: 'PolicyInfo',
+  field: 'policyNo',
+  'field-props': {
+    visible: 'Y',
+    editable: 'Y',
+    required: 'Y',
+    label: {
+      dictTypeCode: 'Label_BIZ_Policy',
+      dictCode: ' ',
+    },
+    maxLength: 20,
+    'x-layout': {
+      // 480px
+      xs: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 0,
+      },
+      // 576px
+      sm: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 0,
+      },
+      // 768px
+      md: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 0,
+      },
+      // 992px
+      lg: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 0,
+      },
+      // 1200px
+      xl: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 0,
+      },
+      // 1600px
+      xxl: {
+        span: 24,
+        offset: 0,
+        pull: 0,
+        order: 0,
+      },
+    },
+  },
+};
+
+export { localFieldConfig };

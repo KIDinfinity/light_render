@@ -1,0 +1,40 @@
+import { useMemo } from 'react';
+import lodash from 'lodash';
+import { useSelector } from 'dva';
+import { shallowEqual } from 'react-redux';
+import { NAMESPACE } from 'opus/NewBusiness/ManualUnderwriting/activity.config';
+import flatProductConfig from 'opus/NewBusiness/ManualUnderwriting/_utils/flatProductConfig';
+import useGetCoverageProductListForUW from 'opus/NewBusiness/ManualUnderwriting/_hooks/useGetCoverageProductList';
+import SubmissionChannel from 'enum/SubmissionChannel';
+import getCaseCompanyCode from 'packages/Opus/NewBusiness/ManualUnderwriting/_utils/getCaseCompanyCode';
+import CompanyCode from 'opus/NewBusiness/Enum/CompanyCode';
+
+export default () => {
+  const companyCode = getCaseCompanyCode();
+  if (companyCode === CompanyCode.IL) {
+    return false;
+  }
+  const planProductConfig = useSelector(
+    ({ [NAMESPACE]: modelnamepsace }: any) => modelnamepsace.planProductConfig,
+    shallowEqual
+  );
+  const taskDetail = useSelector(
+    ({ [NAMESPACE]: modelnamepsace }: any) => modelnamepsace.taskDetail,
+    shallowEqual
+  );
+
+  const productCodes = useGetCoverageProductListForUW();
+
+  return useMemo(() => {
+    return lodash
+      .chain(flatProductConfig({ planProductConfig }))
+      .filter((configItem: any) => {
+        return productCodes.includes(configItem.productCode);
+      })
+      .some(
+        (item: any) =>
+          item.annuityInd === 'Y' && taskDetail.submissionChannel === SubmissionChannel.ECOM
+      )
+      .value();
+  }, [planProductConfig, productCodes, taskDetail]);
+};

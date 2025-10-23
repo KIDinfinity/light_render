@@ -1,0 +1,17 @@
+export default [
+  'Dropdown_CFG_Country',
+  'Dropdown_POL_PaymentMethod',
+  'Dropdown_POL_PremiumStatus',
+  'Dropdown_SRV_TransactionType',
+  'Dropdown_PRD_Product',
+  'Dropdown_POL_NextPaymentMode',
+  'Dropdown_POL_PaymentMode',
+  'risk_status',
+  'Dropdown_IND_AddressType',
+  'Dropdown_IND_Gender',
+  'Dropdown_IND_RelationshipwithInsured',
+  'Dropdown_POL_IdentityType',
+  'Dropdown_IND_Title',
+  'Dropdown_SRV_ReasonforChange',
+  'Dropdown_COM_YN',
+];

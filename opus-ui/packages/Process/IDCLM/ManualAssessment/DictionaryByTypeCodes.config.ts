@@ -1,0 +1,39 @@
+import Dictionary from 'enum/Dictionary';
+
+const ManualAssessment: string[] = [
+  Dictionary.Dropdown_CFG_Country,
+  Dictionary.Gender,
+  Dictionary.IdentityType,
+  Dictionary.OrganizationIdentityType,
+  Dictionary.Dropdown_COM_SubmissionChannel,
+  Dictionary.InsuredState,
+  Dictionary.ClaimType,
+  Dictionary.Dropdown_COM_ClaimType,
+  Dictionary.CauseOfIncident,
+  Dictionary.TreatmentType,
+  Dictionary.DiagnosisType,
+  Dictionary.Dropdown_CLM_HosptialType,
+  Dictionary.Dropdown_POL_RelationshipWithInsured,
+  Dictionary.Dropdown_CLM_TherapiesType,
+  Dictionary.MainBenefit,
+  Dictionary.Dropdown_CLM_SurgeryCategory,
+  Dictionary.Dropdown_CLM_SurgeryClass,
+  Dictionary.Dropdown_CLM_PlaceOfHospital,
+  Dictionary.Dropdown_CLM_RoomType,
+  Dictionary.Dropdown_CLM_ClaimStatus,
+  Dictionary.CaseSource,
+  Dictionary.PaymentMethod,
+  Dictionary.Dropdown_CLM_ClaimDecision,
+  Dictionary.Dropdown_CLM_AssessmentDecision,
+  Dictionary.Dropdown_CLM_ExGratiaCode,
+  Dictionary.AmountType,
+  Dictionary.PolicyType,
+  Dictionary.PayablesType,
+  Dictionary.Dropdown_CLM_AgentStatus,
+  Dictionary.Dropdown_CLM_DenyCode,
+  Dictionary.Dropdown_PAY_ChequeRemarkTemplate,
+];
+
+export default {
+  ManualAssessment,
+};

@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "type": null,
+  "warnData": null,
+  "resultData": [
+    {
+      "id": "69207c23-c530-48cc-8895-49b0b802a43e",
+      "creator": "MDLJP-10",
+      "gmtCreate": "2024-07-02T17:00:00.000+0000",
+      "modifier": "MDLTH-3645",
+      "gmtModified": "2024-08-15T17:00:00.000+0000",
+      "deleted": 0,
+      "transId": "213176e5-29b2-4b36-9921-68203c4c673c",
+      "regionCode": "TH",
+      "businessCode": "BIZ003",
+      "sectionId": "Incident",
+      "fieldId": "incidentDate",
+      "dropdownTypeCode": null,
+      "applicable": "Y",
+      "typeCode": "Label_BIZ_Claim",
+      "dictCode": "IncidentDate",
+      "order": 2.0,
+      "span": 4.0,
+      "offset": 1.0,
+      "pull": 0.0
+    }
+  ],
+  "promptMessages": []
+}

@@ -1,0 +1,74 @@
+{
+  "insuredLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    },
+    "address": {
+      "layout": {
+        "xs": { "span": 8 },
+        "sm": { "span": 8 },
+        "md": { "span": 8 },
+        "lg": { "span": 8 }
+      }
+    }
+  },
+  "incidentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  },
+  "mainBenefitLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "diagnosisLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "treatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 16 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  }
+}

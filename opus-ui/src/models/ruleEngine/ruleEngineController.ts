@@ -1,0 +1,10 @@
+import { state, effects, reducers, listeners } from 'ruleEngine/pages/Edit/_models';
+
+export default {
+  state,
+  effects: {
+    ...effects,
+    ...listeners,
+  },
+  reducers,
+};

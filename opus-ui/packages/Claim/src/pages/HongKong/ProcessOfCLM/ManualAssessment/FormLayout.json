@@ -1,0 +1,314 @@
+{
+  "claimantLayout": {
+    "fieldLayout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "relationshipWithInsured": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 8, "offset": 16, "pull": 16 },
+        "md": { "span": 8, "offset": 16, "pull": 16 },
+        "lg": { "span": 8, "offset": 16, "pull": 16 }
+      }
+    },
+    "address": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "insuredLayout": {
+    "fieldLayout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "address": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "serviceAgentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    }
+  },
+  "payeeLayout": {
+    "fieldLayout": {
+      "xs": { "span": 24 },
+      "sm": { "span": 12 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    }
+  },
+  "AssessmentResultLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "remark": {
+      "layout": {
+        "xs": { "span": 16 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "incidentWithTreatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "incidentNoTreatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 8 },
+        "sm": { "span": 8 },
+        "md": { "span": 8 },
+        "lg": { "span": 8 }
+      }
+    }
+  },
+  "incidentListItemOfShortLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  },
+  "treatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "diagnosisExpendLayout": {
+    "fieldLayout": {
+      "xs": { "span": 6 },
+      "sm": { "span": 6 },
+      "md": { "span": 6 },
+      "lg": { "span": 6 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 6 },
+        "sm": { "span": 6 },
+        "md": { "span": 6 },
+        "lg": { "span": 6 }
+      }
+    }
+  },
+  "diagnosisLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "procedureLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "fieldTwo": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    }
+  },
+  "invoiceLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  },
+  "serviceItemLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 16 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "serviceItemHeaderLayout": {
+    "fieldLayout": {
+      "xs": { "span": 16 },
+      "sm": { "span": 16 },
+      "md": { "span": 16 },
+      "lg": { "span": 16 }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 8 },
+        "sm": { "span": 8 },
+        "md": { "span": 8 },
+        "lg": { "span": 8 }
+      }
+    }
+  },
+  "claimPayableWithTreatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    },
+    "remark": {
+      "layout": {
+        "xs": { "span": 24 },
+        "sm": { "span": 24 },
+        "md": { "span": 24 },
+        "lg": { "span": 24 }
+      }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 12 },
+        "sm": { "span": 12 },
+        "md": { "span": 12 },
+        "lg": { "span": 12 }
+      }
+    }
+  },
+  "claimPayableNoTreatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    },
+    "remark": {
+      "layout": {
+        "xs": { "span": 8, "offset": 8, "pull": 8 },
+        "sm": { "span": 8, "offset": 8, "pull": 8 },
+        "md": { "span": 8, "offset": 8, "pull": 8 },
+        "lg": { "span": 8, "offset": 8, "pull": 8 }
+      }
+    },
+    "fieldOne": {
+      "layout": {
+        "xs": { "span": 8 },
+        "sm": { "span": 8 },
+        "md": { "span": 8 },
+        "lg": { "span": 8 }
+      }
+    }
+  },
+  "lifePayableWithTreatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    }
+  },
+  "lifePayableNoTreatmentLayout": {
+    "fieldLayout": {
+      "xs": { "span": 4 },
+      "sm": { "span": 4 },
+      "md": { "span": 4 },
+      "lg": { "span": 4 }
+    }
+  },
+  "policyBenefitLayout": {
+    "fieldLayout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 12 },
+      "lg": { "span": 12 }
+    }
+  },
+  "BeneficiaryListLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    },
+    "address": {
+      "layout": {
+        "xs": { "span": 16 },
+        "sm": { "span": 16 },
+        "md": { "span": 16 },
+        "lg": { "span": 16 }
+      }
+    }
+  },
+  "payeeListLayout": {
+    "fieldLayout": {
+      "xs": { "span": 8 },
+      "sm": { "span": 8 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  }
+}

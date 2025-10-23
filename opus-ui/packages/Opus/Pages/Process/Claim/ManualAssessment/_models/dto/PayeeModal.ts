@@ -1,0 +1,57 @@
+import type { BankAccountModal } from './BankAccountModal';
+import type { ChequeRemarkModal } from './ChequeRemarkModal';
+import type { ContactModal } from './ContactModal';
+import type { RedepositPolicyModal } from './RedepositPolicyModal';
+
+export interface PayeeModal {
+  payeeContactList?: ContactModal[];
+  payeeBankAccountList?: BankAccountModal[];
+  claimChequeRemarkList?: ChequeRemarkModal[];
+  claimRedepositList?: RedepositPolicyModal[];
+  account?: string;
+  address?: string;
+  addressSearchResult?: string;
+  bankAccountName?: string;
+  bankAccountNo?: string;
+  bankCode?: string;
+  bpoBankAccountName?: string;
+  bpoBranchName?: string;
+  branchCode?: string;
+  branchName?: string;
+  claimNo?: string;
+  dateOfBirth?: null;
+  email?: string;
+  firstName?: string;
+  gender?: string;
+  id: string;
+  identityNo?: string;
+  identityType?: string;
+  middleName?: string;
+  organization?: number;
+  passbookCode?: string;
+  passbookNo?: string;
+  payee?: string;
+  payeeNo?: string;
+  payeeType?: string;
+  paymentAmount?: number | null;
+  paymentMethod?: string;
+  paymentModel?: string;
+  phoneNo?: string;
+  postCode?: string;
+  relationshipWithInsured?: string;
+  scheduledDate?: null;
+  surname?: string;
+  transferAccount?: string;
+  typeOfPayment?: string;
+  sourceBank?: string;
+  manualAdd?: string;
+
+  payoutAmount?: number | null;
+  subPaymentMethod?: string;
+  payoutCurrency?: string;
+  chequeRemark?: string;
+  payoutExchangeRate?: number;
+  exchangeRateRecord?: string;
+  clientId?: string;
+  printDestinationSelected?: any[];
+}

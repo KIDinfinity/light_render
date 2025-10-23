@@ -1,0 +1,59 @@
+const localFieldConfig = {
+  section: 'ClaimEstimation-Result-Rider',
+  field: 'riderSeq',
+  'field-props': {
+    editable: 'Y',
+    label: {
+      dictTypeCode: 'Label_CLM_Opus',
+      dictCode: 'riderNo',
+    },
+    required: 'N',
+    visible: 'Y',
+    'x-layout': {
+      // 480px
+      xs: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 1,
+      },
+      // 576px
+      sm: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 1,
+      },
+      // 768px
+      md: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 1,
+      },
+      // 992px
+      lg: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 1,
+      },
+      // 1200px
+      xl: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 1,
+      },
+      // 1600px
+      xxl: {
+        span: 2,
+        offset: 0,
+        pull: 0,
+        order: 1,
+      },
+    },
+  },
+};
+
+export { localFieldConfig };

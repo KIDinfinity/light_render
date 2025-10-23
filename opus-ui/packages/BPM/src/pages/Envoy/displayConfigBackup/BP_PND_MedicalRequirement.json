@@ -1,0 +1,50 @@
+{
+  "switch": { "visible": true, "editable": true },
+  "pendingMemo": {
+    "sort": 3,
+    "visible": true,
+    "editable": true,
+    "disableNewMemo": true,
+    "children": {
+      "memoRemark": {
+        "visible": true
+      },
+      "subInfos": {
+        "visible": true,
+        "multiple": false
+      },
+      "showRemark": true,
+      "medicalProvider": {
+        "visible": true
+      },
+      "pendingDescription": {
+        "type": "SubTypeCode"
+      }
+    }
+  },
+  "reminder": {
+    "visible": true,
+    "children": {
+      "sendDay": { "visible": true, "editable": true, "sort": 1 },
+      "dispatchDate": { "visible": true, "editable": true, "sort": 3 },
+      "channelContent": {
+        "visible": false,
+        "children": {
+          "letter": {
+            "channelInfo": { "visible": true, "editable": true, "sort": 2 },
+            "channelTpl": { "visible": true, "editable": true, "sort": 1 }
+          },
+          "sms": {
+            "channelInfo": { "visible": true, "editable": true, "sort": 2 },
+            "channelTpl": { "visible": true, "editable": true, "sort": 1 }
+          },
+          "email": {
+            "channelInfo": { "visible": true, "editable": true, "sort": 1 },
+            "channelTpl": { "visible": true, "editable": true, "sort": 2 }
+          }
+        },
+        "sort": 4
+      }
+    }
+  }
+}

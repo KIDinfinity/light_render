@@ -1,0 +1,74 @@
+import React from 'react';
+import { Col } from 'antd';
+
+import { getDrowDownList } from '@/utils/dictFormatMessage';
+import { Authority, Editable, FormItemSelect, RuleByForm } from 'basic/components/Form';
+import useGetVisibleByConfigUseFormRule from 'basic/hooks/useGetVisibleByConfigUseFormRule';
+
+import useGetRequiredByRole from '../../../_hooks/useGetRequiredByRole';
+import useJudgeIsTargetRelationOfInsured from '../../../_hooks/useJudgeIsTargetRelationOfInsured';
+import { fieldConfig } from './Title.config';
+
+export { fieldConfig } from './Title.config';
+
+const FormItem = ({ isShow, layout, form, editable, field, config, id }: any) => {
+  const fieldProps: any = fieldConfig['field-props'];
+  const dicts = getDrowDownList({ config, fieldProps });
+  const editableConditions = !RuleByForm(config['editable-condition'], form);
+  const requiredConditions = false;
+  const requiredByRole = useGetRequiredByRole({
+    requiredConditions,
+    config,
+    localConfig: fieldConfig,
+    clientId: id
+  });
+
+  const isTargetRelationOfInsured = useJudgeIsTargetRelationOfInsured({ form });
+  const visible = useGetVisibleByConfigUseFormRule({ config, fieldConfig });
+  const titleVisible = isTargetRelationOfInsured ? false : visible;
+
+  return (
+    isShow &&
+    titleVisible && (
+      <Col {...layout}>
+        <FormItemSelect
+          dicts={dicts}
+          disabled={
+            !editable ||
+            ((config?.editable || fieldProps.editable) === Editable.Conditions
+              ? editableConditions
+              : (config?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId={config?.label?.dictCode || fieldProps.label.dictCode}
+          labelTypeCode={
+            config?.label?.dictTypeCode || fieldProps.label.dictTypeCode
+          }
+          required={requiredByRole}
+          hiddenPrefix
+          precision={0}
+          labelType="inline"
+        />
+      </Col>
+    )
+  );
+};
+
+const Title = ({ field, config, form, editable, layout, isShow, id }: any) => (
+  <Authority>
+    <FormItem
+      field={fieldConfig.field}
+      config={config}
+      isShow={isShow}
+      layout={layout}
+      form={form}
+      editable={editable}
+      id={id}
+    />
+  </Authority>
+);
+
+Title.displayName = 'title';
+
+export default Title;

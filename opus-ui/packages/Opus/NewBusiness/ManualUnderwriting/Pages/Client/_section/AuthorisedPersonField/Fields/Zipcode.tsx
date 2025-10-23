@@ -1,0 +1,93 @@
+import React, { useMemo } from 'react';
+import lodash from 'lodash';
+import useGetRequiredByRole from '../../../_hooks/useGetRequiredByRole';
+import { Col } from 'antd';
+
+import useGetCurrentLevelAddress from 'process/NB/ManualUnderwriting/_hooks/useGetCurrentLevelAddress';
+import AddressLevel from 'process/NB/ManualUnderwriting/Enum/AddressLevel';
+import {
+  Authority,
+  Editable,
+  FormItemAutoComplete,
+  Visible,
+  RuleByForm,
+} from 'basic/components/Form';
+import { fieldConfig } from './Zipcode.config';
+
+export { fieldConfig } from './Zipcode.config';
+
+const FormItem = ({ isShow, layout, form, editable, field, config, id }: any) => {
+  const fieldProps: any = fieldConfig['field-props'];
+  const addrType = form.getFieldValue('addrType');
+  const dicts = useGetCurrentLevelAddress({
+    id,
+    addressType: addrType,
+    addressLevel: AddressLevel.ZipCode,
+  });
+
+  const visibleConditions = RuleByForm(config?.['visible-condition'], form);
+  const editableConditions = !RuleByForm(config?.['editable-condition'], form);
+  const requiredConditions = false;
+  const requiredByRole = useGetRequiredByRole({
+    requiredConditions,
+    config,
+    localConfig: fieldConfig,
+    clientId: id,
+  });
+
+  const dataSource = useMemo(() => {
+    return lodash.map(dicts, (item: any) => item.subCode);
+  }, [dicts]);
+
+  return (
+    isShow &&
+    ((config?.visible || fieldProps.visible) === Visible.Conditions
+      ? visibleConditions
+      : (config?.visible || fieldProps.visible) === Visible.Yes) && (
+      <Col {...layout}>
+        <FormItemAutoComplete
+          dataSource={dataSource}
+          onSearch={(text: string) => {
+            return lodash.filter(dataSource, (content) =>
+              lodash.lowerCase(content).includes(lodash.lowerCase(text))
+            );
+          }}
+          disabled={
+            !editable ||
+            ((config?.editable || fieldProps.editable) === Editable.Conditions
+              ? editableConditions
+              : (config?.editable || fieldProps.editable) === Editable.No)
+          }
+          form={form}
+          formName={config.name || field}
+          labelId={config?.label?.dictCode || fieldProps.label.dictCode}
+          labelTypeCode={config?.label?.dictTypeCode || fieldProps.label.dictTypeCode}
+          required={requiredByRole}
+          hiddenPrefix
+          precision={0}
+        />
+      </Col>
+    )
+  );
+};
+
+const Zipcode = ({ form, editable, layout, isShow, id, config, isDropEmptyData }: any) => {
+  return (
+    <Authority>
+      <FormItem
+        field={fieldConfig?.field}
+        config={config}
+        isShow={isShow}
+        layout={layout}
+        form={form}
+        editable={editable}
+        id={id}
+        isDropEmptyData={isDropEmptyData}
+      />
+    </Authority>
+  );
+};
+
+Zipcode.displayName = 'zipCode';
+
+export default Zipcode;

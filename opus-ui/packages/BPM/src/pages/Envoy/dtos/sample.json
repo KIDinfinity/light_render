@@ -1,0 +1,211 @@
+{
+  "dateProcess": {
+    "sort": 1,
+    "visible": false
+  },
+  "envoyTo": {
+    "sort": 2,
+    "visible": false,
+    "editable": true
+  },
+  "messageText": {
+    "sort": 3,
+    "visible": false
+  },
+  "channelTabs": {
+    "sort": 4,
+    "visible": false,
+    "editable": true
+  },
+  "channelContent": {
+    "sort": 5,
+    "visible": false,
+    "children": {
+      "sms": {
+        "channelInfo": {
+          "sort": 1,
+          "visible": true,
+          "editable": true
+        },
+        "channelTpl": {
+          "sort": 2,
+          "visible": true,
+          "editable": true
+        }
+      },
+      "letter": {
+        "channelInfo": {
+          "sort": 1,
+          "visible": true,
+          "editable": true
+        },
+        "channelTpl": {
+          "sort": 2,
+          "visible": true,
+          "editable": true
+        }
+      },
+      "email": {
+        "channelInfo": {
+          "sort": 1,
+          "visible": true,
+          "editable": true
+        },
+        "channelTpl": {
+          "sort": 2,
+          "visible": true,
+          "editable": true
+        }
+      },
+      "remark": {
+        "channelInfo": {
+          "sort": 1,
+          "visible": true,
+          "editable": true
+        },
+        "channelTpl": {
+          "sort": 2,
+          "visible": true,
+          "editable": true
+        }
+      }
+    }
+  },
+  "documents": {
+    "sort": 6,
+    "visible": false,
+    "editable": true
+  },
+  "subcase": {
+    "sort": 7,
+    "visible": false
+  },
+  "dispatchDate": {
+    "sort": 8,
+    "visible": false,
+    "editable": true
+  },
+  "policy": {
+    "sort": 9,
+    "visible": false,
+    "children": {
+      " policyList": {
+        "editable": true
+      },
+      "reasonList": {
+        "editable": true
+      },
+      "date": {
+        "editable": false
+      }
+    }
+  },
+  "attachment": {
+    "sort": 10,
+    "visible": false,
+    "editable": true
+  },
+  "delayLetter": {
+    "sort": 11,
+    "visible": false,
+    "editable": true
+  },
+  "define": {
+    "sort": 12,
+    "visible": true,
+    "editable": true
+  },
+  "switch": {
+    "visible": false,
+    "editable": true
+  },
+  "reminder": {
+    "sort": 13,
+    "visible": false,
+    "children": {
+      "sendDay": {
+        "sort": 1,
+        "visible": false,
+        "editable": true
+      },
+      "simpleSend": {
+        "sort": 2,
+        "visible": false,
+        "editable": true
+      },
+      "channelSend": {
+        "sort": 3,
+        "visible": false,
+        "editable": true
+      },
+      "envoyTo": {
+        "sort": 4,
+        "visible": false,
+        "editable": true
+      },
+      "messageText": {
+        "sort": 5,
+        "visible": false
+      },
+      "channelContent": {
+        "sort": 6,
+        "visible": false,
+        "children": {
+          "sms": {
+            "channelInfo": {
+              "sort": 2,
+              "visible": false,
+              "editable": true
+            },
+            "channelTpl": {
+              "sort": 1,
+              "visible": false,
+              "editable": true
+            }
+          },
+          "letter": {
+            "channelInfo": {
+              "sort": 2,
+              "visible": false,
+              "editable": true
+            },
+            "channelTpl": {
+              "sort": 1,
+              "visible": false,
+              "editable": true
+            }
+          },
+          "email": {
+            "channelInfo": {
+              "sort": 1,
+              "visible": false,
+              "editable": true
+            },
+            "channelTpl": {
+              "sort": 2,
+              "visible": false,
+              "editable": true
+            }
+          },
+          "remark": {
+            "channelInfo": {
+              "sort": 1,
+              "visible": false,
+              "editable": true
+            },
+            "channelTpl": {
+              "sort": 2,
+              "visible": false,
+              "editable": true
+            }
+          }
+        }
+      },
+      "dispatchDate": {
+        "sort": 7,
+        "visible": false,
+        "editable": true
+      }
+    }
+  }
+}

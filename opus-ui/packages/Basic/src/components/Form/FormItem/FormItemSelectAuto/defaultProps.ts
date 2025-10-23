@@ -1,0 +1,15 @@
+export default {
+  disabled: false,
+  required: false,
+  rules: [],
+  mode: 'default',
+  optionShowType: 'dictName',
+  dictCode: 'dictCode',
+  dictName: 'dictName',
+  editable: undefined,
+  allowClear: false,
+  typeCode: '',
+  onFocus: () => { },
+  labelId: undefined,
+  labelTypeCode: 'Label_BIZ_Claim',
+}

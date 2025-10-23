@@ -1,0 +1,12 @@
+export default {
+  layout: {
+    type: 'flex',
+    justify: 'space-around',
+  },
+  fieldLayout: {
+    xs: { span: 24 },
+    sm: { span: 6 },
+    md: { span: 6 },
+    lg: { span: 6 },
+  },
+};

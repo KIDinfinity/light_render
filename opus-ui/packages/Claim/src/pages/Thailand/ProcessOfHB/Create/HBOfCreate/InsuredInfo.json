@@ -1,0 +1,16 @@
+{
+  "fieldLayout": {
+    "xs": { "span": 8 },
+    "sm": { "span": 8 },
+    "md": { "span": 4 },
+    "lg": { "span": 4 }
+  },
+  "address": {
+    "layout": {
+      "xs": { "span": 12 },
+      "sm": { "span": 12 },
+      "md": { "span": 8 },
+      "lg": { "span": 8 }
+    }
+  }
+}

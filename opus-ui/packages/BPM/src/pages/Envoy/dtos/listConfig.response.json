@@ -1,0 +1,1405 @@
+{
+  "success": true,
+  "type": null,
+  "warnData": null,
+  "resultData": [
+    {
+      "code": "P_BP_PND_MedicalRequirement",
+      "name": "APS Medical Requirement",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_MedicalRequirement",
+          "reasonName": "APS Medical Requirement",
+          "type": "Pending",
+          "subCaseCategory": "",
+          "period": -1,
+          "enableReminder": true,
+          "enableAutoReminder": true,
+          "enableReminderNotice": false,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [
+            {
+              "reminderCode": "BP_PND_MedicalRequirement_RMD_1",
+              "cron": 15,
+              "reminderSequence": 1,
+              "triggerCcm": true,
+              "cronExpression": "0 0 10 dd MM ?",
+              "expressionType": "extendByCron",
+              "roleChannelConfigs": []
+            },
+            {
+              "reminderCode": "BP_PND_MedicalRequirement_RMD_2",
+              "cron": 30,
+              "reminderSequence": 2,
+              "triggerCcm": true,
+              "cronExpression": "0 0 10 dd MM ?",
+              "expressionType": "extendByCron",
+              "roleChannelConfigs": []
+            }
+          ],
+          "docConfigs": [
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AR",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AS",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AQ",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AP",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PAR",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PAS",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PAQ",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PAP",
+              "memoSubcode": null
+            }
+          ],
+          "displayConfig": "{\"switch\":{\"visible\":true,\"editable\":true},\"pendingMemo\":{\"sort\":3,\"visible\":true,\"editable\":true,\"disableNewMemo\":true,\"children\":{\"memoRemark\":{\"visible\":true},\"subInfos\":{\"visible\":true,\"multiple\":false},\"showRemark\":true,\"medicalProvider\":{\"visible\":true},\"pendingDescription\":{\"type\":\"SubTypeCode\"}}},\"reminder\":{\"visible\":true,\"children\":{\"sendDay\":{\"visible\":true,\"editable\":true,\"sort\":1},\"dispatchDate\":{\"visible\":true,\"editable\":true,\"sort\":3},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":true,\"editable\":true,\"sort\":2},\"channelTpl\":{\"visible\":true,\"editable\":true,\"sort\":1}},\"sms\":{\"channelInfo\":{\"visible\":true,\"editable\":true,\"sort\":2},\"channelTpl\":{\"visible\":true,\"editable\":true,\"sort\":1}},\"email\":{\"channelInfo\":{\"visible\":true,\"editable\":true,\"sort\":1},\"channelTpl\":{\"visible\":true,\"editable\":true,\"sort\":2}}},\"sort\":4}}}}",
+          "copyData": null,
+          "triggerCcm": true,
+          "syncDestToReminder": false,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "v2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "N",
+      "allowMerge": "Y"
+    },
+    {
+      "code": "P_BP_PND_ActuarialProductOpinion",
+      "name": "Actuarial / Product Opinion",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_ActuarialProductOpinion",
+          "reasonName": "Actuarial / Product Opinion",
+          "type": "Pending",
+          "subCaseCategory": null,
+          "period": -1,
+          "enableReminder": true,
+          "enableAutoReminder": true,
+          "enableReminderNotice": true,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [
+            {
+              "reminderCode": "BP_PND_ActuarialProductOpinion_RMD",
+              "cron": 3,
+              "reminderSequence": 1,
+              "triggerCcm": null,
+              "cronExpression": null,
+              "expressionType": "loop",
+              "roleChannelConfigs": []
+            }
+          ],
+          "docConfigs": [],
+          "displayConfig": "{\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"retry\":{\"visible\":true,\"editable\":true},\"pendingMemo\":{\"sort\":3,\"visible\":true,\"editable\":true,\"children\":{\"memoClientRole\":{\"visible\":false},\"memoClientId\":{\"visible\":false},\"memoRemark\":{\"visible\":true},\"pendingDescription\":{\"type\":\"SubTypeCode\"}}},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":4},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":5},\"switch\":{\"visible\":false,\"editable\":false},\"reminder\":{\"visible\":false,\"children\":{\"sendDay\":{\"visible\":false,\"editable\":false,\"sort\":1},\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":3},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":4}}}}",
+          "copyData": null,
+          "triggerCcm": false,
+          "syncDestToReminder": false,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "V2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "N",
+      "allowMerge": "Y"
+    },
+    {
+      "code": "P_BP_PND_ComplianceOpinion",
+      "name": "Compliance Opinion",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_ComplianceOpinion",
+          "reasonName": "Compliance Opinion",
+          "type": "Pending",
+          "subCaseCategory": null,
+          "period": -1,
+          "enableReminder": true,
+          "enableAutoReminder": true,
+          "enableReminderNotice": true,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [
+            {
+              "reminderCode": "BP_PND_ComplianceOpinion_RMD",
+              "cron": 1,
+              "reminderSequence": 1,
+              "triggerCcm": null,
+              "cronExpression": "0 0 0/4 * * ?",
+              "expressionType": "loop",
+              "roleChannelConfigs": []
+            }
+          ],
+          "docConfigs": [],
+          "displayConfig": "{\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"retry\":{\"visible\":true,\"editable\":true},\"pendingMemo\":{\"sort\":3,\"visible\":true,\"editable\":true,\"children\":{\"memoClientRole\":{\"visible\":false},\"memoClientId\":{\"visible\":false},\"pendingDescription\":{\"type\":\"SubTypeCode\"}}},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":4},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":5},\"switch\":{\"visible\":false,\"editable\":false},\"reminder\":{\"visible\":false,\"children\":{\"sendDay\":{\"visible\":false,\"editable\":false,\"sort\":1},\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":3},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":4}}}}",
+          "copyData": null,
+          "triggerCcm": false,
+          "syncDestToReminder": false,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "V2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "N",
+      "allowMerge": "Y"
+    },
+    {
+      "code": "P_BP_PND_CounterOffer",
+      "name": "Counter-offer",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_CounterOffer",
+          "reasonName": "Counter Offer",
+          "type": "Pending",
+          "subCaseCategory": null,
+          "period": -1,
+          "enableReminder": false,
+          "enableAutoReminder": false,
+          "enableReminderNotice": false,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [],
+          "docConfigs": [
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-CT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "CT",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SP",
+              "memoSubcode": null
+            }
+          ],
+          "displayConfig": "{\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"retry\":{\"visible\":true,\"editable\":true},\"pendingMemo\":{\"sort\":3,\"visible\":true,\"editable\":true,\"children\":{\"memoClientRole\":{\"visible\":false},\"memoClientId\":{\"visible\":false},\"pendingDescription\":{\"type\":\"SubTypeCode\"}}},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":4},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":5},\"switch\":{\"visible\":false,\"editable\":false},\"reminder\":{\"visible\":false,\"children\":{\"sendDay\":{\"visible\":false,\"editable\":false,\"sort\":1},\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":3},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":4}}}}",
+          "copyData": null,
+          "triggerCcm": false,
+          "syncDestToReminder": true,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "v2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "N",
+      "allowMerge": "Y"
+    },
+    {
+      "code": "P_BP_PND_CreditCardRefund",
+      "name": "Credit Card Refund",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_CreditCardRefund",
+          "reasonName": "Credit Card Refund",
+          "type": "Pending",
+          "subCaseCategory": null,
+          "period": -1,
+          "enableReminder": false,
+          "enableAutoReminder": false,
+          "enableReminderNotice": false,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [],
+          "docConfigs": [],
+          "displayConfig": "{\"freeField\":{\"visible\":true,\"editable\":true,\"custom\":{\"type\":\"input\",\"labelTypeCode\":\"Label_COM_Envoy\",\"labelDictCode\":\"description\",\"name\":\"Description\",\"dataPath\":\"remark\"},\"sort\":1},\"switch\":{\"visible\":true,\"editable\":true},\"retry\":{\"visible\":true,\"editable\":true}}",
+          "copyData": null,
+          "triggerCcm": true,
+          "syncDestToReminder": false,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "v2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "Y",
+      "allowMerge": null
+    },
+    {
+      "code": "P_BP_PND_FurtherRequirement",
+      "name": "Further Requirement",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_FurtherRequirement",
+          "reasonName": "Further Requirement",
+          "type": "Pending",
+          "subCaseCategory": null,
+          "period": -1,
+          "enableReminder": false,
+          "enableAutoReminder": false,
+          "enableReminderNotice": false,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [],
+          "docConfigs": [
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AX",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "3A",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AW",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0009"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PG",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "FS",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W5",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "785",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-IL-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PO",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "712",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "02",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-004"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "894",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-IL-003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SO",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PF",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "1K",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "MI",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W9",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SF",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "81",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "81",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "712",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SF",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0009"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PG",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "788",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "782",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "MJ",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "826",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "FS",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "830",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "770",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-004"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "KC",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W8",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "784",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "17",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "722",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W4",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "784",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "722",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "11",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "MI",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-IL-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PO",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SP",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "830",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "961",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-004"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "KC",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W9",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "8E",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "21",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-004"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "894",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "MP",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "920",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "01",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "769",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "83",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "787",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "961",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "11",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W4",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "959",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "826",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-IL-003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SO",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "86",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "1M",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AW",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "22",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "788",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "MJ",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "21",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "960",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "959",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "3A",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W5",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "22",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0004"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W6",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "787",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "920",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "782",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "17",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "83",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0004"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W6",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "SP",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "86",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "770",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "769",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "W8",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "777",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "1K",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "804",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "20",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "785",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "960",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "804",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "71",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["NB-M-ALL-UL-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "PF",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "01",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AT",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "1M",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AX",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "71",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "82",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-002"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "AT",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["BC-S-ALL-PY-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "777",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-AT-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "02",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "20",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-ME-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "MP",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["OTH-0003"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "8E",
+              "memoSubcode": null
+            },
+            {
+              "docGroupCode": "TH_NB_Doc",
+              "defaultDocTypeCodes": ["ALL-S-ALL-FN-001"],
+              "enableFreeTextDoc": false,
+              "enableComment": false,
+              "enableCopies": false,
+              "memoCode": "82",
+              "memoSubcode": null
+            }
+          ],
+          "displayConfig": "{\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"retry\":{\"visible\":true,\"editable\":true},\"pendingMemo\":{\"sort\":3,\"visible\":true,\"editable\":true,\"children\":{\"memoClientRole\":{\"visible\":false},\"memoClientId\":{\"visible\":false},\"subInfos\":{\"visible\":false,\"multiple\":false},\"pendingDescription\":{\"type\":\"SubTypeCode\"}}},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":4},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":5},\"switch\":{\"visible\":false,\"editable\":false},\"reminder\":{\"visible\":false,\"children\":{\"sendDay\":{\"visible\":false,\"editable\":false,\"sort\":1},\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":3},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":4}}}}",
+          "copyData": null,
+          "triggerCcm": false,
+          "syncDestToReminder": true,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "v2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "N",
+      "allowMerge": "Y"
+    },
+    {
+      "code": "P_BP_PND_MedicalOfficerOpinion",
+      "name": "Medical Officer Opinion",
+      "allowActions": ["Save", "Waive", "Resolve"],
+      "reasonConfigs": [
+        {
+          "reasonCode": "BP_PND_MedicalOfficerOpinion",
+          "reasonName": "Medical Officer Opinion",
+          "type": "Pending",
+          "subCaseCategory": null,
+          "period": -1,
+          "enableReminder": true,
+          "enableAutoReminder": true,
+          "enableReminderNotice": true,
+          "enableWorkday": false,
+          "triggerDocDispatch": false,
+          "roleChannelConfigs": [],
+          "reminderConfigs": [
+            {
+              "reminderCode": "BP_PND_MedicalOfficerOpinion_RMD",
+              "cron": 1,
+              "reminderSequence": 1,
+              "triggerCcm": null,
+              "cronExpression": null,
+              "expressionType": "loop",
+              "roleChannelConfigs": []
+            }
+          ],
+          "docConfigs": [],
+          "displayConfig": "{\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"retry\":{\"visible\":true,\"editable\":true},\"pendingMemo\":{\"sort\":3,\"visible\":true,\"editable\":true,\"children\":{\"memoClientRole\":{\"visible\":false},\"memoClientId\":{\"visible\":false},\"pendingDescription\":{\"type\":\"SubTypeCode\"}}},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":4},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":5},\"switch\":{\"visible\":false,\"editable\":false},\"reminder\":{\"visible\":false,\"children\":{\"sendDay\":{\"visible\":false,\"editable\":false,\"sort\":1},\"envoyTo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"dispatchDate\":{\"visible\":false,\"editable\":false,\"sort\":3},\"channelContent\":{\"visible\":false,\"children\":{\"letter\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"sms\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":2},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":1}},\"email\":{\"channelInfo\":{\"visible\":false,\"editable\":false,\"sort\":1},\"channelTpl\":{\"visible\":false,\"editable\":false,\"sort\":2}}},\"sort\":4}}}}",
+          "copyData": null,
+          "triggerCcm": false,
+          "syncDestToReminder": false,
+          "caseRelationWithSubCase": null,
+          "ccmSyncFlag": null
+        }
+      ],
+      "enableAutoPend": true,
+      "stopSla": null,
+      "stopTat": null,
+      "version": "v2",
+      "previewMode": null,
+      "emailToEM": null,
+      "emailCcEM": null,
+      "emailBccEM": null,
+      "emailTitleEM": null,
+      "emailContentEM": null,
+      "smsToEM": null,
+      "smsContentEM": null,
+      "isVisible": null,
+      "existCorrespondenceFlag": "N",
+      "allowMerge": "Y"
+    }
+  ],
+  "promptMessages": [null]
+}

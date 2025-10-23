@@ -1,0 +1,7 @@
+enum DataPriorityEvent {
+  HIGH_PRIORITY_LOADED = 'HIGH_PRIORITY_LOADED',
+  MEDIUM_PRIORITY_LOADED = 'MEDIUM_PRIORITY_LOADED',
+  RESET = 'RESET',
+}
+
+export default DataPriorityEvent;

@@ -1,0 +1,27 @@
+enum FILE_TYPE {
+  SQL = 'SQL',
+  LIQUI = 'LIQUI',
+}
+
+enum PATCH_TYPE {
+  INPUT = 'INPUT',
+  IMPORT = 'IMPORT',
+}
+
+enum PATCH_TYPE_NAME {
+  INPUT = 'Input SQL',
+  IMPORT = 'Import File',
+}
+
+enum OPERATION_TYPE {
+  ADD = 'ADD',
+  UPDATE = 'UPDATE',
+  DELETE = 'DELETE',
+  NULL = 'NULL',
+  BACKUP = 'BACKUP',
+  UPLOAD = 'UPLOAD',
+  COMPARE = 'COMPARE',
+  SCAN = 'SCAN',
+}
+
+export { FILE_TYPE, PATCH_TYPE, PATCH_TYPE_NAME, OPERATION_TYPE };
