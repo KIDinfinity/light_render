@@ -122,7 +122,7 @@ const SelectItem = React.forwardRef<any, FormItemSelectProps>((props, ref) => {
 
       if (result === false) {
         return;
-      }
+  
     }
 
     setCustomItem('');
